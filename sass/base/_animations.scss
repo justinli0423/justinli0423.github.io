@@ -1,0 +1,24 @@
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 10px #228DFF, 0 0 15px #228DFF,
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 10px #228DFF, 0 0 20px #228DFF,
+    }
+}
+
+@keyframes ring {
+    0% {
+        padding: 0;
+        opacity: .1;
+        color: transparentize($color-grey-light-1, $amount: 20%);
+    }
+    50% {
+        padding: 1rem 1.5rem;
+        opacity: .7;
+    }
+    100% {
+        padding: 2rem 2.7rem;
+        opacity: .1;
+    }
+}
