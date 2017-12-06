@@ -1,0 +1,21 @@
+.header {
+    background-image: linear-gradient(to bottom, $color-blue-dark, $color-blue 65%);
+    background-color: $color-blue-dark;
+    background-size: cover;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100vh, 0 75vh);
+}
+
+.composition {
+    position: relative;
+
+    &__photo {
+        position: absolute;
+        width: 75%;
+        border-radius: 50%;
+        z-index: 10;
+        left: 12.5%;
+        top: 12rem;
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .8);        
+    }
+}
