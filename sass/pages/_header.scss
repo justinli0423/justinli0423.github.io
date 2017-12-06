@@ -1,10 +1,11 @@
 .header {
-    background-image: linear-gradient(to bottom, $color-blue-dark, $color-blue 45%, $color-blue-light 80%);
-    background-color: $color-blue-dark;
-    background-size: cover;
+	background: linear-gradient(45deg, rgba($color-blue, .97), rgba($color-blue-light, .97), rgba($color-blue-dark, .97)), url(../img/header-bg.jpg);
     height: 100vh;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 50.4% 100vh, 49.6% 100vh, 0 75vh);
     position: relative;
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    z-index: 1;
 }
 
 .composition {

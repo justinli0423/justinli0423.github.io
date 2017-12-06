@@ -25,15 +25,22 @@ body {
 
 @keyframes ring {
   0% {
-    padding: 0;
-    opacity: 0;
-    color: transparent; }
+    padding: 0 .5rem;
+    color: rgba(247, 247, 247, 0.8); }
   50% {
     padding: 1rem 1.5rem;
     opacity: .7; }
   100% {
     padding: 2rem 2.7rem;
     opacity: .1; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 50% 0%; }
+  50% {
+    background-position: 50% 100%; }
+  100% {
+    background-position: 50% 0%; } }
 
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -136,7 +143,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#2f71e3, #070021);
+  background-image: radial-gradient(#2f71e3, #193D7A);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -226,12 +233,13 @@ body {
   transform: rotate(-135deg); }
 
 .header {
-  background-image: linear-gradient(to bottom, #070021, #193D7A 45%, #2f71e3 80%);
-  background-color: #070021;
-  background-size: cover;
+  background: linear-gradient(45deg, rgba(25, 61, 122, 0.97), rgba(47, 113, 227, 0.97), rgba(7, 0, 33, 0.97)), url(../img/header-bg.jpg);
   height: 100vh;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 50.4% 100vh, 49.6% 100vh, 0 75vh);
-  position: relative; }
+  position: relative;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  z-index: 1; }
 
 .composition {
   position: relative;
