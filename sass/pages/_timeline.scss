@@ -1,10 +1,11 @@
 .timeline {
     background-color: $color-grey-light-2;
-    padding: 30rem 0;
+    padding: 40rem 0;
     margin-top: -37vh;
     overflow-x: hidden;
+    width: 100%;
 
-    & div ul {
+    & div ul { 
         padding: 50px 0;
     }
 }
@@ -13,8 +14,8 @@
     list-style: none;
     position: relative;
     width: .6rem;
-    margin: 0 auto;
-    padding-top: 5rem;
+    margin: -20rem auto;
+    padding-top: 25rem;
     background: $color-blue-light;
     font-weight: 400;
     font-size: 1.6rem;
@@ -94,6 +95,7 @@ time {
 
     &.in-view::after {
         background: $color-grey-dark-2;
+        z-index: 1;
     }
 
     & div {
@@ -129,7 +131,7 @@ time {
         &::before {
             left: -1.5rem;
             border-width: .8rem 1.6rem .8rem 0;
-            border-color: transparent orangered transparent transparent;
+            border-color: transparent $color-grey-dark-2 transparent transparent;
         }
     }
 }
@@ -149,7 +151,7 @@ time {
         &:nth-child(odd) div::before {
             left: 4.6rem;
             border-width: .8rem 1.6rem .8rem 0;
-            border-color: transparent transparent transparent orangered;
+            border-color: transparent transparent transparent $color-grey-dark-2;
             
         }
     }

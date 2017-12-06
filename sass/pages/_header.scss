@@ -4,6 +4,7 @@
     background-size: cover;
     height: 100vh;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 50.4% 100vh, 49.6% 100vh, 0 75vh);
+    position: relative;
 }
 
 .composition {
@@ -11,11 +12,12 @@
 
     &__photo {
         position: absolute;
+        top: 20rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 75%;
         border-radius: 50%;
         z-index: 10;
-        left: 12.5%;
-        top: 12rem;
         box-shadow: .5rem 1rem 2rem rgba($color-black, .8);        
     }
 }

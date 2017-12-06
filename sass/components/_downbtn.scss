@@ -1,0 +1,14 @@
+.scroll-down {
+    position: relative;
+    &:link,
+    &:visited{
+        position: absolute;
+        top: 95vh;
+        left: 50%;
+        text-decoration: none;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        font-size: 6rem;
+        color: $color-grey-light-2
+    }
+}

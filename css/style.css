@@ -41,6 +41,18 @@ body {
   .intro__paragraph {
     color: #eee; }
 
+.scroll-down {
+  position: relative; }
+  .scroll-down:link, .scroll-down:visited {
+    position: absolute;
+    top: 95vh;
+    left: 50%;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-size: 6rem;
+    color: #eee; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -184,24 +196,27 @@ body {
   background-color: #070021;
   background-size: cover;
   height: 100vh;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 50.4% 100vh, 49.6% 100vh, 0 75vh); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 50.4% 100vh, 49.6% 100vh, 0 75vh);
+  position: relative; }
 
 .composition {
   position: relative; }
   .composition__photo {
     position: absolute;
+    top: 20rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 75%;
     border-radius: 50%;
     z-index: 10;
-    left: 12.5%;
-    top: 12rem;
     box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8); }
 
 .timeline {
   background-color: #eee;
-  padding: 30rem 0;
+  padding: 40rem 0;
   margin-top: -37vh;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 100%; }
   .timeline div ul {
     padding: 50px 0; }
 
@@ -209,8 +224,8 @@ body {
   list-style: none;
   position: relative;
   width: .6rem;
-  margin: 0 auto;
-  padding-top: 5rem;
+  margin: -20rem auto;
+  padding-top: 25rem;
   background: #2f71e3;
   font-weight: 400;
   font-size: 1.6rem; }
@@ -266,7 +281,8 @@ time {
   transition: background .5s ease-in-out; }
 
 .list-element.in-view::after {
-  background: #999; }
+  background: #999;
+  z-index: 1; }
 
 .list-element div {
   visibility: hidden;
@@ -292,7 +308,7 @@ time {
     .list-element:nth-child(odd) div::before {
       left: -1.5rem;
       border-width: .8rem 1.6rem .8rem 0;
-      border-color: transparent orangered transparent transparent; } }
+      border-color: transparent #999 transparent transparent; } }
 
 @media screen and (max-width: 600px) {
   .list-element {
@@ -304,4 +320,4 @@ time {
     .list-element:nth-child(odd) div::before {
       left: 4.6rem;
       border-width: .8rem 1.6rem .8rem 0;
-      border-color: transparent transparent transparent orangered; } }
+      border-color: transparent transparent transparent #999; } }
