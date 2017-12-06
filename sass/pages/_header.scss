@@ -1,9 +1,9 @@
 .header {
-    background-image: linear-gradient(to bottom, $color-blue-dark, $color-blue 65%);
+    background-image: linear-gradient(to bottom, $color-blue-dark, $color-blue 45%, $color-blue-light 80%);
     background-color: $color-blue-dark;
     background-size: cover;
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100vh, 0 75vh);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 50.4% 100vh, 49.6% 100vh, 0 75vh);
 }
 
 .composition {
