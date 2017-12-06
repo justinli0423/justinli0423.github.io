@@ -1,5 +1,5 @@
 .timeline {
-    background-color: $color-grey-light-2;
+    background: linear-gradient(45deg, rgba($color-grey-light-1, .7), rgba($color-grey-light-2, .7), rgba($color-blue-dark, .7)), url(../img/dark-bg.jpg);
     padding: 40rem 0;
     margin-top: -37vh;
     overflow-x: hidden;

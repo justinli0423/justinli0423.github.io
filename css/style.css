@@ -36,17 +36,16 @@ body {
 
 @keyframes gradient {
   0% {
-    background-position: 50% 0%; }
+    background-position: 50% 30%; }
   50% {
-    background-position: 50% 100%; }
+    background-position: 50% 60%; }
   100% {
-    background-position: 50% 0%; } }
+    background-position: 50% 30%; } }
 
 body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   line-height: 1.6rem;
-  padding: 3rem;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
@@ -255,7 +254,7 @@ body {
     box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8); }
 
 .timeline {
-  background-color: #eee;
+  background: linear-gradient(45deg, rgba(247, 247, 247, 0.7), rgba(238, 238, 238, 0.7), rgba(7, 0, 33, 0.7)), url(../img/dark-bg.jpg);
   padding: 40rem 0;
   margin-top: -37vh;
   overflow-x: hidden;
