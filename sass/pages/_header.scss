@@ -9,13 +9,13 @@
 
 .composition {
     position: relative;
-
+    display: block;
     &__photo {
         position: absolute;
-        top: 20rem;
+        top: 25vh;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 75%;
+        width: 35vh;
         border-radius: 50%;
         z-index: 10;
         box-shadow: .5rem 1rem 2rem rgba($color-black, .8);        

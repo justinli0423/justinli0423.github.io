@@ -28,13 +28,17 @@ body {
   hyphens: auto; }
 
 .intro {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 4px solid #eee;
   border-radius: 2px;
   display: block;
-  margin-top: 100%;
   text-align: center;
   padding: 2rem;
-  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8); }
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8);
+  width: 35vh;
+  bottom: 30vh; }
   .intro__heading-primary {
     color: #fff;
     padding-bottom: 2rem; }
@@ -42,7 +46,8 @@ body {
     color: #eee; }
 
 .scroll-down {
-  position: relative; }
+  position: relative;
+  transition: all .2s; }
   .scroll-down:link, .scroll-down:visited {
     position: absolute;
     top: 95vh;
@@ -51,7 +56,12 @@ body {
     transform: translate(-50%, -50%);
     z-index: 100;
     font-size: 6rem;
-    color: #eee; }
+    color: #eee;
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
+  .scroll-down:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8); }
+  .scroll-down:active {
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.35); }
 
 .row {
   max-width: 114rem;
@@ -200,13 +210,14 @@ body {
   position: relative; }
 
 .composition {
-  position: relative; }
+  position: relative;
+  display: block; }
   .composition__photo {
     position: absolute;
-    top: 20rem;
+    top: 25vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 35vh;
     border-radius: 50%;
     z-index: 10;
     box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8); }
