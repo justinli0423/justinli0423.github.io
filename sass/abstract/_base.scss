@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /* this universal selector with inherit will have all child elements
+    (so all elements in this case since this is universal selector)
+    to inherit the body's box sizing */
+}
+
+html {
+    font-size: 62.5%;
+    /* Note: declare font-size as percentage for user friendliness */
+    /* this is root declaration-allows REM to be used to allow responsive fonts
+    browser have default 16px, so 10px is 62.5% of 16px */
+}
+
+body {
+    box-sizing: border-box;
+}
