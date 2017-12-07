@@ -254,6 +254,9 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
+.navi-hide {
+  display: none; }
+
 .navigation-top {
   position: absolute;
   color: #fff;

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/timeline.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/page-load.js"></script>
     <script type="text/javascript" src="js/navi.js"></script>
     <title>Justin - Jli0423</title>
@@ -17,12 +18,16 @@
 <body>
     <div class="navigation-top">
         <a class="navigation-top__name">ıllıllı נυsтιη ıllıllı</a>
-        <a href="#" class="navigation-top__link"><i class="fa fa-clock-o" aria-hidden="true"></i>Timeline</a>
-        <a href="#" class="navigation-top__link"><i class="fa fa-file-text-o" aria-hidden="true"></i>Resume</a>
-        <a href="#" class="navigation-top__link"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
-        <a href="#" class="navigation-top__link"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+        <a href="#" class="navigation-top__link">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>Timeline</a>
+        <a href="#" class="navigation-top__link">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>Resume</a>
+        <a href="#" class="navigation-top__link">
+            <i class="fa fa-github" aria-hidden="true"></i>Github</a>
+        <a href="#" class="navigation-top__link">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
     </div>
-    <div class="navigation-toggle">
+    <div class="navigation-toggle" id="navi-btn">
         <input type="checkbox" class="navigation-toggle__checkbox" id="navi-toggle">
         <label for="navi-toggle" class="navigation-toggle__button">
             <span class="navigation-toggle__icon">&nbsp;</span>
