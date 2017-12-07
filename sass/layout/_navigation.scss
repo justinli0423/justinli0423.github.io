@@ -1,0 +1,45 @@
+.navigation-top {
+    position: absolute;
+    color: $color-white;
+    z-index: 1;
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    text-align: right;
+    border-bottom: 1px solid $color-grey-dark;  
+    background-color: rgba($color-grey-dark-3, .5);
+    a {
+        &:first-child{
+            margin-top: 2rem;
+            float: left;
+            margin-left: 38rem;
+            font-family: 'Ubuntu', sans-serif;
+            text-transform: lowercase;
+            font-size: 3rem;
+        }
+        &:last-child {
+            margin-right: 38rem;
+        }
+    }
+
+    &__link { 
+        transition: all .3s;
+        margin: 2rem 1.2rem;
+        display: inline-block;
+        & i {
+            margin-right: 1.2rem;
+        }
+        &:visited,
+        &:link{
+                color: inherit;
+                text-decoration: none;
+                text-transform: uppercase;
+                margin-right: 5rem;
+        }
+
+        &:hover {
+            // background-color: rgba($color-grey-light-1, .5);
+            color: $color-blue-light;
+        }
+    }
+}

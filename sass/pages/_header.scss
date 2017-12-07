@@ -1,5 +1,5 @@
 .header {
-	background: linear-gradient(45deg, rgba($color-black, .9), rgba($color-black, .7), rgba($color-black, .97)), url(../img/header-bg.jpg);
+	background: linear-gradient(45deg, rgba($color-black, .98), rgba($color-black, .94), rgba($color-black, .97)), url(../img/header-bg.jpg);
     height: 100vh;
     // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
@@ -9,7 +9,7 @@
 }
 
 .composition {
-    margin-top: 28rem;
+    margin-top: 29rem;
     margin-left: 25vh;
     &__photo {
         vertical-align: middle;
