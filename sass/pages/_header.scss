@@ -1,21 +1,19 @@
 .header {
 	background: linear-gradient(45deg, rgba($color-black, .9), rgba($color-black, .7), rgba($color-black, .97)), url(../img/header-bg.jpg);
     height: 100vh;
-    // clip-path: polygon(0 0, 100% 0, 100% 75vh, 50.4% 100vh, 49.6% 100vh, 0 75vh);
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
     background-attachment: fixed;    
     animation: gradient 30s ease infinite;
     background-size: 200% 200%;
-    z-index: 1;
 }
 
 .composition {
-    padding-top: 20vh;
+    margin-top: 28rem;
     margin-left: 25vh;
     &__photo {
         vertical-align: middle;
-        width: 100%;
+        width: 90%;
         border-radius: 50%;
         box-shadow: .5rem 1rem 2rem rgba($color-black, .8);        
     }

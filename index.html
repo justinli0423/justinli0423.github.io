@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/favicon.png" />    
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -14,37 +14,38 @@
 </head>
 
 <body>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
+    <div class="navigation-top">
+        <a href="#" class="navigation-timeline">Timeline</a>
+        <a href="#" class="navigation-top__resume">Resume</a>
+        <a href="#" class="navigation-top__github">Github</a>
+        <a href="#" class="navigation-top__linkedin">LinkedIn</a>
+    </div>
+    <div class="navigation-toggle">
+        <input type="checkbox" class="navigation-toggle__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation-toggle__button">
+            <span class="navigation-toggle__icon">&nbsp;</span>
         </label>
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+        <div class="navigation-toggle__background">&nbsp;</div>
+        <nav class="navigation-toggle__nav">
+            <ul class="navigation-toggle__list">
+                <li class="navigation-toggle__item">
+                    <a href="#" class="navigation-toggle__link">
                         Timeline
                     </a>
                 </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                <li class="navigation-toggle__item">
+                    <a href="#" class="navigation-toggle__link">
                         Resume (PDF)
                     </a>
                 </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                <li class="navigation-toggle__item">
+                    <a href="#" class="navigation-toggle__link">
                         Github
                     </a>
                 </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                <li class="navigation-toggle__item">
+                    <a href="#" class="navigation-toggle__link">
                         LinkedIn
-                    </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">
-                        Facebook
                     </a>
                 </li>
             </ul>
@@ -60,8 +61,10 @@
                     <p class="intro__paragraph">
                         Welcome to my personal website!
                     </p>
-                    <a href="#" class="intro__btn intro__btn--resume">Resume</a>
-                    <a href="#" class="intro__btn intro__btn--github">Github</a>
+                    <div class="intro__btn">
+                        <a href="#" class="btn intro__btn--resume">Resume</a>
+                        <a href="#" class="btn intro__btn--github">Github</a>
+                    </div>
                 </div>
             </div>
             <div class="col-1-of-2">
