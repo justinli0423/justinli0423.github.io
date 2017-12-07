@@ -1,10 +1,12 @@
 .timeline {
-    background: linear-gradient(45deg, rgba($color-grey-light-1, .7), rgba($color-grey-light-2, .7), rgba($color-blue-dark, .7)), url(../img/dark-bg.jpg);
-    padding: 40rem 0;
-    margin-top: -37vh;
+    background: linear-gradient(45deg, rgba($color-black, .9), rgba($color-grey-dark-2, .9), rgba($color-black, .7)), url(../img/dark-bg.jpg);
+    padding-top: 90rem;
+    padding-bottom: 20rem;
+    margin-top: -65vh;
     overflow-x: hidden;
+    overflow-y: hidden;
     width: 100%;
-
+    background-attachment: fixed;
     & div ul { 
         padding: 50px 0;
     }
@@ -105,11 +107,11 @@ time {
     }
 
     &:nth-child(odd) div {
-        transform: translate3d(20rem, 0, 0);
+        transform: translate3d(-20rem, 0, 0);
     }
 
     &:nth-child(even) div {
-        transform: translate3d(-20rem, 0, 0);        
+        transform: translate3d(20rem, 0, 0);        
     }
 
     &.in-view div {
