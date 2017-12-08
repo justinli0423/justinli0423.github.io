@@ -42,16 +42,6 @@ body {
   100% {
     background-position: 50% 20%; } }
 
-@keyframes dropdown {
-  0% {
-    top: 6rem;
-    right: 4rem;
-    opacity: 0; }
-  100% {
-    top: 14rem;
-    right: 4rem;
-    opacity: 1; } }
-
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -191,11 +181,19 @@ body {
       height: 2px;
       transition: all .4s; }
     .navigation-toggle__parent:hover {
-      transform: scale(1.1); }
+      box-shadow: 0 0.5rem 2rem rgba(255, 255, 255, 0.8); }
       .navigation-toggle__parent:hover::before {
-        top: 1.1rem; }
+        top: 1.6rem; }
       .navigation-toggle__parent:hover::after {
         top: 2.5rem; }
+    .navigation-toggle__parent:active, .navigation-toggle__parent:focus {
+      box-shadow: 0 0.5rem 2rem rgba(255, 255, 255, 0.4); }
+      .navigation-toggle__parent:active::before, .navigation-toggle__parent:focus::before {
+        transform: translate(-1.3rem, 0.8rem) rotate(-135deg) translateX(0.1rem);
+        top: 1.4rem; }
+      .navigation-toggle__parent:active::after, .navigation-toggle__parent:focus::after {
+        transform: translate(-1.3rem, -0.8rem) rotate(135deg) translateX(0.1rem);
+        top: 2.8rem; }
     .navigation-toggle__parent::before, .navigation-toggle__parent::after {
       content: "";
       position: absolute;
