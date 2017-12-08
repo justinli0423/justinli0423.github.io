@@ -1,130 +1,94 @@
 .navigation-toggle {
-    &__checkbox {
-        display: none;
-    }
-    &__button {
-        background-color: $color-white;
-        height: 7rem;
-        width: 7rem;
-        position: fixed;
-        top: 6rem;
-        right: 6rem;
-        border-radius: 50%;
-        z-index: 1500;
-        box-shadow: 0 1rem 3rem rgba($color-black, .1);
-        text-align: center;
-        cursor: pointer;
-    }
-    &__background {
-        height: 6rem;
-        width: 6rem;
-        border-radius: 50%;
-        position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
-        background-image: radial-gradient($color-blue-light, $color-blue);
-        z-index: 1000;
-        transition: transform .8s cubic-bezier(.86, 0, .07, 1); // transform: scale(80);
-    }
-    &__nav {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: -20rem;
-        z-index: 1250;
-        opacity: 0;
-        width: 0;
-        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    &__list {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        list-style: none;
-        text-align: center;
-        width: 100%;
-    }
-    &__item {
-        margin: 2rem;
-    }
-    &__link {
-        &:link,
-        &:visited {
-            display: inline-block;
-            font-size: 3rem;
-            font-weight: 300;
-            color: $color-white;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-            background-size: 220%;
-            transition: all .4s;
-            padding: 1rem 2rem;
-            span {
-                margin-right: 1rem;
-                display: inline-block;
-            }
-        }
-        &:hover,
-        &:active {
-            background-position: 100%;
-            color: $color-blue;
-            transform: translateX(1rem);
-        }
-    } // ~ is the 'sibling' selector, and we only want the __background
-    &__checkbox:checked~&__background {
-        transform: scale(80);
-    }
-    &__checkbox:checked~&__nav {
-        width: 100%;
-        opacity: 1;
-        left: 0;
-    } // icon
-    &__icon {
-        position: relative;
-        margin-top: 3.5rem;
+    position: fixed;
+    z-index: 50;
+    top: 7rem;
+    right: 7rem;
+    line-height: 5;
+    text-align: center;
+    &__parent {
+        padding: 2rem 3rem;
         &,
         &::before,
         &::after {
+            display: inline-block;
+            box-shadow: .5rem 1rem 2rem rgba($color-black, .9);
+            border-radius: 5px;
+            border: 2px solid $color-white;
+            color: transparent;
             width: 3rem;
             height: 2px;
-            background: $color-grey-dark-3;
-            display: inline-block;
-            transition: all .2s;
+            transition: all .4s;
         }
+    
+        &:hover {
+            transform: scale(1.1);
+            &::before {
+                top: 1.1rem;
+            }
+
+            &::after {
+                top: 2.5rem;
+            }
+        }
+        
         &::before,
         &::after {
             content: "";
             position: absolute;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
-        &::before {
-            top: -.8rem;
-        }
-        &::after {
-            top: .8rem;
-        }
-    }
-    &__button:hover &__icon::before {
-        top: -1rem;
-    }
-    &__button:hover &__icon::after {
-        top: 1rem;
-    } // select adjacent element and then child of button
-    &__checkbox:checked+&__button &__icon {
-        background-color: transparent;
-    }
-    &__checkbox:checked+&__button &__icon::before {
-        top: 0;
-        transform: rotate(135deg);
-    }
-    &__checkbox:checked+&__button &__icon::after {
-        top: 0;
-        transform: rotate(-135deg);
-    }
-}
 
-.navi-hide {
-    display: none;
+        &::before {
+            top: 1.4rem;
+        }
+
+        &::after{
+            top: 2.8rem;
+        }
+    }
+    &__parent:active~&__list,
+    &__parent:focus~&__list,
+    &__parent:focus-within~&__list {
+        cursor: pointer;
+        visibility: visible;
+        opacity: 1;
+        z-index: 1000;
+        transform: translateY(0%); //removes the flashes
+        transition-delay: 0s, 0s, 0.3s;
+        /* this removes the transition delay so the menu will be visible while the other styles transition */
+    }
+    &__list {
+        visibility: hidden;
+        list-style: none;
+        /* hides sub-menu */
+        opacity: 0;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-2em);
+        z-index: -1;
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    }
+    &__link {
+        &:link,
+        &:visited {
+            transition: all .1s linear;
+            text-decoration: none;
+            background-color: transparent;
+            font-size: 2rem;
+            font-weight: 700;
+            color: $color-white;
+            text-shadow: .5rem 1rem 2rem rgba($color-black, .4);
+        }
+        &:hover {
+            transform: translateY(-5px);
+            text-shadow: .5rem 1rem 2rem rgba($color-black, .9);
+            color: $color-grey-dark-2;
+        }
+
+        &:active {
+            text-shadow: .5rem 1rem 2rem rgba($color-black, .5);
+        }
+    }
 }

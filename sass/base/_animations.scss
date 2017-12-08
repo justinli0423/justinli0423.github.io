@@ -33,3 +33,16 @@
 		background-position: 50% 20%
 	}
 }
+
+@keyframes dropdown {
+    0%{
+        top: 6rem;
+        right: 4rem;
+        opacity: 0;
+    }
+    100% {
+        top: 14rem;
+        right: 4rem;
+        opacity: 1;
+    }
+}

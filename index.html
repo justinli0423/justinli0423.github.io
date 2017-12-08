@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/timeline.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/page-load.js"></script>
@@ -17,46 +18,40 @@
 <body>
     <div class="navigation-top">
         <a class="navigation-top__name">ıllıllı נυsтιη ıllıllı</a>
-            <a href="#" class="navigation-top__link">
-                <i class="fa fa-clock-o" aria-hidden="true"></i>Timeline</a>
-            <a href="#" class="navigation-top__link">
-                <i class="fa fa-file-text-o" aria-hidden="true"></i>Resume</a>
-            <a href="#" class="navigation-top__link">
-                <i class="fa fa-github" aria-hidden="true"></i>Github</a>
-            <a href="#" class="navigation-top__link">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+        <a href="#" class="navigation-top__link">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>Timeline</a>
+        <a href="#" class="navigation-top__link">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>Resume</a>
+        <a href="#" class="navigation-top__link">
+            <i class="fa fa-github" aria-hidden="true"></i>Github</a>
+        <a href="#" class="navigation-top__link">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
     </div>
-    <div class="navigation-toggle" id="navi-btn">
-        <input type="checkbox" class="navigation-toggle__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation-toggle__button">
-            <span class="navigation-toggle__icon">&nbsp;</span>
-        </label>
-        <div class="navigation-toggle__background">&nbsp;</div>
-        <nav class="navigation-toggle__nav">
-            <ul class="navigation-toggle__list">
-                <li class="navigation-toggle__item">
-                    <a href="#" class="navigation-toggle__link">
-                        Timeline
-                    </a>
-                </li>
-                <li class="navigation-toggle__item">
-                    <a href="#" class="navigation-toggle__link">
-                        Resume (PDF)
-                    </a>
-                </li>
-                <li class="navigation-toggle__item">
-                    <a href="#" class="navigation-toggle__link">
-                        Github
-                    </a>
-                </li>
-                <li class="navigation-toggle__item">
-                    <a href="#" class="navigation-toggle__link">
-                        LinkedIn
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <nav class="navigation-toggle">
+        <a href="#/" class="navigation-toggle__parent">&nbsp;</a>
+        <ul class="navigation-toggle__list">
+            <li class="navigation-toggle__item">
+                <a href="#" class="navigation-toggle__link">
+                    Home
+                </a>
+            </li>
+            <li class="navigation-toggle__item">
+                <a href="#/" class="navigation-toggle__link">
+                    Resume
+                </a>
+            </li>
+            <li class="navigation-toggle__item">
+                <a href="#/" class="navigation-toggle__link">
+                    Github
+                </a>
+            </li>
+            <li class="navigation-toggle__item">
+                <a href="#/" class="navigation-toggle__link">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+    </nav>
     <header class="header">
         <div class="row">
             <div class="col-1-of-2">
@@ -76,7 +71,9 @@
             </div>
             <div class="col-1-of-2">
                 <div class="composition">
-                    <img src="img/studious-me.jpg" alt="Me-1" class="composition__photo">
+                    <img src="img/studious-me.jpg" alt="Me-1" class="composition__photo composition__photo--me">
+                    <img src="img/grand-canyon.jpg" alt="Me-1" class="composition__photo composition__photo--canyon">
+                    <img src="img/badminton.jpg" alt="Me-1" class="composition__photo composition__photo--badminton">
                 </div>
             </div>
         </div>
@@ -90,7 +87,7 @@
         </h1>
     </div>
     <section class="timeline" id="timeline">
-        <div class="row">
+        <div>
             <ul>
                 <li class="list-element">
                     <div>

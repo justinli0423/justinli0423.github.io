@@ -32,6 +32,7 @@ body {
 .timeline {
     &__intro {
         position: relative;
+        cursor: default;
     }
     &__heading-primary {
         position: absolute;
@@ -47,15 +48,16 @@ body {
         border-radius: 5px;
         box-shadow: .5rem 1rem 2rem rgba($color-black, .5);
 
-        &::after {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translate(-49%, 50%) rotate(90deg);
-            color: $color-grey-dark-2;
-            display: block;
-            content: ">";
-            text-shadow: .5rem -1rem 2rem rgba($color-black, .7);
-        }
+        // Arrow under the 'timeline' title, maybe use for later
+        // &::after {
+        //     position: absolute;
+        //     top: 100%;
+        //     left: 50%;
+        //     transform: translate(-50%, 50%) rotate(90deg);
+        //     color: $color-grey-dark-2;
+        //     display: block;
+        //     content: ">";
+        //     text-shadow: .5rem -1rem 2rem rgba($color-black, .7);
+        // }
     }
 }
