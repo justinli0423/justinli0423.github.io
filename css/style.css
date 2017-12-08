@@ -173,7 +173,7 @@ body {
     padding: 2rem 3rem; }
     .navigation-toggle__parent, .navigation-toggle__parent::before, .navigation-toggle__parent::after {
       display: inline-block;
-      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.9);
+      box-shadow: 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.2);
       border-radius: 5px;
       border: 2px solid #fff;
       color: transparent;
@@ -181,13 +181,13 @@ body {
       height: 2px;
       transition: all .4s; }
     .navigation-toggle__parent:hover {
-      box-shadow: 0 0.5rem 2rem rgba(255, 255, 255, 0.8); }
+      box-shadow: 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.5); }
       .navigation-toggle__parent:hover::before {
         top: 1.6rem; }
       .navigation-toggle__parent:hover::after {
         top: 2.5rem; }
     .navigation-toggle__parent:active, .navigation-toggle__parent:focus {
-      box-shadow: 0 0.5rem 2rem rgba(255, 255, 255, 0.4); }
+      box-shadow: 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.2); }
       .navigation-toggle__parent:active::before, .navigation-toggle__parent:focus::before {
         transform: translate(-1.3rem, 0.8rem) rotate(-135deg) translateX(0.1rem);
         top: 1.4rem; }
