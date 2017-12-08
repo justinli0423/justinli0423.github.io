@@ -1,20 +1,23 @@
 .header {
-	background: linear-gradient(45deg, rgba($color-black, .98), rgba($color-black, .94), rgba($color-black, .97)), url(../img/header-bg.jpg);
-    height: 100vh;
-    // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    background: linear-gradient(45deg, rgba($color-black, .98), rgba($color-black, .94), rgba($color-black, .97)), url(../img/header-bg.jpg);
+    height: 100vh; // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
-    background-attachment: fixed;    
+    background-attachment: fixed;
     animation: gradient 30s ease infinite;
     background-size: 200% 200%;
 }
 
 .composition {
-    margin-top: 29rem;
-    margin-left: 25vh;
+    // margin-top: 33vh;
+    // margin-left: 11vw;
+    position: relative;
     &__photo {
-        vertical-align: middle;
-        width: 90%;
+        transform: translateY(calc(14rem - 50%));
+        top: 33vh;
+        left: 10vw;
+        position: absolute;
+        width: 15vw;
         border-radius: 50%;
-        box-shadow: .5rem 1rem 2rem rgba($color-black, .8);        
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .8);
     }
 }

@@ -1,5 +1,5 @@
 .intro__btn {
-    margin-top: 5.5rem;
+    margin-top: 3vh;
 }
 
 .btn{
@@ -8,10 +8,10 @@
         display: inline-block;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1vw;
         color: $color-white;
         border: 2px solid $color-grey-light-1;
-        padding: 1rem 2rem;
+        padding: 1vh 1vw;
         border-radius: .5rem;
         transition: all .2s;
     }
@@ -26,7 +26,7 @@
         transform: translateY(-2px);
     }
     &:not(:last-child) {
-        margin-right: 7rem;
+        margin-right: 2vw;
     }
 }
 

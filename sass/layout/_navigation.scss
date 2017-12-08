@@ -2,41 +2,38 @@
     position: absolute;
     color: $color-white;
     z-index: 1;
-    font-size: 2rem;
-    display: block;
+    font-size: 1.9rem;
+    display: inline-block;
     width: 100%;
-    text-align: right;
-    border-bottom: 1px solid $color-grey-dark;  
+    border-bottom: 1px solid $color-grey-dark;
     background-color: rgba($color-grey-dark-3, .5);
     a {
-        &:first-child{
+        &:first-child {
+            text-align: left;
             margin-top: 2rem;
             float: left;
-            margin-left: 38rem;
+            margin-left: 1vw;
+            margin-right: 10rem;
             font-family: 'Ubuntu', sans-serif;
             text-transform: lowercase;
             font-size: 3rem;
         }
-        &:last-child {
-            margin-right: 38rem;
-        }
     }
-
-    &__link { 
+    &__link {
         transition: all .3s;
-        margin: 2rem 1.2rem;
-        display: inline-block;
+        margin: 2rem 0;
         & i {
-            margin-right: 1.2rem;
+            margin: 0 .9rem;
         }
         &:visited,
-        &:link{
-                color: inherit;
-                text-decoration: none;
-                text-transform: uppercase;
-                margin-right: 5rem;
+        &:link {
+            float: right;
+            color: inherit;
+            text-align: right;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding-right: 3rem;
         }
-
         &:hover {
             // background-color: rgba($color-grey-light-1, .5);
             color: $color-blue-light;
