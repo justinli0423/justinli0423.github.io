@@ -21,12 +21,13 @@
     }
     &__link {
         transition: all .3s;
-        margin: 2rem 0;
         & i {
             margin: 0 .9rem;
         }
         &:visited,
         &:link {
+            margin: 2rem 0;
+            font-weight: 400;
             float: right;
             color: inherit;
             text-align: right;
