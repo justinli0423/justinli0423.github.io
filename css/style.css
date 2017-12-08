@@ -71,7 +71,7 @@ body {
 
 .timeline__intro {
   position: relative;
-  cursor: default; }
+  cursor: pointer; }
 
 .timeline__heading-primary {
   position: absolute;
@@ -88,7 +88,7 @@ body {
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
 
 .intro__btn {
-  margin-top: 3vh; }
+  margin-top: 2rem; }
 
 .btn:visited, .btn:link {
   display: inline-block;
@@ -97,7 +97,7 @@ body {
   font-size: 1vw;
   color: #fff;
   border: 2px solid #f7f7f7;
-  padding: 1vh 1vw;
+  padding: 1rem 1.2rem;
   border-radius: .5rem;
   transition: all .2s; }
 
@@ -283,13 +283,29 @@ body {
 .composition {
   position: relative; }
   .composition__photo {
-    transform: translateY(calc(14rem - 50%));
-    top: 33vh;
-    left: 10vw;
+    transform: translateY(6vh);
     position: absolute;
-    width: 15vw;
-    border-radius: 50%;
-    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8); }
+    width: 35%;
+    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+    outline-offset: 1.75rem;
+    z-index: 10; }
+    .composition__photo--me {
+      top: 28vh;
+      right: 9vw; }
+    .composition__photo--canyon {
+      top: 33vh;
+      right: 0; }
+    .composition__photo--badminton {
+      top: 39vh;
+      right: 7vw; }
+    .composition__photo:hover {
+      z-index: 20;
+      outline: 1rem solid #2f71e3;
+      transform: scale(1.1) translateY(3rem);
+      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.7); }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95) translateY(5.5rem); }
 
 .timeline {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(153, 153, 153, 0.9), rgba(0, 0, 0, 0.7)), url(../img/dark-bg.jpg);

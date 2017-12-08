@@ -8,16 +8,39 @@
 }
 
 .composition {
-    // margin-top: 33vh;
-    // margin-left: 11vw;
     position: relative;
     &__photo {
-        transform: translateY(calc(14rem - 50%));
-        top: 33vh;
-        left: 10vw;
+        transform: translateY(6vh);
         position: absolute;
-        width: 15vw;
-        border-radius: 50%;
-        box-shadow: .5rem 1rem 2rem rgba($color-black, .8);
+        width: 35%;
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .3);
+        transition: all .3s;
+        outline-offset: 1.75rem;
+        z-index: 10;
+        &--me {
+            top: 28vh;
+            right: 9vw;
+        }
+
+        &--canyon {
+            top: 33vh;
+            right: 0;
+        }
+
+        &--badminton {
+            top: 39vh;
+            right: 7vw;
+        }
+
+        &:hover {
+            z-index: 20;
+            outline: 1rem solid $color-blue-light;
+            transform: scale(1.1) translateY(3rem);
+            box-shadow: .5rem 1rem 2rem rgba($color-black, .7);            
+        }
+    }
+
+    &:hover &__photo:not(:hover){
+        transform: scale(.95) translateY(5.5rem);
     }
 }
