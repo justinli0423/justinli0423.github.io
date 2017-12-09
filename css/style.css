@@ -50,7 +50,20 @@ body {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ }
 
 .intro {
   text-align: center;
@@ -71,7 +84,7 @@ body {
 
 .timeline__intro {
   position: relative;
-  cursor: pointer; }
+  cursor: default; }
 
 .timeline__heading-primary {
   position: absolute;
@@ -305,7 +318,8 @@ body {
       transform: scale(1.1) translateY(3rem);
       box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.7); }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95) translateY(5.5rem); }
+    transform: scale(0.95) translateY(5.5rem);
+    filter: blur(2px); }
 
 .timeline {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(153, 153, 153, 0.9), rgba(0, 0, 0, 0.7)), url(../img/dark-bg.jpg);

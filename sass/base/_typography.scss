@@ -7,6 +7,19 @@ body {
     -webkit-hyphens: auto;
     hyphens: auto;
     overflow-x: hidden;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 .intro {
@@ -32,7 +45,7 @@ body {
 .timeline {
     &__intro {
         position: relative;
-        cursor: pointer;
+        cursor: default;
     }
     &__heading-primary {
         position: absolute;
@@ -46,9 +59,7 @@ body {
         color: $color-white;
         border: 2px solid $color-grey-dark-2;
         border-radius: 5px;
-        box-shadow: .5rem 1rem 2rem rgba($color-black, .5);
-
-        // Arrow under the 'timeline' title, maybe use for later
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .5); // Arrow under the 'timeline' title, maybe use for later
         // &::after {
         //     position: absolute;
         //     top: 100%;

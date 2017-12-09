@@ -42,5 +42,6 @@
 
     &:hover &__photo:not(:hover){
         transform: scale(.95) translateY(5.5rem);
+        filter: blur(2px); 
     }
 }
