@@ -59,7 +59,8 @@ body {
         color: $color-white;
         border: 2px solid $color-grey-dark-2;
         border-radius: 5px;
-        box-shadow: .5rem 1rem 2rem rgba($color-black, .5); // Arrow under the 'timeline' title, maybe use for later
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .5); 
+        // Arrow under the 'timeline' title, maybe use for later
         // &::after {
         //     position: absolute;
         //     top: 100%;

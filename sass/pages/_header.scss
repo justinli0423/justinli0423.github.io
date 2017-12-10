@@ -16,6 +16,7 @@
         box-shadow: .5rem 1rem 2rem rgba($color-black, .3);
         transition: all .3s;
         outline-offset: 1.75rem;
+        border-radius: 4px;
         z-index: 10;
         &--me {
             top: 28vh;
@@ -34,7 +35,7 @@
 
         &:hover {
             z-index: 20;
-            outline: 1rem solid $color-blue-light;
+            outline: 1rem solid $color-grey-dark-2;
             transform: scale(1.1) translateY(3rem);
             box-shadow: .5rem 1rem 2rem rgba($color-black, .7);            
         }

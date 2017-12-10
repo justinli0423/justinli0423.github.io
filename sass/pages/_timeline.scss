@@ -1,16 +1,13 @@
 .timeline {
-    background: linear-gradient(45deg, rgba($color-black, .9), rgba($color-grey-dark-2, .9), rgba($color-black, .7)), url(../img/dark-bg.jpg);
     padding-top: 90rem;
     padding-bottom: 20rem;
-    margin-top: -65vh;
+    margin-top: -60rem;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 100%;
-    background-attachment: fixed;
+    width: 100%;    
     & div ul { 
         padding: 50px 0;
     }
-    
 }
 
 .list-element {
@@ -23,10 +20,11 @@
     font-weight: 400;
     font-size: 1.6rem;
     &:first-child{
-        padding-top: 10rem;
+        padding-top: 0;
     }
 
     &::after {
+        // Black circles
         content: "";
         position: absolute;
         left: 50%;
@@ -49,6 +47,7 @@
         box-shadow: .5rem 1rem 2rem rgba($color-black, .8);        
 
         &::before {
+            // triangular arrows
             content: "";
             position: absolute;
             bottom: .7rem;
@@ -65,7 +64,6 @@
 
     &:nth-child(odd) div {
         left: -43.9rem;
-        
         &::before {
             right: -1.5rem;
             border-width: .8rem 0 .8rem 1.6rem;

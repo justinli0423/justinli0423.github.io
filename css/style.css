@@ -15,7 +15,10 @@ html {
     browser have default 16px, so 10px is 62.5% of 16px */ }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(153, 153, 153, 0.9), rgba(0, 0, 0, 0.7)), url(../img/dark-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
 
 @keyframes glow {
   from {
@@ -302,6 +305,7 @@ body {
     box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
     transition: all .3s;
     outline-offset: 1.75rem;
+    border-radius: 4px;
     z-index: 10; }
     .composition__photo--me {
       top: 28vh;
@@ -314,7 +318,7 @@ body {
       right: 7vw; }
     .composition__photo:hover {
       z-index: 20;
-      outline: 1rem solid #2f71e3;
+      outline: 1rem solid #999;
       transform: scale(1.1) translateY(3rem);
       box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.7); }
   .composition:hover .composition__photo:not(:hover) {
@@ -322,14 +326,12 @@ body {
     filter: blur(2px); }
 
 .timeline {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(153, 153, 153, 0.9), rgba(0, 0, 0, 0.7)), url(../img/dark-bg.jpg);
   padding-top: 90rem;
   padding-bottom: 20rem;
-  margin-top: -65vh;
+  margin-top: -60rem;
   overflow-x: hidden;
   overflow-y: hidden;
-  width: 100%;
-  background-attachment: fixed; }
+  width: 100%; }
   .timeline div ul {
     padding: 50px 0; }
 
@@ -343,7 +345,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem; }
   .list-element:first-child {
-    padding-top: 10rem; }
+    padding-top: 0; }
   .list-element::after {
     content: "";
     position: absolute;
