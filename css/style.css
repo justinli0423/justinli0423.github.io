@@ -103,6 +103,16 @@ body {
   border-radius: 5px;
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
 
+.timeline__start {
+  position: absolute;
+  display: block;
+  margin: -22rem auto;
+  width: 100%;
+  text-align: center;
+  font-size: 7rem;
+  color: #333;
+  text-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.4); }
+
 .intro__btn {
   margin-top: 2rem; }
 
@@ -326,9 +336,8 @@ body {
     filter: blur(2px); }
 
 .timeline {
-  padding-top: 90rem;
+  padding-top: 50rem;
   padding-bottom: 20rem;
-  margin-top: -60rem;
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100%; }
@@ -343,9 +352,10 @@ body {
   padding-top: 25rem;
   background: #999;
   font-weight: 400;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border-radius: 3px; }
   .list-element:first-child {
-    padding-top: 0; }
+    padding-top: 2rem; }
   .list-element::after {
     content: "";
     position: absolute;

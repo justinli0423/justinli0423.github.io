@@ -1,7 +1,6 @@
 .timeline {
-    padding-top: 90rem;
+    padding-top: 50rem;
     padding-bottom: 20rem;
-    margin-top: -60rem;
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;    
@@ -19,8 +18,9 @@
     background: $color-grey-dark-2;
     font-weight: 400;
     font-size: 1.6rem;
+    border-radius: 3px;
     &:first-child{
-        padding-top: 0;
+        padding-top: 2rem;
     }
 
     &::after {
