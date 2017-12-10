@@ -138,8 +138,7 @@ body {
   background: #999;
   font-weight: 400;
   font-size: 1.6rem;
-  border-radius: 3px;
-  z-index: 10; }
+  border-radius: 3px; }
   .list-element:first-child {
     padding-top: 2rem; }
   .list-element__caption {
@@ -407,7 +406,7 @@ body {
   border-radius: 5px;
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8); }
   .list-element div:hover .list-element__text {
-    transition: all .4s;
+    transition: all .4s .15s;
     filter: blur(2px); }
   .list-element div:hover .list-element__caption {
     transition: all .4s;

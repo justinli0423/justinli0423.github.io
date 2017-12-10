@@ -34,7 +34,7 @@
         box-shadow: .5rem 1rem 2rem rgba($color-black, .8);        
 
         &:hover .list-element__text {
-            transition: all .4s;
+            transition: all .4s .15s;
             filter: blur(2px);
         }
 

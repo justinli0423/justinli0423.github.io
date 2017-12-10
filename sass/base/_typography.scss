@@ -95,7 +95,6 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     border-radius: 3px;
-    z-index: 10;
     &:first-child{
         padding-top: 2rem;
     }
@@ -113,5 +112,17 @@ body {
         color: transparent;
         background-color: transparent;
         text-decoration: none;  
+
+        // pseudo underline - may add back in the future
+        // &::after{
+        //     content: "";
+        //     padding: 1px 5rem;
+        //     position: absolute;
+        //     top: 75%;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     color: $color-grey-dark-2;
+        //     background-color: $color-grey-dark-2;
+        // }
     }
 }
