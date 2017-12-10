@@ -45,6 +45,22 @@ body {
   100% {
     background-position: 50% 20%; } }
 
+@keyframes shade-up {
+  0% {
+    height: 0em;
+    opacity: 0;
+    border-top: 0.1px solid #777; }
+  40% {
+    opacity: 0; }
+  100% {
+    border-top: 3px solid #777;
+    height: 3em;
+    background-color: #eee;
+    color: #000;
+    z-index: 100;
+    height: 3em;
+    opacity: 1; } }
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -112,6 +128,32 @@ body {
   font-size: 7rem;
   color: #333;
   text-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.4); }
+
+.list-element {
+  list-style: none;
+  position: relative;
+  width: .8rem;
+  margin: -16rem auto;
+  padding-top: 22rem;
+  background: #999;
+  font-weight: 400;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  z-index: 10; }
+  .list-element:first-child {
+    padding-top: 2rem; }
+  .list-element__caption {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    border-radius: 0 0 .5rem .5rem;
+    padding-top: 1em;
+    color: transparent;
+    background-color: transparent;
+    text-decoration: none; }
 
 .intro__btn {
   margin-top: 2rem; }
@@ -344,65 +386,57 @@ body {
   .timeline div ul {
     padding: 50px 0; }
 
-.list-element {
-  list-style: none;
+.list-element::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+  background: inherit; }
+
+.list-element div {
   position: relative;
-  width: .6rem;
-  margin: -20rem auto;
-  padding-top: 25rem;
+  bottom: 0;
+  width: 40rem;
+  padding: 1.5rem;
   background: #999;
-  font-weight: 400;
-  font-size: 1.6rem;
-  border-radius: 3px; }
-  .list-element:first-child {
-    padding-top: 2rem; }
-  .list-element::after {
+  border-radius: 5px;
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8); }
+  .list-element div:hover .list-element__text {
+    transition: all .4s;
+    filter: blur(2px); }
+  .list-element div:hover .list-element__caption {
+    transition: all .4s;
+    animation: shade-up .4s linear;
+    animation-fill-mode: forwards; }
+  .list-element div::before {
     content: "";
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
-    background: inherit; }
-  .list-element div {
-    position: relative;
-    bottom: 0;
-    width: 40rem;
-    padding: 1.5rem;
-    background: #999;
-    border-radius: 5px;
-    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8); }
-    .list-element div::before {
-      content: "";
-      position: absolute;
-      bottom: .7rem;
-      width: 0;
-      height: 0;
-      border-style: solid; }
-    .list-element div:hover {
-      transition: all .2s;
-      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4); }
-  .list-element:nth-child(odd) div {
-    left: -43.9rem; }
-    .list-element:nth-child(odd) div::before {
-      right: -1.5rem;
-      border-width: .8rem 0 .8rem 1.6rem;
-      border-color: transparent transparent transparent #999; }
-  .list-element:nth-child(even) div {
-    left: 4.5rem; }
-    .list-element:nth-child(even) div::before {
-      left: -1.5rem;
-      border-width: .8rem 1.6rem .8rem 0;
-      border-color: transparent #999 transparent transparent; }
+    bottom: .7rem;
+    width: 0;
+    height: 0;
+    border-style: solid; }
+  .list-element div:hover {
+    transition: all .2s;
+    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4); }
 
-time {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: .8rem; }
+.list-element:nth-child(odd) div {
+  left: -43.9rem; }
+  .list-element:nth-child(odd) div::before {
+    right: -1.5rem;
+    border-width: .8rem 0 .8rem 1.6rem;
+    border-color: transparent transparent transparent #999; }
+
+.list-element:nth-child(even) div {
+  left: 4.5rem; }
+  .list-element:nth-child(even) div::before {
+    left: -1.5rem;
+    border-width: .8rem 1.6rem .8rem 0;
+    border-color: transparent #999 transparent transparent; }
 
 .list-element::after {
   transition: background .5s ease-in-out; }

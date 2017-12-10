@@ -84,3 +84,34 @@ body {
         text-shadow: .5rem .5rem 2rem rgba($color-black, .4);
     }
 }
+
+.list-element {
+    list-style: none;
+    position: relative;
+    width: .8rem;
+    margin: -16rem auto;
+    padding-top: 22rem;
+    background: $color-grey-dark-2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    z-index: 10;
+    &:first-child{
+        padding-top: 2rem;
+    }
+
+
+    &__caption {
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        text-align: center;      
+        border-radius: 0 0 .5rem .5rem;
+        padding-top: 1em;
+        color: transparent;
+        background-color: transparent;
+        text-decoration: none;  
+    }
+}
