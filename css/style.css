@@ -170,21 +170,29 @@ body {
     box-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4); }
   .resource__container {
     position: absolute;
-    top: 40%;
+    top: 30%;
     width: 100%;
     text-align: center;
     font-size: 10rem; }
   .resource__folders {
     color: #fff;
     text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4);
-    transition: all .2s; }
+    transition: all .2s;
+    position: relative; }
+    .resource__folders-open {
+      display: none; }
     .resource__folders-caption {
-      margin-top: 1rem;
       font-size: 2rem; }
     .resource__folders:hover {
       text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.7); }
+      .resource__folders:hover .resource__folders-closed {
+        display: none; }
+      .resource__folders:hover .resource__folders-open {
+        display: initial; }
     .resource__folders:active {
       text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.5); }
+  .resource__icon-stack {
+    width: 50%; }
 
 .intro__btn {
   margin-top: 2rem; }

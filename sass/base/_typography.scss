@@ -34,9 +34,9 @@ body {
     color: $color-white;
     border: 2px solid $color-grey-dark-2;
     border-radius: 5px;
-    box-shadow: .5rem 1rem 2rem rgba($color-black, .5); 
-
+    box-shadow: .5rem 1rem 2rem rgba($color-black, .5);
 }
+
 .intro {
     text-align: center;
     margin-left: -14.5vw;
@@ -61,19 +61,17 @@ body {
     &__intro {
         position: relative;
         cursor: default;
-    }
-        // Arrow under the 'timeline' title, maybe use for later
-        // &::after {
-        //     position: absolute;
-        //     top: 100%;
-        //     left: 50%;
-        //     transform: translate(-50%, 50%) rotate(90deg);
-        //     color: $color-grey-dark-2;
-        //     display: block;
-        //     content: ">";
-        //     text-shadow: .5rem -1rem 2rem rgba($color-black, .7);
-        // }
-
+    } // Arrow under the 'timeline' title, maybe use for later
+    // &::after {
+    //     position: absolute;
+    //     top: 100%;
+    //     left: 50%;
+    //     transform: translate(-50%, 50%) rotate(90deg);
+    //     color: $color-grey-dark-2;
+    //     display: block;
+    //     content: ">";
+    //     text-shadow: .5rem -1rem 2rem rgba($color-black, .7);
+    // }
     &__start {
         position: absolute;
         display: block;
@@ -97,39 +95,32 @@ body {
     font-size: 1.6rem;
     border-radius: 3px;
     color: $color-grey-light-2;
-    &:first-child{
+    &:first-child {
         padding-top: 2rem;
     }
-
-
     &__title {
         font-size: 2rem;
         font-weight: 700;
         line-height: 3rem;
     }
-
     &__text {
         line-height: 2.5rem;
         font-weight: 500;
     }
-
     &__caption {
         position: absolute;
         display: inline-block;
         width: 100%;
         left: 0;
         bottom: 0;
-        text-align: center;      
+        text-align: center;
         border-radius: 0 0 .5rem .5rem;
         padding-top: 1em;
         color: transparent;
-        text-decoration: none;  
-
+        text-decoration: none;
         &-cross {
             text-decoration: line-through;
-        }
-
-        // pseudo underline - may add back in the future
+        } // pseudo underline - may add back in the future
         // &::after{
         //     content: "";
         //     padding: 1px 5rem;
@@ -146,33 +137,43 @@ body {
 .resource {
     position: relative;
     &__heading-primary {
-        box-shadow: .5rem 1rem 2rem rgba($color-white, .4);     
+        box-shadow: .5rem 1rem 2rem rgba($color-white, .4);
     }
-
     &__container {
         position: absolute;
-        top: 40%;
+        top: 30%;
         width: 100%;
         text-align: center;
         font-size: 10rem;
     }
-
     &__folders {
         color: $color-white;
         text-shadow: .5rem 1rem 2rem rgba($color-white, .4);
         transition: all .2s;
+        position: relative;
+
+        &-open {
+            display: none;
+        }
 
         &-caption {
-            margin-top: 1rem;
             font-size: 2rem;
         }
-
         &:hover {
-            text-shadow: .5rem 1rem 2rem rgba($color-white, .7);        
-        }
+            text-shadow: .5rem 1rem 2rem rgba($color-white, .7);
+            & .resource__folders-closed {
+                display: none;
+            }
 
-        &:active{
-            text-shadow: .5rem 1rem 2rem rgba($color-white, .5);            
+            & .resource__folders-open {
+                display: initial;
+            }
         }
+        &:active {
+            text-shadow: .5rem 1rem 2rem rgba($color-white, .5);
+        }
+    }
+    &__icon-stack {
+        width: 50%;
     }
 }
