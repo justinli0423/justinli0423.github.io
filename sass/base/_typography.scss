@@ -144,5 +144,35 @@ body {
 }
 
 .resource {
+    position: relative;
+    &__heading-primary {
+        box-shadow: .5rem 1rem 2rem rgba($color-white, .4);     
+    }
 
+    &__container {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        font-size: 10rem;
+    }
+
+    &__folders {
+        color: $color-white;
+        text-shadow: .5rem 1rem 2rem rgba($color-white, .4);
+        transition: all .2s;
+
+        &-caption {
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+
+        &:hover {
+            text-shadow: .5rem 1rem 2rem rgba($color-white, .7);        
+        }
+
+        &:active{
+            text-shadow: .5rem 1rem 2rem rgba($color-white, .5);            
+        }
+    }
 }
