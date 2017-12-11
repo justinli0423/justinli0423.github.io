@@ -85,6 +85,20 @@ body {
   /* Non-prefixed version, currently
                                   supported by Chrome and Opera */ }
 
+.heading-primary {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 7.5rem;
+  margin-top: 9vh;
+  padding: 5rem 2rem;
+  font-weight: 200;
+  color: #fff;
+  border: 2px solid #999;
+  border-radius: 5px;
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
+
 .intro {
   text-align: center;
   margin-left: -14.5vw;
@@ -106,24 +120,10 @@ body {
   position: relative;
   cursor: default; }
 
-.timeline__heading-primary {
-  position: absolute;
-  left: 50%;
-  text-align: center;
-  transform: translateX(-50%);
-  font-size: 7.5rem;
-  margin-top: 9vh;
-  padding: 5rem 2rem;
-  font-weight: 200;
-  color: #fff;
-  border: 2px solid #999;
-  border-radius: 5px;
-  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
-
 .timeline__start {
   position: absolute;
   display: block;
-  margin: -22rem auto;
+  margin: -18.5rem auto;
   width: 100%;
   text-align: center;
   font-size: 7rem;
@@ -494,3 +494,13 @@ body {
       left: 4.6rem;
       border-width: .8rem 1.6rem .8rem 0;
       border-color: transparent transparent transparent #999; } }
+
+.resource {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.97)), url(../img/header-bg.jpg);
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  animation: gradient 30s ease infinite;
+  background-size: 200% 200%; }
+  .resource__heading-primary {
+    color: #fff; }

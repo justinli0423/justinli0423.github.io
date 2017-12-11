@@ -22,6 +22,21 @@ body {
                                   supported by Chrome and Opera */
 }
 
+.heading-primary {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size: 7.5rem;
+    margin-top: 9vh;
+    padding: 5rem 2rem;
+    font-weight: 200;
+    color: $color-white;
+    border: 2px solid $color-grey-dark-2;
+    border-radius: 5px;
+    box-shadow: .5rem 1rem 2rem rgba($color-black, .5); 
+
+}
 .intro {
     text-align: center;
     margin-left: -14.5vw;
@@ -47,19 +62,6 @@ body {
         position: relative;
         cursor: default;
     }
-    &__heading-primary {
-        position: absolute;
-        left: 50%;
-        text-align: center;
-        transform: translateX(-50%);
-        font-size: 7.5rem;
-        margin-top: 9vh;
-        padding: 5rem 2rem;
-        font-weight: 200;
-        color: $color-white;
-        border: 2px solid $color-grey-dark-2;
-        border-radius: 5px;
-        box-shadow: .5rem 1rem 2rem rgba($color-black, .5); 
         // Arrow under the 'timeline' title, maybe use for later
         // &::after {
         //     position: absolute;
@@ -71,12 +73,11 @@ body {
         //     content: ">";
         //     text-shadow: .5rem -1rem 2rem rgba($color-black, .7);
         // }
-    }
 
     &__start {
         position: absolute;
         display: block;
-        margin: -22rem auto;
+        margin: -18.5rem auto;
         width: 100%;
         text-align: center;
         font-size: 7rem;
@@ -140,4 +141,8 @@ body {
         //     background-color: $color-grey-dark-2;
         // }
     }
+}
+
+.resource {
+
 }
