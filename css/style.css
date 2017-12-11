@@ -49,7 +49,8 @@ body {
   0% {
     height: 0em;
     opacity: 0;
-    border-top: 0.1px solid #777; }
+    border-top: 0.1px solid #777;
+    background-color: transparent; }
   40% {
     opacity: 0; }
   100% {
@@ -127,7 +128,7 @@ body {
   text-align: center;
   font-size: 7rem;
   color: #333;
-  text-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.4); }
+  text-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.3); }
 
 .list-element {
   list-style: none;
@@ -138,9 +139,17 @@ body {
   background: #999;
   font-weight: 400;
   font-size: 1.6rem;
-  border-radius: 3px; }
+  border-radius: 3px;
+  color: #eee; }
   .list-element:first-child {
     padding-top: 2rem; }
+  .list-element__title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem; }
+  .list-element__text {
+    line-height: 2.5rem;
+    font-weight: 500; }
   .list-element__caption {
     position: absolute;
     display: inline-block;
@@ -151,8 +160,9 @@ body {
     border-radius: 0 0 .5rem .5rem;
     padding-top: 1em;
     color: transparent;
-    background-color: transparent;
     text-decoration: none; }
+    .list-element__caption-cross {
+      text-decoration: line-through; }
 
 .intro__btn {
   margin-top: 2rem; }
@@ -406,6 +416,9 @@ body {
   border-radius: 5px;
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.8); }
   .list-element div:hover .list-element__text {
+    transition: all .4s .15s;
+    filter: blur(2px); }
+  .list-element div:hover .list-element__title {
     transition: all .4s .15s;
     filter: blur(2px); }
   .list-element div:hover .list-element__caption {

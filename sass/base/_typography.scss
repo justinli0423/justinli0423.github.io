@@ -81,7 +81,7 @@ body {
         text-align: center;
         font-size: 7rem;
         color: $color-grey-dark-3;
-        text-shadow: .5rem .5rem 2rem rgba($color-black, .4);
+        text-shadow: .5rem .5rem 1.5rem rgba($color-black, .3);
     }
 }
 
@@ -95,10 +95,22 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     border-radius: 3px;
+    color: $color-grey-light-2;
     &:first-child{
         padding-top: 2rem;
     }
 
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 3rem;
+    }
+
+    &__text {
+        line-height: 2.5rem;
+        font-weight: 500;
+    }
 
     &__caption {
         position: absolute;
@@ -110,8 +122,11 @@ body {
         border-radius: 0 0 .5rem .5rem;
         padding-top: 1em;
         color: transparent;
-        background-color: transparent;
         text-decoration: none;  
+
+        &-cross {
+            text-decoration: line-through;
+        }
 
         // pseudo underline - may add back in the future
         // &::after{

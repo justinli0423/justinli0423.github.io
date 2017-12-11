@@ -38,6 +38,11 @@
             filter: blur(2px);
         }
 
+        &:hover .list-element__title {
+            transition: all .4s .15s;
+            filter: blur(2px);
+        }
+
         &:hover .list-element__caption {
             transition: all .4s;
             animation: shade-up .4s linear;
