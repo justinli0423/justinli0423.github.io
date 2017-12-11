@@ -170,29 +170,33 @@ body {
     box-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4); }
   .resource__container {
     position: absolute;
-    top: 30%;
+    top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 10rem; }
+    font-size: 9.5rem; }
   .resource__folders {
     color: #fff;
-    text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4);
     transition: all .2s;
     position: relative; }
+    .resource__folders a:visited,
+    .resource__folders a:link {
+      text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4);
+      text-decoration: none;
+      color: inherit; }
     .resource__folders-open {
       display: none; }
     .resource__folders-caption {
-      font-size: 2rem; }
-    .resource__folders:hover {
+      font-size: 2rem;
+      font-weight: 500; }
+    .resource__folders:hover a {
       text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.7); }
-      .resource__folders:hover .resource__folders-closed {
+      .resource__folders:hover a .resource__folders-closed {
         display: none; }
-      .resource__folders:hover .resource__folders-open {
-        display: initial; }
-    .resource__folders:active {
+      .resource__folders:hover a .resource__folders-open {
+        display: initial;
+        transform: translateX(1rem); }
+    .resource__folders:active a {
       text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.5); }
-  .resource__icon-stack {
-    width: 50%; }
 
 .intro__btn {
   margin-top: 2rem; }
@@ -242,6 +246,65 @@ body {
     animation: glow 1.5s ease-in-out infinite alternate;
     opacity: 1;
     border: none; }
+
+.popup {
+  display: initial;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 2rem 2rem;
+    max-width: 70rem;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s;
+    z-index: 100;
+    text-align: center; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__files {
+    font-size: 5rem;
+    text-align: center;
+    display: inline-block;
+    padding: 2rem 5rem;
+    margin: 2rem 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: #999; }
+    .popup__files:hover {
+      transition: all .5s;
+      color: #2f71e3;
+      border: 2px solid rgba(47, 113, 227, 0.6); }
+    .popup__files-caption {
+      font-size: 2.5rem;
+      font-weight: 600;
+      padding-top: 1.5rem; }
+  .popup__close:link, .popup__close:visited {
+    cursor: default;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    z-index: 10; }
 
 .row {
   max-width: 114rem;
