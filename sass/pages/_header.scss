@@ -22,132 +22,121 @@
             top: 28vh;
             right: 9vw;
         }
-
         &--canyon {
             top: 33vh;
             right: 0;
         }
-
         &--badminton {
             top: 39vh;
             right: 7vw;
         }
-
         &:hover {
             z-index: 20;
             outline: 1rem solid $color-grey-dark-2;
             transform: scale(1.1) translateY(3rem);
-            box-shadow: .5rem 1rem 2rem rgba($color-black, .7);            
+            box-shadow: .5rem 1rem 2rem rgba($color-black, .7);
         }
     }
-
-    &:hover &__photo:not(:hover){
+    &:hover &__photo:not(:hover) {
         transform: scale(.95) translateY(5.5rem);
-        filter: blur(2px); 
+        filter: blur(2px);
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px) {
     .composition {
         &__photo {
             margin-right: 8rem;
             transform: translateY(8rem);
-
             &--me {
                 top: 28vh;
                 right: 11vw;
             }
-    
             &--canyon {
                 top: 33vh;
                 right: 0;
             }
-    
             &--badminton {
                 top: 39vh;
                 right: 7vw;
             }
-
             &:hover {
                 z-index: 20;
                 outline: 1rem solid $color-grey-dark-2;
                 transform: scale(1.15) translateY(8rem);
-                box-shadow: .5rem 1rem 2rem rgba($color-black, .7);            
+                box-shadow: .5rem 1rem 2rem rgba($color-black, .7);
             }
         }
-        &:hover &__photo:not(:hover){
+        &:hover &__photo:not(:hover) {
             transform: scale(.9) translateY(8.5rem);
-            filter: blur(2px); 
+            filter: blur(2px);
         }
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
     .composition {
         &__photo {
             margin-right: 8rem;
             transform: translateY(13rem);
-
             &--me {
                 top: 28vh;
                 right: 11vw;
             }
-    
             &--canyon {
                 top: 33vh;
                 right: 0;
             }
-    
             &--badminton {
                 top: 39vh;
                 right: 7vw;
             }
-
             &:hover {
                 z-index: 20;
                 outline: 1rem solid $color-grey-dark-2;
                 transform: scale(1.15) translateY(11rem);
-                box-shadow: .5rem 1rem 2rem rgba($color-black, .7);            
+                box-shadow: .5rem 1rem 2rem rgba($color-black, .7);
             }
         }
-        &:hover &__photo:not(:hover){
+        &:hover &__photo:not(:hover) {
             transform: scale(.9) translateY(13rem);
-            filter: blur(2px); 
+            filter: blur(2px);
         }
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     .composition {
+        position: absolute;
+        display: inline-block;
+        top: 12rem;
+        left: 0;
+        width: 100%;
+        height: auto;
         &__photo {
-            margin-right: 8rem;
-            transform: translateY(20rem);
-            width: 50%;            
+            margin: 0;
+            width: 25%;
             &--me {
-                top: 20vh;
-                right: 0;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
             }
-    
             &--canyon {
-                top: 30vh;
-                right: 0;
+                display: none;
             }
-    
             &--badminton {
-                top: 40vh;
-                right: 0;
+                display: none;
             }
-
             &:hover {
-                z-index: 20;
-                outline: 1rem solid $color-grey-dark-2;
-                transform: scale(1.1) translateY(19rem);
-                box-shadow: .5rem 1rem 2rem rgba($color-black, .7);            
+                outline: none;
+                transform: none;
+                box-shadow: .5rem 1rem 2rem rgba($color-black, .7);                
+                transform: translateX(-50%);
             }
         }
-        &:hover &__photo:not(:hover){
-            transform: scale(.9) translateY(22rem);
-            filter: blur(2px); 
+        &:hover &__photo:not(:hover) {
+            transform: none;
+            filter: blur(0);
         }
     }
 }

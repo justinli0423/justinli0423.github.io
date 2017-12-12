@@ -39,7 +39,7 @@ body {
 
 .intro {
     text-align: center;
-    margin-left: -14.5vw;
+    margin-left: -18.5vw;
     font-weight: 100;
     padding-top: 38vh;
     &__heading-primary {
@@ -47,6 +47,10 @@ body {
         color: $color-white;
         font-size: 5.5rem;
         padding-bottom: 4vh;
+        &::before,
+        &::after {
+            content: "ıllıllı";
+        }
     }
     &__paragraph {
         color: $color-grey-light-2;
@@ -120,9 +124,8 @@ body {
         text-decoration: none;
         &-cross {
             text-decoration: line-through;
-        } 
+        }
     }
-
     &:hover &__caption {
         color: $color-blue-light;
     }
@@ -131,9 +134,7 @@ body {
 .resource {
     &__heading-primary {
         color: $color-white;
-    }
-    
-    // folder styling(the folders are treated as text, so typography section)
+    } // folder styling(the folders are treated as text, so typography section)
     position: relative;
     &__heading-primary {
         box-shadow: .5rem 1rem 2rem rgba($color-white, .4);
@@ -188,12 +189,10 @@ body {
         width: 20rem;
         height: 16rem;
         color: $color-grey-dark-2;
-
         & div {
             width: 100%;
             padding-top: 2rem;
         }
-
         &:hover {
             transition: all .5s;
             color: $color-blue-light;
@@ -206,9 +205,55 @@ body {
             font-size: 2.5rem;
             font-weight: 600;
             width: 100%;
-            margin-top: 1.5rem;  
+            margin-top: 1.5rem;
             line-height: 2.5rem;
-            margin-bottom: 1rem;    
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+// MEDIA QUERIES
+@media screen and (max-width: 1300px) {
+    .intro {
+        margin-left: -8vw;
+        &__heading-primary {
+            &::before,
+            &::after {
+                content: "ıllıllı";
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    &__paragraph {
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .intro {
+        text-align: center;
+        margin-left: -18.5vw;
+        font-weight: 100;
+        padding-top: 38vh;
+        &__heading-primary {
+            font-weight: 500;
+            color: $color-white;
+            font-size: 5.5rem;
+            padding-bottom: 4vh;
+            &::before,
+            &::after {
+                content: "ıllıllı";
+            }
+        }
+        &__paragraph {
+            color: $color-grey-light-2;
+            font-size: 1.5rem;
+            line-height: 3rem;
+            display: inline-block;
+            width: 20vw;
         }
     }
 }

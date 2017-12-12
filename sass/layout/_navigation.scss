@@ -9,6 +9,10 @@
     background-color: rgba($color-grey-dark-3, .5);
     a {
         &:first-child {
+            &::before,
+            &::after{ 
+                content: "ıllıllı ";
+            }
             text-align: left;
             margin-top: 2rem;
             float: left;
