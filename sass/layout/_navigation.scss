@@ -13,7 +13,7 @@
             margin-top: 2rem;
             float: left;
             margin-left: 1vw;
-            margin-right: 10rem;
+            margin-right: 8rem;
             text-transform: lowercase;
             font-size: 3rem;
         }
@@ -37,6 +37,25 @@
         &:hover {
             // background-color: rgba($color-grey-light-1, .5);
             color: $color-blue-light;
+        }
+    }
+}
+
+// Media queries
+@media screen and (max-width: 900px) {
+    .navigation-top {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        &__link:link,
+        &__link:visited {
+            float: none;
+            display: inline-block;
+        }
+        &__name {
+            display: inline-block;
+            width: 100%;
+            text-align: center !important;
         }
     }
 }
