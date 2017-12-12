@@ -120,23 +120,20 @@ body {
         text-decoration: none;
         &-cross {
             text-decoration: line-through;
-        } // pseudo underline - may add back in the future
-        // &::after{
-        //     content: "";
-        //     padding: 1px 5rem;
-        //     position: absolute;
-        //     top: 75%;
-        //     left: 50%;
-        //     transform: translateX(-50%);
-        //     color: $color-grey-dark-2;
-        //     background-color: $color-grey-dark-2;
-        // }
+        } 
+    }
+
+    &:hover &__caption {
+        color: $color-blue-light;
     }
 }
 
 .resource {
-
-    // folder styling
+    &__heading-primary {
+        color: $color-white;
+    }
+    
+    // folder styling(the folders are treated as text, so typography section)
     position: relative;
     &__heading-primary {
         box-shadow: .5rem 1rem 2rem rgba($color-white, .4);
@@ -146,7 +143,7 @@ body {
         top: 50%;
         width: 100%;
         text-align: center;
-        font-size: 9.5rem;
+        font-size: 9rem;
     }
     &__folders {
         color: $color-white;
@@ -163,9 +160,11 @@ body {
         }
         &-caption {
             font-size: 2rem;
+            text-align: center;
+            text-transform: uppercase;
             font-weight: 500;
         }
-        &:hover a{
+        &:hover a {
             text-shadow: .5rem 1rem 2rem rgba($color-white, .7);
             & .resource__folders-closed {
                 display: none;
@@ -175,8 +174,41 @@ body {
                 transform: translateX(1rem);
             }
         }
-        &:active a{
-            text-shadow: .5rem 1rem 2rem rgba($color-white, .5);
+    }
+}
+
+.popup {
+    &__files {
+        font-size: 5rem;
+        text-align: center;
+        display: inline-block;
+        margin: 2rem 2rem;
+        border: 2px solid rgba($color-black, .2);
+        text-decoration: none;
+        width: 20rem;
+        height: 16rem;
+        color: $color-grey-dark-2;
+
+        & div {
+            width: 100%;
+            padding-top: 2rem;
+        }
+
+        &:hover {
+            transition: all .5s;
+            color: $color-blue-light;
+            border: 2px solid rgba($color-blue-light, .6);
+        }
+        &-caption {
+            padding: 0 1rem;
+            vertical-align: top;
+            display: inline-block;
+            font-size: 2.5rem;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 1.5rem;  
+            line-height: 2.5rem;
+            margin-bottom: 1rem;    
         }
     }
 }

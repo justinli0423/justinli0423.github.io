@@ -1,5 +1,4 @@
 .popup {
-    display: initial;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -15,14 +14,15 @@
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
-        padding: 2rem 2rem;
-        max-width: 70rem;
-        overflow: hidden;
+        max-width: 55rem;
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: left;
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
         z-index: 100;
-        text-align: center;
     }
     &:target {
         opacity: 1;
@@ -32,26 +32,7 @@
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
-    &__files {
-        font-size: 5rem;
-        text-align: center;
-        display: inline-block;
-        padding: 2rem 5rem;
-        margin: 2rem 1rem;
-        border: 2px solid rgba($color-black, .2);
-        text-decoration: none;
-        color: $color-grey-dark-2;
-        &:hover {
-            transition: all .5s;
-            color: $color-blue-light;
-            border: 2px solid rgba($color-blue-light, .6);
-        }
-        &-caption {
-            font-size: 2.5rem;
-            font-weight: 600;
-            padding-top: 1.5rem;
-        }
-    }
+     // set the close button to be entire background
     &__close {
         &:link,
         &:visited {
