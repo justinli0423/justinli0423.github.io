@@ -109,7 +109,7 @@
     .composition {
         position: absolute;
         display: inline-block;
-        top: 12rem;
+        top: 15rem;
         left: 0;
         width: 100%;
         height: auto;
@@ -117,7 +117,7 @@
             margin: 0;
             width: 25%;
             &--me {
-                top: 0;
+                top: 1rem;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -137,6 +137,28 @@
         &:hover &__photo:not(:hover) {
             transform: none;
             filter: blur(0);
+        }
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .composition {
+        top: 19rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .composition {
+        &__photo {
+            width: 35%;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .composition {
+        &__photo {
+            width: 45%;
         }
     }
 }

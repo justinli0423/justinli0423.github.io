@@ -49,6 +49,7 @@ body {
         padding-bottom: 4vh;
         &::before,
         &::after {
+            font-size: 3rem;
             content: "ıllıllı";
         }
     }
@@ -227,22 +228,28 @@ body {
 }
 
 @media screen and (max-width: 1150px) {
-    &__paragraph {
-        width: 25vw;
+    .intro {
+        margin-left: -5vw;
+        &__paragraph {
+            width: 25vw;
+        }
     }
 }
 
 @media screen and (max-width: 800px) {
     .intro {
         text-align: center;
-        margin-left: -18.5vw;
+        position: absolute;
+        display: inline-block;
+        width: 111%;
+        top: 5.5rem;
         font-weight: 100;
-        padding-top: 38vh;
         &__heading-primary {
             font-weight: 500;
             color: $color-white;
             font-size: 5.5rem;
             padding-bottom: 4vh;
+
             &::before,
             &::after {
                 content: "ıllıllı";
@@ -253,7 +260,7 @@ body {
             font-size: 1.5rem;
             line-height: 3rem;
             display: inline-block;
-            width: 20vw;
+            width: 35vw;
         }
     }
 }

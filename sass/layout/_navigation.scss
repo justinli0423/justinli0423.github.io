@@ -11,7 +11,9 @@
         &:first-child {
             &::before,
             &::after{ 
-                content: "ıllıllı ";
+                content: " ıllıllı ";
+                font-size: 1.7rem;
+                letter-spacing: 2px;                
             }
             text-align: left;
             margin-top: 2rem;

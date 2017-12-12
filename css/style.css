@@ -111,6 +111,7 @@ body {
     font-size: 5.5rem;
     padding-bottom: 4vh; }
     .intro__heading-primary::before, .intro__heading-primary::after {
+      font-size: 3rem;
       content: "ıllıllı"; }
   .intro__paragraph {
     color: #eee;
@@ -241,15 +242,19 @@ body {
       font-size: 3rem; } }
 
 @media screen and (max-width: 1150px) {
-  __paragraph {
-    width: 25vw; } }
+  .intro {
+    margin-left: -5vw; }
+    .intro__paragraph {
+      width: 25vw; } }
 
 @media screen and (max-width: 800px) {
   .intro {
     text-align: center;
-    margin-left: -18.5vw;
-    font-weight: 100;
-    padding-top: 38vh; }
+    position: absolute;
+    display: inline-block;
+    width: 111%;
+    top: 5.5rem;
+    font-weight: 100; }
     .intro__heading-primary {
       font-weight: 500;
       color: #fff;
@@ -262,7 +267,7 @@ body {
       font-size: 1.5rem;
       line-height: 3rem;
       display: inline-block;
-      width: 20vw; } }
+      width: 35vw; } }
 
 .intro__btn {
   margin-top: 2rem; }
@@ -271,7 +276,7 @@ body {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 1.5rem;
   color: #fff;
   border: 2px solid #f7f7f7;
   padding: 1rem 1.2rem;
@@ -478,7 +483,9 @@ body {
     text-transform: lowercase;
     font-size: 3rem; }
     .navigation-top a:first-child::before, .navigation-top a:first-child::after {
-      content: "ıllıllı "; }
+      content: " ıllıllı ";
+      font-size: 1.7rem;
+      letter-spacing: 2px; }
   .navigation-top__link {
     transition: all .3s; }
     .navigation-top__link i {
@@ -593,7 +600,7 @@ body {
   .composition {
     position: absolute;
     display: inline-block;
-    top: 12rem;
+    top: 15rem;
     left: 0;
     width: 100%;
     height: auto; }
@@ -601,7 +608,7 @@ body {
       margin: 0;
       width: 25%; }
       .composition__photo--me {
-        top: 0;
+        top: 1rem;
         left: 50%;
         transform: translateX(-50%); }
       .composition__photo--canyon {
@@ -616,6 +623,18 @@ body {
     .composition:hover .composition__photo:not(:hover) {
       transform: none;
       filter: blur(0); } }
+
+@media screen and (max-width: 612px) {
+  .composition {
+    top: 19rem; } }
+
+@media screen and (max-width: 550px) {
+  .composition__photo {
+    width: 35%; } }
+
+@media screen and (max-width: 400px) {
+  .composition__photo {
+    width: 45%; } }
 
 .timeline {
   padding-top: 50rem;
