@@ -87,6 +87,8 @@
     &__link {
         &:link,
         &:visited {
+            display: inline-block;
+            width: 100%;
             transition: all .1s linear;
             text-decoration: none;
             background-color: transparent;

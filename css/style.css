@@ -410,6 +410,8 @@ body {
     z-index: -1;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; }
   .navigation-toggle__link:link, .navigation-toggle__link:visited {
+    display: inline-block;
+    width: 100%;
     transition: all .1s linear;
     text-decoration: none;
     background-color: transparent;
