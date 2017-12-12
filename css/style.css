@@ -509,6 +509,73 @@ body {
     transform: scale(0.95) translateY(5.5rem);
     filter: blur(2px); }
 
+@media screen and (max-width: 1200px) {
+  .composition__photo {
+    margin-right: 8rem;
+    transform: translateY(8rem); }
+    .composition__photo--me {
+      top: 28vh;
+      right: 11vw; }
+    .composition__photo--canyon {
+      top: 33vh;
+      right: 0; }
+    .composition__photo--badminton {
+      top: 39vh;
+      right: 7vw; }
+    .composition__photo:hover {
+      z-index: 20;
+      outline: 1rem solid #999;
+      transform: scale(1.15) translateY(8rem);
+      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.7); }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9) translateY(8.5rem);
+    filter: blur(2px); } }
+
+@media screen and (max-width: 1000px) {
+  .composition__photo {
+    margin-right: 8rem;
+    transform: translateY(13rem); }
+    .composition__photo--me {
+      top: 28vh;
+      right: 11vw; }
+    .composition__photo--canyon {
+      top: 33vh;
+      right: 0; }
+    .composition__photo--badminton {
+      top: 39vh;
+      right: 7vw; }
+    .composition__photo:hover {
+      z-index: 20;
+      outline: 1rem solid #999;
+      transform: scale(1.15) translateY(11rem);
+      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.7); }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9) translateY(13rem);
+    filter: blur(2px); } }
+
+@media screen and (max-width: 800px) {
+  .composition__photo {
+    margin-right: 8rem;
+    transform: translateY(20rem);
+    width: 50%; }
+    .composition__photo--me {
+      top: 20vh;
+      right: 0; }
+    .composition__photo--canyon {
+      top: 30vh;
+      right: 0; }
+    .composition__photo--badminton {
+      top: 40vh;
+      right: 0; }
+    .composition__photo:hover {
+      z-index: 20;
+      outline: 1rem solid #999;
+      transform: scale(1.1) translateY(19rem);
+      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.7); }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9) translateY(22rem);
+    filter: blur(2px); } }
+
 .timeline {
   padding-top: 50rem;
   padding-bottom: 20rem;
