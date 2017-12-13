@@ -132,15 +132,14 @@ body {
     }
 }
 
+// folders section
 .resource {
-    &__heading-primary {
-        color: $color-white;
-    } 
-    // folder styling(the folders are treated as text, so typography section)
     position: relative;
     &__heading-primary {
+        color: $color-white;
         box-shadow: .5rem 1rem 2rem rgba($color-white, .4);
-    }
+        line-height: 8rem;
+    } // folder styling(the folders are treated as text, so typography section)
     &__container {
         position: absolute;
         top: 50%;
@@ -154,6 +153,7 @@ body {
         position: relative;
         & a:visited,
         & a:link {
+            z-index: 100;
             text-shadow: .5rem 1rem 2rem rgba($color-white, .4);
             text-decoration: none;
             color: inherit;
@@ -166,6 +166,7 @@ body {
             text-align: center;
             text-transform: uppercase;
             font-weight: 500;
+            margin-top: 12rem;
         }
         &:hover a {
             text-shadow: .5rem 1rem 2rem rgba($color-white, .7);
@@ -175,6 +176,9 @@ body {
             & .resource__folders-open {
                 display: initial;
                 transform: translateX(1rem);
+            }
+            & .resource__folders-caption {
+                text-shadow: .5rem 1rem 2rem rgba($color-white, .4);
             }
         }
     }
@@ -235,6 +239,22 @@ body {
             width: 25vw;
         }
     }
+    .resource {
+        &__container {
+            top: 40%;
+            left: 51.5%;
+            transform: translateX(-25%);
+            font-size: 7rem;
+        }
+        &__folders {
+            &-caption {
+                margin-top: 7rem;
+            }
+            &:nth-child(3) {
+                clear: both;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -252,6 +272,15 @@ body {
         font-size: 1.2rem;
         &__title {
             font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline {
+        padding-top: 40rem !important;
+        &__start {
+            display: none;
         }
     }
 }

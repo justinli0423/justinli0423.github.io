@@ -173,9 +173,9 @@ body {
 .resource {
   position: relative; }
   .resource__heading-primary {
-    color: #fff; }
-  .resource__heading-primary {
-    box-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4); }
+    color: #fff;
+    box-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4);
+    line-height: 8rem; }
   .resource__container {
     position: absolute;
     top: 50%;
@@ -188,6 +188,7 @@ body {
     position: relative; }
     .resource__folders a:visited,
     .resource__folders a:link {
+      z-index: 100;
       text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4);
       text-decoration: none;
       color: inherit; }
@@ -197,7 +198,8 @@ body {
       font-size: 2rem;
       text-align: center;
       text-transform: uppercase;
-      font-weight: 500; }
+      font-weight: 500;
+      margin-top: 12rem; }
     .resource__folders:hover a {
       text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.7); }
       .resource__folders:hover a .resource__folders-closed {
@@ -205,6 +207,8 @@ body {
       .resource__folders:hover a .resource__folders-open {
         display: initial;
         transform: translateX(1rem); }
+      .resource__folders:hover a .resource__folders-caption {
+        text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4); }
 
 .popup__files {
   font-size: 5rem;
@@ -245,7 +249,16 @@ body {
   .intro {
     margin-left: -5vw; }
     .intro__paragraph {
-      width: 25vw; } }
+      width: 25vw; }
+  .resource__container {
+    top: 40%;
+    left: 51.5%;
+    transform: translateX(-25%);
+    font-size: 7rem; }
+  .resource__folders-caption {
+    margin-top: 7rem; }
+  .resource__folders:nth-child(3) {
+    clear: both; } }
 
 @media screen and (max-width: 800px) {
   .intro {
@@ -260,6 +273,12 @@ body {
     font-size: 1.2rem; }
     .list-element__title {
       font-size: 1.5rem; } }
+
+@media screen and (max-width: 600px) {
+  .timeline {
+    padding-top: 40rem !important; }
+    .timeline__start {
+      display: none; } }
 
 @media screen and (max-width: 500px) {
   .intro__paragraph {
@@ -388,7 +407,7 @@ body {
 
 .navigation-toggle {
   position: fixed;
-  z-index: 50;
+  z-index: 5000;
   top: 7rem;
   right: 7rem;
   line-height: 5;
@@ -438,6 +457,7 @@ body {
     transition-delay: 0s, 0s, 0.3s;
     /* this removes the transition delay so the menu will be visible while the other styles transition */ }
   .navigation-toggle__list {
+    height: 0;
     visibility: hidden;
     list-style: none;
     /* hides sub-menu */
@@ -744,7 +764,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .list-element {
-    margin-left: 2rem; }
+    margin-left: 2.5rem; }
     .list-element div {
       width: calc(100vw - 9.5rem); }
     .list-element:nth-child(odd) div {
