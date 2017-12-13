@@ -1,6 +1,6 @@
 .navigation-toggle {
     position: fixed;
-    z-index: 50;
+    z-index: 5000;
     top: 7rem;
     right: 7rem;
     line-height: 5;
@@ -73,6 +73,7 @@
         /* this removes the transition delay so the menu will be visible while the other styles transition */
     }
     &__list {
+        height: 0;
         visibility: hidden;
         list-style: none;
         /* hides sub-menu */
