@@ -185,7 +185,8 @@ body {
   .resource__folders {
     color: #fff;
     transition: all .2s;
-    position: relative; }
+    display: inline-block;
+    padding: 1rem 3rem; }
     .resource__folders a:visited,
     .resource__folders a:link {
       z-index: 100;
@@ -245,20 +246,37 @@ body {
       content: "ıllıllı";
       font-size: 3rem; } }
 
+@media screen and (max-width: 1225px) {
+  .resource__container {
+    top: 30%; } }
+
 @media screen and (max-width: 1150px) {
   .intro {
     margin-left: -5vw; }
     .intro__paragraph {
       width: 25vw; }
   .resource__container {
-    top: 40%;
-    left: 51.5%;
-    transform: translateX(-25%);
-    font-size: 7rem; }
-  .resource__folders-caption {
-    margin-top: 7rem; }
+    top: 45%;
+    font-size: 7rem;
+    text-align: center; }
   .resource__folders:nth-child(3) {
-    clear: both; } }
+    clear: both; }
+  .resource__folders-caption {
+    margin-top: 7rem; } }
+
+@media screen and (max-width: 1042px) {
+  .popup__content {
+    padding-left: 0 !important;
+    text-align: center !important; } }
+
+@media screen and (max-width: 982px) {
+  .popup__content {
+    width: 100%; } }
+
+@media screen and (max-width: 850px) {
+  .resource__container {
+    display: inline-block;
+    width: 100%; } }
 
 @media screen and (max-width: 800px) {
   .intro {
@@ -279,6 +297,12 @@ body {
     padding-top: 40rem !important; }
     .timeline__start {
       display: none; } }
+
+@media screen and (max-width: 528px) {
+  .resource {
+    min-height: 1300px; }
+    .resource__container {
+      top: 30%; } }
 
 @media screen and (max-width: 500px) {
   .intro__paragraph {
@@ -378,6 +402,16 @@ body {
     height: 100vh;
     display: inline-block;
     z-index: 10; }
+
+@media screen and (max-width: 500px) {
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.7); } }
+
+@media screen and (max-width: 450px) {
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.5); } }
 
 .row {
   max-width: 114rem;

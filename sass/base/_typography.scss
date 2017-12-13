@@ -150,7 +150,8 @@ body {
     &__folders {
         color: $color-white;
         transition: all .2s;
-        position: relative;
+        display: inline-block;
+        padding: 1rem 3rem;
         & a:visited,
         & a:link {
             z-index: 100;
@@ -185,6 +186,7 @@ body {
 }
 
 .popup {
+
     &__files {
         font-size: 5rem;
         text-align: center;
@@ -232,6 +234,14 @@ body {
     }
 }
 
+@media screen and (max-width: 1225px) {
+    .resource {
+        &__container {
+            top: 30%;
+        }
+    }
+}
+
 @media screen and (max-width: 1150px) {
     .intro {
         margin-left: -5vw;
@@ -241,18 +251,44 @@ body {
     }
     .resource {
         &__container {
-            top: 40%;
-            left: 51.5%;
-            transform: translateX(-25%);
+            top: 45%;
             font-size: 7rem;
+            text-align: center;
         }
         &__folders {
-            &-caption {
-                margin-top: 7rem;
-            }
             &:nth-child(3) {
                 clear: both;
             }
+            &-caption {
+                margin-top: 7rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1042px) {
+    .popup {
+        &__content {
+            padding-left: 0 !important;
+            text-align: center !important;
+        }
+    }
+}
+
+@media screen and (max-width: 982px) {
+    .popup {
+        &__content {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .resource {
+        &__container {
+            display: inline-block;
+            width: 100%;
         }
     }
 }
@@ -276,11 +312,36 @@ body {
     }
 }
 
+// @media screen and (max-width: 660px) {
+//     .popup {
+//         &__content {
+//             padding-left: 0 !important;
+//             text-align: center !important;
+//             font-size: .6rem;
+//         }
+//         &__files {
+//             display: block !important;
+//             margin-left: 30.5%;
+//         }
+//     }
+// }
+
+
 @media screen and (max-width: 600px) {
     .timeline {
         padding-top: 40rem !important;
         &__start {
             display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 528px) {
+    .resource {
+        min-height: 1300px;
+        &__container {
+            top: 30%;
         }
     }
 }
