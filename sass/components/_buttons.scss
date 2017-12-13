@@ -58,3 +58,23 @@
         border: none;
     }
 }
+
+
+@media screen and (max-width: 800px) {
+    .scroll-down {
+        &:visited,
+        &:link {
+            left: 51%;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .scroll-down {
+        &:visited,
+        &:link {
+            top: 81rem;
+            font-size: 5rem;
+        }
+    }
+}
