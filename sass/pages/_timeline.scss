@@ -3,8 +3,8 @@
     padding-bottom: 20rem;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 100%;    
-    & div ul { 
+    width: 100%;
+    & div ul {
         padding: 50px 0;
     }
 }
@@ -20,10 +20,9 @@
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
-        box-shadow: .5rem 1rem 2rem rgba($color-black, .3);                
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .3);
         background: inherit;
     }
-
     & div {
         position: relative;
         bottom: 0;
@@ -31,18 +30,15 @@
         padding: 1.5rem;
         background: $color-grey-dark-2;
         border-radius: 5px;
-        box-shadow: .5rem 1rem 2rem rgba($color-black, .8);        
-
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .8);
         &:hover .list-element__text {
             transition: all .4s .15s;
             filter: blur(2px);
         }
-
         &:hover .list-element__title {
             transition: all .4s .15s;
             filter: blur(2px);
         }
-
         &:hover .list-element__caption {
             transition: all .4s;
             animation: shade-up .4s linear;
@@ -57,13 +53,11 @@
             height: 0;
             border-style: solid;
         }
-
         &:hover {
             transition: all .2s;
-            box-shadow: .5rem 1rem 2rem rgba($color-black, .4);                
+            box-shadow: .5rem 1rem 2rem rgba($color-black, .4);
         }
     }
-
     &:nth-child(odd) div {
         left: -43.9rem;
         &::before {
@@ -72,10 +66,8 @@
             border-color: transparent transparent transparent $color-grey-dark-2;
         }
     }
-
     &:nth-child(even) div {
         left: 4.5rem;
-
         &::before {
             left: -1.5rem;
             border-width: .8rem 1.6rem .8rem 0;
@@ -86,30 +78,24 @@
 
 // Transitions
 .list-element {
-    
     &::after {
         transition: background .5s ease-in-out;
     }
-
     &.in-view::after {
         background: $color-grey-dark-3;
         z-index: 1;
     }
-
     & div {
         visibility: hidden;
         opacity: 0;
         transition: all .5s ease-in-out;
     }
-
     &:nth-child(odd) div {
         transform: translate3d(-20rem, 0, 0);
     }
-
     &:nth-child(even) div {
-        transform: translate3d(20rem, 0, 0);        
+        transform: translate3d(20rem, 0, 0);
     }
-
     &.in-view div {
         transform: none;
         visibility: visible;
@@ -117,19 +103,28 @@
     }
 }
 
-
 // Media Queries
-@media screen and (max-width: 900px) {
-    .list-element div {
-        width: 25rem;
+@media screen and (max-width: 1000px) {
+    .list-element {
+        & div {
+            width: 35vw;
+        }
+        &:nth-child(odd) div {
+            left: -39vw;
+        }
+        &:nth-child(even) div {
+            left: 5vw;
+        }
     }
-    .list-element:nth-child(odd) div {
-        left: 4.5rem;
+}
 
-        &::before {
-            left: -1.5rem;
-            border-width: .8rem 1.6rem .8rem 0;
-            border-color: transparent $color-grey-dark-2 transparent transparent;
+@media screen and (max-width: 750px) {
+    .list-element {
+        &:nth-child(odd) div {
+            left: -40vw;
+        }
+        &:nth-child(even) div {
+            left: 6vw;
         }
     }
 }
@@ -137,20 +132,22 @@
 @media screen and (max-width: 600px) {
     .list-element {
         margin-left: 2rem;
-
         & div {
-            width: calc(100vw - 9.1rem);
+            width: calc(100vw - 9.5rem);
         }
-
-        &::nth-child(odd) div {
+        &:nth-child(odd) div {
             left: 4.5rem;
+            &::before {
+                left: -1.5rem;
+                border-color: transparent $color-grey-dark-2 transparent transparent;
+                border-width: .8rem 1.6rem .8rem 0;
+            }
         }
-
-        &:nth-child(odd) div::before {
-            left: 4.6rem;
-            border-width: .8rem 1.6rem .8rem 0;
-            border-color: transparent transparent transparent $color-grey-dark-2;
-            
+        &:nth-child(even) div {
+            left: 4.5rem;
+            &::before {
+                left: -1.5rem;
+            }
         }
     }
 }

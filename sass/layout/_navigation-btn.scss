@@ -108,3 +108,10 @@
         }
     }
 }
+
+@media screen and (max-width: 750px){
+    .navigation-toggle {
+        top: 7rem;
+        right: 4rem;
+    }
+};

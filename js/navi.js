@@ -6,12 +6,9 @@ $(document).scroll(function () {
   } else {
     $('.navigation-toggle').fadeOut();
   }
+
 });
 
 $(document).ready(function () {
   $('.navigation-toggle').fadeOut();
 });
-
-window.onscroll = function(e) {
-  $('.navigation-toggle').hide().fadeIn(200);
-};

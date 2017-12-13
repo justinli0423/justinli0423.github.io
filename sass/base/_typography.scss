@@ -135,7 +135,8 @@ body {
 .resource {
     &__heading-primary {
         color: $color-white;
-    } // folder styling(the folders are treated as text, so typography section)
+    } 
+    // folder styling(the folders are treated as text, so typography section)
     position: relative;
     &__heading-primary {
         box-shadow: .5rem 1rem 2rem rgba($color-white, .4);
@@ -243,24 +244,30 @@ body {
         display: inline-block;
         width: 111%;
         top: 5.5rem;
-        font-weight: 100;
-        &__heading-primary {
-            font-weight: 500;
-            color: $color-white;
-            font-size: 5.5rem;
-            padding-bottom: 4vh;
-
-            &::before,
-            &::after {
-                content: "ıllıllı";
-            }
-        }
         &__paragraph {
-            color: $color-grey-light-2;
-            font-size: 1.5rem;
-            line-height: 3rem;
-            display: inline-block;
             width: 35vw;
+        }
+    }
+    .list-element {
+        font-size: 1.2rem;
+        &__title {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .intro {
+        &__paragraph {
+            width: 45vw;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro {
+        &__paragraph {
+            width: 50vw;
         }
     }
 }
