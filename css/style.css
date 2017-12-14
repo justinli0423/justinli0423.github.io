@@ -21,6 +21,10 @@ body {
   background-attachment: fixed;
   background-size: cover; }
 
+html,
+body {
+  width: 100%; }
+
 @keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 10px #228DFF, 0 0 15px #228DFF; }
@@ -128,7 +132,7 @@ body {
   position: absolute;
   display: block;
   margin: -18.5rem auto;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   font-size: 7rem;
   color: #333;
@@ -283,8 +287,9 @@ body {
     text-align: center;
     position: absolute;
     display: inline-block;
-    width: 111%;
-    top: 5.5rem; }
+    width: 100%;
+    top: 5.5rem;
+    left: 5vw; }
     .intro__paragraph {
       width: 35vw; }
   .list-element {
@@ -451,8 +456,8 @@ body {
 .navigation-toggle {
   position: fixed;
   z-index: 5000;
-  top: 7rem;
-  right: 7rem;
+  top: 9rem;
+  right: 9rem;
   line-height: 5;
   text-align: center; }
   .navigation-toggle__parent {
@@ -528,10 +533,13 @@ body {
   .navigation-toggle__link:active {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
 
-@media screen and (max-width: 750px) {
-  .navigation-toggle {
-    top: 7rem;
-    right: 4rem; } }
+@media screen and (max-width: 600px) {
+  .navigation-toggle__parent {
+    display: none; } }
+
+@media screen and (max-height: 500px) {
+  .navigation-toggle__parent {
+    display: none; } }
 
 .navigation-top {
   position: absolute;
@@ -546,7 +554,7 @@ body {
     text-align: left;
     margin-top: 2rem;
     float: left;
-    margin-left: 1vw;
+    padding-left: 1rem;
     margin-right: 8rem;
     text-transform: lowercase;
     font-size: 3rem; }
@@ -604,13 +612,13 @@ body {
     border-radius: 4px;
     z-index: 10; }
     .composition__photo--me {
-      top: 28vh;
+      top: 26rem;
       right: 9vw; }
     .composition__photo--canyon {
-      top: 33vh;
+      top: 30.5rem;
       right: 0; }
     .composition__photo--badminton {
-      top: 39vh;
+      top: 36rem;
       right: 7vw; }
     .composition__photo:hover {
       z-index: 20;
@@ -626,13 +634,13 @@ body {
     margin-right: 8rem;
     transform: translateY(8rem); }
     .composition__photo--me {
-      top: 28vh;
+      top: 25rem;
       right: 11vw; }
     .composition__photo--canyon {
-      top: 33vh;
+      top: 30rem;
       right: 0; }
     .composition__photo--badminton {
-      top: 39vh;
+      top: 35rem;
       right: 7vw; }
     .composition__photo:hover {
       z-index: 20;
@@ -646,16 +654,7 @@ body {
 @media screen and (max-width: 1000px) {
   .composition__photo {
     margin-right: 8rem;
-    transform: translateY(13rem); }
-    .composition__photo--me {
-      top: 28vh;
-      right: 11vw; }
-    .composition__photo--canyon {
-      top: 33vh;
-      right: 0; }
-    .composition__photo--badminton {
-      top: 39vh;
-      right: 7vw; }
+    transform: translateY(10rem); }
     .composition__photo:hover {
       z-index: 20;
       outline: 1rem solid #999;
@@ -677,9 +676,11 @@ body {
       margin: 0;
       width: 25%; }
       .composition__photo--me {
-        top: 1rem;
+        top: 8rem;
         left: 50%;
-        transform: translateX(-50%); }
+        transform: translateX(-50%);
+        border: 2px solid #f7f7f7;
+        border-radius: 50%; }
       .composition__photo--canyon {
         display: none; }
       .composition__photo--badminton {
@@ -693,13 +694,27 @@ body {
       transform: none;
       filter: blur(0); } }
 
+@media screen and (max-width: 799px) {
+  .composition__photo--me {
+    top: 1rem; } }
+
+@media screen and (max-width: 600px) {
+  .composition__photo--me {
+    top: 13rem; } }
+
 @media screen and (max-width: 612px) {
   .composition {
-    top: 19rem; } }
+    top: 21vh; } }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 595px) {
   .composition__photo {
-    width: 35%; } }
+    width: 30vw; } }
+
+@media screen and (max-width: 425px) {
+  .composition__photo {
+    width: 35%; }
+    .composition__photo--me {
+      top: 6rem; } }
 
 @media screen and (max-width: 400px) {
   .composition__photo {

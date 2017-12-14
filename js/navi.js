@@ -1,7 +1,7 @@
 $(document).scroll(function () {
   var y = $(this).scrollTop();
   var x = $(this).width();
-  if ((y > 70 && x > 900) || (y > 110 && x > 612)) {
+  if (y > 70) {
     $('.navigation-toggle').fadeIn();
   } else {
     $('.navigation-toggle').fadeOut();

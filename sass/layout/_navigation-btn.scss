@@ -1,8 +1,8 @@
 .navigation-toggle {
     position: fixed;
     z-index: 5000;
-    top: 7rem;
-    right: 7rem;
+    top: 9rem;
+    right: 9rem;
     line-height: 5;
     text-align: center;
     &__parent {
@@ -110,9 +110,14 @@
     }
 }
 
-@media screen and (max-width: 750px){
-    .navigation-toggle {
-        top: 7rem;
-        right: 4rem;
+@media screen and (max-width: 600px){
+    .navigation-toggle__parent {
+        display: none;
+    }
+};
+
+@media screen and (max-height: 500px){
+    .navigation-toggle__parent {
+        display: none;
     }
 };
