@@ -1,11 +1,11 @@
 .header {
-    background: linear-gradient(45deg, rgba($color-black, .98), rgba($color-black, .94), rgba($color-black, .97)), url(../img/header-bg.jpg);
-    height: 100vh; // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    background: linear-gradient(45deg, rgba($color-black, .6), rgba($color-black, .8), rgba($color-black, .9)), url(../img/material-wb.png);    
+    height: 100vh;
     min-height: 880px;
     position: relative;
     background-attachment: fixed;
     animation: gradient 30s ease infinite;
-    background-size: 200% 200%;
+    background-size: cover;
 }
 
 .composition {
