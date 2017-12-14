@@ -562,15 +562,17 @@ body {
     .navigation-top__link i {
       margin: 0 .9rem; }
     .navigation-top__link:visited, .navigation-top__link:link {
-      margin: 2rem 0;
+      padding: 2rem 0;
+      padding-right: 3rem;
+      padding-left: 2rem;
       font-weight: 400;
       float: right;
       color: inherit;
       text-align: right;
       text-decoration: none;
-      text-transform: uppercase;
-      padding-right: 3rem; }
+      text-transform: uppercase; }
     .navigation-top__link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
       color: #81D4FA; }
 
 @media screen and (max-width: 900px) {

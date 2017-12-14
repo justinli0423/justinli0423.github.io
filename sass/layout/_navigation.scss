@@ -31,17 +31,18 @@
         }
         &:visited,
         &:link {
-            margin: 2rem 0;
+            padding: 2rem 0;
+            padding-right: 3rem;
+            padding-left: 2rem;
             font-weight: 400;
             float: right;
             color: inherit;
             text-align: right;
             text-decoration: none;
             text-transform: uppercase;
-            padding-right: 3rem;
         }
         &:hover {
-            // background-color: rgba($color-grey-light-1, .5);
+            background-color: rgba($color-white, .1);
             color: $color-blue-light;
         }
     }
