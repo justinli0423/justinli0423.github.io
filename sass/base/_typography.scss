@@ -34,7 +34,7 @@ body {
     color: $color-white;
     border: 2px solid $color-grey-dark-2;
     border-radius: 5px;
-    box-shadow: .5rem 1rem 2rem rgba($color-black, .5);
+    box-shadow: .2rem .5rem .5rem rgba($color-black, .5);
 }
 
 .intro {
@@ -47,11 +47,6 @@ body {
         color: $color-white;
         font-size: 5.5rem;
         padding-bottom: 4rem;
-        &::before,
-        &::after {
-            font-size: 3rem;
-            content: "ıllıllı";
-        }
     }
     &__paragraph {
         color: $color-grey-light-2;
@@ -77,16 +72,17 @@ body {
     //     content: ">";
     //     text-shadow: .5rem -1rem 2rem rgba($color-black, .7);
     // }
-    &__start {
-        position: absolute;
-        display: block;
-        margin: -18.5rem auto;
-        width: 100%;
-        text-align: center;
-        font-size: 7rem;
-        color: $color-grey-dark-3;
-        text-shadow: .5rem .5rem 1.5rem rgba($color-black, .3);
-    }
+    // timeline arrow
+    // &__start {
+    //     position: absolute;
+    //     display: block;
+    //     margin: -18.5rem auto;
+    //     width: 100%;
+    //     text-align: center;
+    //     font-size: 7rem;
+    //     color: $color-grey-dark-3;
+    //     text-shadow: .5rem .5rem 1.5rem rgba($color-black, .3);
+    // }
 }
 
 .list-element {
@@ -95,22 +91,24 @@ body {
     width: .8rem;
     margin: -16rem auto;
     padding-top: 17rem;
-    background: $color-grey-dark-2;
+    background: $color-grey-dark;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     border-radius: 3px;
     color: $color-grey-light-2;
     &:first-child {
         padding-top: 2rem;
     }
     &__title {
-        font-size: 2rem;
-        font-weight: 700;
+        font-size: 2.4rem;
+        font-weight: 300;
         line-height: 3rem;
+        padding-bottom: .5rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid rgba($color-blue-grey, .7);
     }
     &__text {
-        line-height: 2.5rem;
-        font-weight: 500;
+        line-height: 2.3rem;
     }
     &__caption {
         position: absolute;
@@ -152,6 +150,11 @@ body {
         transition: all .2s;
         display: inline-block;
         padding: 1rem 3rem;
+
+        &-caption {
+            margin-top: 8rem;
+            font-size: 4rem;
+        }
         & a:visited,
         & a:link {
             z-index: 100;
@@ -161,13 +164,6 @@ body {
         }
         &-open {
             display: none;
-        }
-        &-caption {
-            font-size: 2rem;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 500;
-            margin-top: 12rem;
         }
         &:hover a {
             text-shadow: .5rem 1rem 2rem rgba($color-white, .7);
@@ -224,13 +220,6 @@ body {
 @media screen and (max-width: 1300px) {
     .intro {
         margin-left: -8vw;
-        &__heading-primary {
-            &::before,
-            &::after {
-                content: "ıllıllı";
-                font-size: 3rem;
-            }
-        }
     }
 }
 
@@ -328,21 +317,11 @@ body {
 // }
 
 
-@media screen and (max-width: 600px) {
-    .timeline {
-        padding-top: 40rem !important;
-        &__start {
-            display: none;
-        }
-    }
-}
-
-
 @media screen and (max-width: 528px) {
     .resource {
         min-height: 1300px;
         &__container {
-            top: 30%;
+            top: 40%;
         }
     }
 }
@@ -354,6 +333,17 @@ body {
         }
     }
 }
+
+
+@media screen and (max-width: 451px) {
+    .resource {
+        min-height: 1300px;
+        &__container {
+            top: 27%;
+        }
+    }
+}
+
 
 @media screen and (max-width: 400px) {
     .intro {
