@@ -124,6 +124,16 @@ body {
   position: relative;
   cursor: default; }
 
+.timeline__start {
+  position: absolute;
+  margin: -12rem auto;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  text-align: center;
+  font-size: 7rem;
+  color: #455A64; }
+
 .list-element {
   list-style: none;
   position: relative;
@@ -273,6 +283,12 @@ body {
     .list-element__title {
       font-size: 1.5rem; } }
 
+@media screen and (max-width: 600px) {
+  .timeline__start {
+    position: absolute;
+    margin: -12rem auto;
+    left: 2.9rem; } }
+
 @media screen and (max-width: 528px) {
   .resource {
     min-height: 1300px; }
@@ -338,7 +354,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .scroll-down:visited, .scroll-down:link {
-    left: 51%; } }
+    top: 85rem; } }
 
 @media screen and (max-width: 400px) {
   .scroll-down:visited, .scroll-down:link {
@@ -665,7 +681,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .composition__photo--me {
-    top: 13rem; } }
+    top: 0; } }
 
 @media screen and (max-width: 612px) {
   .composition {
@@ -689,7 +705,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   border-top: 2px solid #999;
   border-bottom: 2px solid #999;
-  padding-top: 50rem;
+  padding-top: 45rem;
   padding-bottom: 20rem;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -701,10 +717,10 @@ body {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: .5rem;
   transform: translateX(-50%);
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
   background: inherit; }

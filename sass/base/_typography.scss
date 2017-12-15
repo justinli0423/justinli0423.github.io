@@ -72,17 +72,16 @@ body {
     //     content: ">";
     //     text-shadow: .5rem -1rem 2rem rgba($color-black, .7);
     // }
-    // timeline arrow
-    // &__start {
-    //     position: absolute;
-    //     display: block;
-    //     margin: -18.5rem auto;
-    //     width: 100%;
-    //     text-align: center;
-    //     font-size: 7rem;
-    //     color: $color-grey-dark-3;
-    //     text-shadow: .5rem .5rem 1.5rem rgba($color-black, .3);
-    // }
+    &__start {
+        position: absolute;
+        margin: -12rem auto;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10000;
+        text-align: center;
+        font-size: 7rem;
+        color: $color-blue-grey-dark;
+    }
 }
 
 .list-element {
@@ -144,23 +143,18 @@ body {
         text-align: center;
         font-size: 8rem;
     }
-
-
-
     &__folders {
         color: $color-white;
         transition: all .2s;
         display: inline-block;
         padding: 1rem 3rem;
-
         &-caption {
             margin-top: 7rem;
             font-size: 2rem;
         }
         & a:visited,
         & a:link {
-            z-index: 100;
-            // text-shadow: 0.3rem .5rem 1rem rgba($color-white, .4);
+            z-index: 100; // text-shadow: 0.3rem .5rem 1rem rgba($color-white, .4);
             text-decoration: none;
             color: inherit;
         }
@@ -184,7 +178,6 @@ body {
 }
 
 .popup {
-
     &__files {
         font-size: 5rem;
         text-align: center;
@@ -257,7 +250,6 @@ body {
     }
 }
 
-
 @media screen and (max-width: 1042px) {
     .popup {
         &__content {
@@ -304,6 +296,16 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .timeline {
+        &__start {
+            position: absolute;
+            margin: -12rem auto;
+            left: 2.9rem;
+        }
+    }
+}
+
 // @media screen and (max-width: 660px) {
 //     .popup {
 //         &__content {
@@ -317,8 +319,6 @@ body {
 //         }
 //     }
 // }
-
-
 @media screen and (max-width: 528px) {
     .resource {
         min-height: 1300px;
@@ -336,7 +336,6 @@ body {
     }
 }
 
-
 @media screen and (max-width: 451px) {
     .resource {
         min-height: 1300px;
@@ -345,7 +344,6 @@ body {
         }
     }
 }
-
 
 @media screen and (max-width: 400px) {
     .intro {
