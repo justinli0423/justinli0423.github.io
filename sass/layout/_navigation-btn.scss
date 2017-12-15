@@ -41,7 +41,6 @@
         transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
     }
     &__link {
-        transition: background-color .3s;
         &:link,
         &:visited {
             display: inline-block;
@@ -54,6 +53,7 @@
             color: $color-white;
         }
         & i {
+            transition: background-color .3s;
             background-color: $color-orange;
             padding: 1rem 1rem;
             border-radius: 50%;

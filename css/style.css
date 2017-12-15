@@ -476,24 +476,23 @@ body {
     transform: translateY(-3em);
     z-index: -1;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; }
-  .navigation-toggle__link {
-    transition: background-color .3s; }
-    .navigation-toggle__link:link, .navigation-toggle__link:visited {
-      display: inline-block;
-      width: 100%;
-      transition: all .1s linear;
-      text-decoration: none;
-      font-size: 2rem;
-      font-weight: 400;
-      max-height: 1rem;
-      color: #fff; }
-    .navigation-toggle__link i {
-      background-color: #F4511E;
-      padding: 1rem 1rem;
-      border-radius: 50%; }
-    .navigation-toggle__link:hover i,
-    .navigation-toggle__link:active i {
-      background-color: #D84315; }
+  .navigation-toggle__link:link, .navigation-toggle__link:visited {
+    display: inline-block;
+    width: 100%;
+    transition: all .1s linear;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    max-height: 1rem;
+    color: #fff; }
+  .navigation-toggle__link i {
+    transition: background-color .3s;
+    background-color: #F4511E;
+    padding: 1rem 1rem;
+    border-radius: 50%; }
+  .navigation-toggle__link:hover i,
+  .navigation-toggle__link:active i {
+    background-color: #D84315; }
 
 @media screen and (max-width: 600px) {
   .navigation-toggle__parent {
