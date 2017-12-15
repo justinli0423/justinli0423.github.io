@@ -22,7 +22,6 @@
     &__parent:active~&__list,
     &__parent:focus~&__list,
     &__parent:focus-within~&__list {
-        cursor: pointer;
         visibility: visible;
         opacity: 1;
         z-index: 1000;

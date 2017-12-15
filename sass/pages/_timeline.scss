@@ -26,11 +26,9 @@
         box-shadow: .1rem .2rem .2rem rgba($color-black, .3);
         background: inherit;
     }
-
     &::after {
         pointer-events: none;
     }
-    
     & div {
         position: relative;
         bottom: 0;
@@ -39,7 +37,6 @@
         background: rgba($color-blue-grey-dark, .7);
         border-radius: 5px;
         box-shadow: 0 .5rem .5rem rgba($color-black, .8);
-
         &:hover .list-element__text {
             transition: all .4s .15s;
             filter: blur(2px);
@@ -143,19 +140,21 @@
         margin-left: 2.5rem;
         & div {
             width: calc(100vw - 9.5rem);
+            transform: translate3d(0,0,0) !important;
         }
         &:nth-child(odd) div {
+            animation: slide-in .5s ease-in-out;
             left: 4.5rem;
             &::before {
-                left: -1.5rem;
-                border-color: transparent $color-blue-grey-dark transparent transparent;
+                left: -1.6rem;
+                border-color: transparent rgba($color-blue-grey-dark, .7) transparent transparent;
                 border-width: .8rem 1.6rem .8rem 0;
             }
         }
         &:nth-child(even) div {
             left: 4.5rem;
             &::before {
-                left: -1.5rem;
+                left: -1.6rem;
             }
         }
     }
