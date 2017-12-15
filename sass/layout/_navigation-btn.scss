@@ -1,31 +1,20 @@
 .navigation-toggle {
     position: fixed;
     z-index: 5000;
-    bottom: 2rem;
     right: 2rem;
     line-height: 5;
     text-align: center;
     &__parent {
-        margin-top: -6px;
-        background-color: $color-blue-dark;
+        background-color: $color-blue;
         color: $color-white;
-        font-size: 4rem;
+        font-size: 2.5rem;
+        padding: 1rem 1.5rem;
         border-radius: 50%;
-        
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        &::before {
-            top: 1.4rem;
-        }
-
-        &::after{
-            top: 2.8rem;
+        font-weight: 400;
+        transition: background-color .3s;
+        &:hover,
+        &:active {
+            background-color: $color-blue-dark;
         }
     }
     &__parent:active~&__list,
@@ -35,7 +24,6 @@
         visibility: visible;
         opacity: 1;
         z-index: 1000;
-        transform: translateY(0%); //removes the flashes
         transition-delay: 0s, 0s, 0.3s;
         /* this removes the transition delay so the menu will be visible while the other styles transition */
     }
@@ -48,43 +36,39 @@
         top: 100%;
         left: 0;
         width: 100%;
-        transform: translateY(-2em);
+        transform: translateY(-3em);
         z-index: -1;
         transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
     }
     &__link {
+        transition: background-color .3s;
         &:link,
         &:visited {
             display: inline-block;
             width: 100%;
             transition: all .1s linear;
             text-decoration: none;
-            background-color: transparent;
             font-size: 2rem;
-            font-weight: 700;
+            font-weight: 400;
+            max-height: 1rem;
             color: $color-white;
-            text-shadow: .5rem 1rem 2rem rgba($color-black, .4);
         }
-        &:hover {
-            transform: translateY(-5px);
-            text-shadow: .5rem 1rem 2rem rgba($color-black, .9);
-            color: $color-grey-dark-2;
+        & i {
+            background-color: $color-orange;
+            padding: 1rem 1rem;
+            border-radius: 50%;
         }
-
-        &:active {
-            text-shadow: .5rem 1rem 2rem rgba($color-black, .5);
+        &:hover i,
+        &:active i {
+            background-color: $color-orange-dark;
         }
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .navigation-toggle__parent {
         display: none;
     }
-};
+}
 
-@media screen and (max-height: 500px){
-    .navigation-toggle__parent {
-        display: none;
-    }
-};
+;
