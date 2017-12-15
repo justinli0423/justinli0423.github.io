@@ -442,35 +442,16 @@ body {
 .navigation-toggle {
   position: fixed;
   z-index: 5000;
-  top: 9rem;
-  right: 9rem;
+  bottom: 2rem;
+  right: 2rem;
   line-height: 5;
   text-align: center; }
   .navigation-toggle__parent {
-    padding: 2rem 3rem; }
-    .navigation-toggle__parent, .navigation-toggle__parent::before, .navigation-toggle__parent::after {
-      display: inline-block;
-      box-shadow: 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.2);
-      border-radius: 5px;
-      border: 2px solid #fff;
-      color: transparent;
-      width: 3rem;
-      height: 2px;
-      transition: all .4s; }
-    .navigation-toggle__parent:hover {
-      box-shadow: 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.5); }
-      .navigation-toggle__parent:hover::before {
-        top: 1.6rem; }
-      .navigation-toggle__parent:hover::after {
-        top: 2.5rem; }
-    .navigation-toggle__parent:active, .navigation-toggle__parent:focus {
-      box-shadow: 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.2); }
-      .navigation-toggle__parent:active::before, .navigation-toggle__parent:focus::before {
-        transform: translate(-1.3rem, 0.8rem) rotate(-135deg) translateX(0.1rem);
-        top: 1.4rem; }
-      .navigation-toggle__parent:active::after, .navigation-toggle__parent:focus::after {
-        transform: translate(-1.3rem, -0.8rem) rotate(135deg) translateX(0.1rem);
-        top: 2.8rem; }
+    margin-top: -6px;
+    background-color: #0D47A1;
+    color: #fff;
+    font-size: 4rem;
+    border-radius: 50%; }
     .navigation-toggle__parent::before, .navigation-toggle__parent::after {
       content: "";
       position: absolute;
@@ -705,7 +686,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   border-top: 2px solid #999;
   border-bottom: 2px solid #999;
-  padding-top: 45rem;
+  padding-top: 50rem;
   padding-bottom: 20rem;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -717,10 +698,10 @@ body {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: .5rem;
+  bottom: .5px;
   transform: translateX(-50%);
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
   background: inherit; }
@@ -749,7 +730,7 @@ body {
   .list-element div::before {
     content: "";
     position: absolute;
-    bottom: .7rem;
+    bottom: .5rem;
     width: 0;
     height: 0;
     border-style: solid; }
