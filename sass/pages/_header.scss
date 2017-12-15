@@ -120,7 +120,7 @@
             &:hover {
                 outline: none;
                 transform: none;
-                box-shadow: .5rem 1rem 2rem rgba($color-black, .7);                
+                box-shadow: .5rem 1rem 2rem rgba($color-black, .7);
                 transform: translateX(-50%);
             }
         }
@@ -130,7 +130,6 @@
         }
     }
 }
-
 
 @media screen and (max-width: 799px) {
     .composition {
@@ -142,19 +141,28 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 667px) {
     .composition {
-        &__photo {
-            &--me {
-                top: 2rem;
-            }
-        }
+        top: 30vh;
     }
 }
 
 @media screen and (max-width: 612px) {
     .composition {
         top: 21vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro {
+        padding-top: 30rem;
+    }
+    .composition {
+        &__photo {
+            &--me {
+                top: 2rem;
+            }
+        }
     }
 }
 
@@ -177,11 +185,38 @@
     }
 }
 
+@media screen and (max-width: 414px) {
+    .composition {
+        top: 6vh;
+    }
+
+    .intro {
+        padding-top: 30rem;
+    }
+}
 
 @media screen and (max-width: 400px) {
     .composition {
         &__photo {
             width: 45%;
+        }
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .composition {
+        top: 5vh;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .composition {
+        top: 6vh;
+        &__photo {
+            &--me{
+                width: 35%;
+            }
         }
     }
 }

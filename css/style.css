@@ -291,6 +291,10 @@ body {
     .list-element__title {
       font-size: 1.5rem; } }
 
+@media screen and (max-width: 667px) {
+  .intro {
+    top: 0; } }
+
 @media screen and (max-width: 600px) {
   .timeline__start {
     position: absolute;
@@ -337,7 +341,7 @@ body {
   background-color: #0D47A1; }
 
 .btn:not(:last-child) {
-  margin-right: 2vw; }
+  margin-right: 4vw; }
 
 .scroll-down {
   position: relative;
@@ -371,9 +375,12 @@ body {
   .scroll-down:visited, .scroll-down:link {
     top: 85rem; } }
 
+@media screen and (max-width: 736px) {
+  .scroll-down:link, .scroll-down:visited {
+    top: 80rem; } }
+
 @media screen and (max-width: 600px) {
   .scroll-down:link, .scroll-down:visited {
-    position: absolute;
     top: 75rem; } }
 
 @media screen and (max-width: 400px) {
@@ -517,7 +524,7 @@ body {
   .navigation-toggle__link:active i {
     background-color: #D84315; }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 667px) {
   .navigation-toggle {
     display: initial; } }
 
@@ -570,7 +577,7 @@ body {
       width: 100%;
       text-align: center !important; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 667px) {
   .navigation-top__name {
     padding-bottom: 2rem; }
   .navigation-top__link {
@@ -681,13 +688,19 @@ body {
   .composition__photo--me {
     top: 1rem; } }
 
-@media screen and (max-width: 600px) {
-  .composition__photo--me {
-    top: 2rem; } }
+@media screen and (max-width: 667px) {
+  .composition {
+    top: 30vh; } }
 
 @media screen and (max-width: 612px) {
   .composition {
     top: 21vh; } }
+
+@media screen and (max-width: 600px) {
+  .intro {
+    padding-top: 30rem; }
+  .composition__photo--me {
+    top: 2rem; } }
 
 @media screen and (max-width: 595px) {
   .composition__photo {
@@ -699,9 +712,25 @@ body {
     .composition__photo--me {
       top: 6rem; } }
 
+@media screen and (max-width: 414px) {
+  .composition {
+    top: 6vh; }
+  .intro {
+    padding-top: 30rem; } }
+
 @media screen and (max-width: 400px) {
   .composition__photo {
     width: 45%; } }
+
+@media screen and (max-width: 384px) {
+  .composition {
+    top: 5vh; } }
+
+@media screen and (max-width: 375px) {
+  .composition {
+    top: 6vh; }
+    .composition__photo--me {
+      width: 35%; } }
 
 .timeline {
   background: rgba(0, 0, 0, 0.5);

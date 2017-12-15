@@ -296,6 +296,13 @@ body {
     }
 }
 
+@media screen and (max-width: 667px) {
+    .intro {
+        top: 0;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .timeline {
         &__start {
@@ -311,19 +318,6 @@ body {
     
 }
 
-// @media screen and (max-width: 660px) {
-//     .popup {
-//         &__content {
-//             padding-left: 0 !important;
-//             text-align: center !important;
-//             font-size: .6rem;
-//         }
-//         &__files {
-//             display: block !important;
-//             margin-left: 30.
-//         }
-//     }
-// }
 @media screen and (max-width: 528px) {
     .resource {
         min-height: 1300px;

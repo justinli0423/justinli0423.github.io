@@ -20,7 +20,7 @@
             background-color: $color-blue-dark;
         }
         &:not(:last-child) {
-            margin-right: 2vw;
+            margin-right: 4vw;
         }
     }
 
@@ -71,11 +71,19 @@
         }
     }
 
+    @media screen and (max-width: 736px) {
+        .scroll-down {
+            &:link,
+            &:visited {
+                top: 80rem;
+            }
+        }
+    }
+
     @media screen and (max-width: 600px) {
         .scroll-down {
             &:link,
             &:visited {
-                position: absolute;
                 top: 75rem;
             }
         }
