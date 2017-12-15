@@ -1,77 +1,92 @@
-.intro__btn {
-    margin-top: 2rem;
-
-}
-
-.btn{
-    &:visited,
-    &:link {
-        display: inline-block;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 4rem;
-        color: $color-white;
-        background-color: $color-blue;
-        padding: 2rem 2.2rem;
-        border-radius: 50%;
-        transition: all .2s ease-in-out;
-    } 
-
-    &:hover,
-    &:active {
-        background-color: $color-blue-dark;
+    .intro__btn {
+        margin-top: 2rem;
     }
 
-
-    &:not(:last-child) {
-        margin-right: 2vw;
-    }
-}
-
-.scroll-down {
-    position: relative;
-    transition: all .7s;
-    &:link,
-    &:visited {
-        position: absolute;
-        top: 80rem;
-        left: 50%;
-        text-decoration: none;
-        transform: translate(-50%, -50%);
-        z-index: 100;
-        font-size: 6rem;
-        color: $color-grey-light-2;
-        animation: ring 1.5s linear infinite;
-        border: 1px solid $color-grey-light-1; 
-        padding: .1rem .5rem;     
-        border-radius: 50%;  
-        opacity: 0;
-    }
-    &:hover,
-    &:active {
-        animation: none;
-        color: $color-blue;
-        opacity: 1;
-        border: none;
-    }
-}
-
-
-@media screen and (max-width: 800px) {
-    .scroll-down {
+    .btn {
         &:visited,
         &:link {
-            top: 85rem;
+            display: inline-block;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 4rem;
+            color: $color-white;
+            background-color: $color-blue;
+            padding: 2rem 2.2rem;
+            border-radius: 50%;
+            transition: all .2s ease-in-out;
+        }
+        &:hover,
+        &:active {
+            background-color: $color-blue-dark;
+        }
+        &:not(:last-child) {
+            margin-right: 2vw;
         }
     }
-}
 
-@media screen and (max-width: 400px) {
     .scroll-down {
-        &:visited,
-        &:link {
-            top: 81rem;
-            font-size: 5rem;
+        position: relative;
+        transition: all .7s;
+        &:link,
+        &:visited {
+            position: absolute;
+            top: 80rem;
+            left: 50%;
+            text-decoration: none;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            font-size: 6rem;
+            color: $color-grey-light-2;
+            animation: ring 1.5s linear infinite;
+            border: 1px solid $color-grey-light-1;
+            padding: .1rem .5rem;
+            border-radius: 50%;
+            opacity: 0;
+        }
+        &:hover,
+        &:active {
+            animation: none;
+            color: $color-blue;
+            opacity: 1;
+            border: none;
         }
     }
-}
+
+    @media screen and (max-width: 1024px) {
+        .btn {
+            &:visited,
+            &:link {
+                font-size: 2.5rem;
+                padding: 2rem 2.2rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 85rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .scroll-down {
+            &:link,
+            &:visited {
+                position: absolute;
+                top: 75rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 81rem;
+                font-size: 5rem;
+            }
+        }
+    }

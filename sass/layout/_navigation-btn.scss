@@ -1,6 +1,8 @@
 .navigation-toggle {
+    display: none;
     position: fixed;
     z-index: 5000;
+    top: -2vh;
     right: 2rem;
     line-height: 5;
     text-align: center;
@@ -27,6 +29,11 @@
         transition-delay: 0s, 0s, 0.3s;
         /* this removes the transition delay so the menu will be visible while the other styles transition */
     }
+
+    &__item {
+        height: 6rem;
+    }
+
     &__list {
         height: 0;
         visibility: hidden;
@@ -36,7 +43,7 @@
         top: 100%;
         left: 0;
         width: 100%;
-        transform: translateY(-3em);
+        transform: translateY(-5em);
         z-index: -1;
         transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
     }
@@ -65,10 +72,8 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    .navigation-toggle__parent {
-        display: none;
+@media screen and (max-width: 736px) {
+    .navigation-toggle {
+        display: initial;
     }
 }
-
-;
