@@ -574,15 +574,15 @@ body {
       display: inline-block;
       margin-right: 3rem; }
     .navigation-top__name {
-      display: inline-block;
-      width: 100%;
-      text-align: center !important; } }
+      display: none; } }
 
 @media screen and (max-width: 667px) {
-  .navigation-top__name {
-    padding-bottom: 2rem; }
-  .navigation-top__link {
-    display: none !important; } }
+  .navigation-top {
+    display: none; }
+    .navigation-top__name {
+      padding-bottom: 2rem; }
+    .navigation-top__link {
+      display: none !important; } }
 
 .header {
   height: 100vh;
