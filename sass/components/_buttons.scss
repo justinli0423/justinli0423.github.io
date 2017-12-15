@@ -49,9 +49,8 @@
     }
     &:hover,
     &:active {
-        -webkit-animation: glow 1.5s ease-in-out infinite alternate;
-        -moz-animation: glow 1.5s ease-in-out infinite alternate;
-        animation: glow 1.5s ease-in-out infinite alternate;
+        animation: none;
+        color: $color-blue;
         opacity: 1;
         border: none;
     }

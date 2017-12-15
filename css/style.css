@@ -166,39 +166,33 @@ body {
   position: relative; }
   .resource__heading-primary {
     color: #fff;
-    box-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4);
     line-height: 8rem; }
   .resource__container {
     position: absolute;
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 9rem; }
+    font-size: 8rem; }
   .resource__folders {
     color: #fff;
     transition: all .2s;
     display: inline-block;
     padding: 1rem 3rem; }
     .resource__folders-caption {
-      margin-top: 8rem;
-      font-size: 4rem; }
+      margin-top: 7rem;
+      font-size: 2rem; }
     .resource__folders a:visited,
     .resource__folders a:link {
       z-index: 100;
-      text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4);
       text-decoration: none;
       color: inherit; }
     .resource__folders-open {
       display: none; }
-    .resource__folders:hover a {
-      text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.7); }
-      .resource__folders:hover a .resource__folders-closed {
-        display: none; }
-      .resource__folders:hover a .resource__folders-open {
-        display: initial;
-        transform: translateX(1rem); }
-      .resource__folders:hover a .resource__folders-caption {
-        text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.4); }
+    .resource__folders:hover a .resource__folders-closed {
+      display: none; }
+    .resource__folders:hover a .resource__folders-open {
+      display: initial;
+      transform: translateX(1rem); }
 
 .popup__files {
   font-size: 5rem;
@@ -337,9 +331,8 @@ body {
     border-radius: 50%;
     opacity: 0; }
   .scroll-down:hover, .scroll-down:active {
-    -webkit-animation: glow 1.5s ease-in-out infinite alternate;
-    -moz-animation: glow 1.5s ease-in-out infinite alternate;
-    animation: glow 1.5s ease-in-out infinite alternate;
+    animation: none;
+    color: #1565C0;
     opacity: 1;
     border: none; }
 
@@ -596,8 +589,7 @@ body {
     .composition__photo:hover {
       z-index: 20;
       outline: 1rem solid #999;
-      transform: scale(1.1) translateY(3rem);
-      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.7); }
+      transform: scale(1.1) translateY(3rem); }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95) translateY(5.5rem);
     filter: blur(2px); }
