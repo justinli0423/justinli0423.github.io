@@ -28,6 +28,7 @@ body {
     text-align: center;
     transform: translateX(-50%);
     font-size: 7.5rem;
+    line-height: 8rem;    
     margin-top: 9vh;
     padding: 5rem 2rem;
     font-weight: 200;
@@ -61,7 +62,8 @@ body {
     &__intro {
         position: relative;
         cursor: default;
-    } // Arrow under the 'timeline' title, maybe use for later
+    }
+    // Arrow under the 'timeline' title, maybe use for later
     // &::after {
     //     position: absolute;
     //     top: 100%;
