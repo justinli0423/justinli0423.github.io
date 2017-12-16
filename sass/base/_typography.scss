@@ -298,9 +298,48 @@ body {
     }
 }
 
+
+
+@media screen and (max-width: 736px) {
+    .heading-primary {
+        font-size: 5rem;
+        padding: 1rem 2rem;
+    }
+
+    .resource {
+        min-height: 40rem !important;
+        &__container {
+            top: 50vh;
+            font-size: 4rem;
+        }
+        &__folders {
+            &-caption {
+                margin-top: 5rem;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 667px) {
     .intro {
         top: 0;
+    }
+
+    .heading-primary {
+        font-size: 4rem;
+        padding: 1rem 1rem;
+    }
+
+    .resource {
+        &__container {
+            font-size: 3rem;
+        }
+        &__folders {
+            &-caption {
+                margin-top: 4rem;
+            }
+        }
     }
 }
 
@@ -346,10 +385,42 @@ body {
     }
 }
 
+@media screen and (max-width: 414px) {
+    .heading-primary {
+        font-size: 5rem;
+    }
+
+    .resource {
+        &__container {
+            top: 45vh;
+            font-size: 4rem;
+        }
+    }
+}
+
 @media screen and (max-width: 400px) {
     .intro {
         &__paragraph {
             width: 50vw;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .heading-primary {
+        font-size: 5rem;
+    }
+
+    .resource {
+        &__container {
+            top: 35vh;
+            font-size: 5rem;
+        }
+
+        &__folders {
+            &-caption {
+                margin-top: 5rem;
+            }
         }
     }
 }

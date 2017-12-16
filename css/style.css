@@ -292,9 +292,28 @@ body {
     .list-element__title {
       font-size: 1.5rem; } }
 
+@media screen and (max-width: 736px) {
+  .heading-primary {
+    font-size: 5rem;
+    padding: 1rem 2rem; }
+  .resource {
+    min-height: 40rem !important; }
+    .resource__container {
+      top: 50vh;
+      font-size: 4rem; }
+    .resource__folders-caption {
+      margin-top: 5rem; } }
+
 @media screen and (max-width: 667px) {
   .intro {
-    top: 0; } }
+    top: 0; }
+  .heading-primary {
+    font-size: 4rem;
+    padding: 1rem 1rem; }
+  .resource__container {
+    font-size: 3rem; }
+  .resource__folders-caption {
+    margin-top: 4rem; } }
 
 @media screen and (max-width: 600px) {
   .timeline__start {
@@ -320,9 +339,25 @@ body {
     .resource__container {
       top: 27%; } }
 
+@media screen and (max-width: 414px) {
+  .heading-primary {
+    font-size: 5rem; }
+  .resource__container {
+    top: 45vh;
+    font-size: 4rem; } }
+
 @media screen and (max-width: 400px) {
   .intro__paragraph {
     width: 50vw; } }
+
+@media screen and (max-width: 375px) {
+  .heading-primary {
+    font-size: 5rem; }
+  .resource__container {
+    top: 35vh;
+    font-size: 5rem; }
+  .resource__folders-caption {
+    margin-top: 5rem; } }
 
 .intro__btn {
   margin-top: 2rem; }
@@ -841,6 +876,14 @@ body {
   .list-element:nth-child(even) div {
     left: 6vw; } }
 
+@media screen and (max-width: 736px) {
+  .timeline {
+    padding-top: 90vh; } }
+
+@media screen and (max-width: 667px) {
+  .timeline {
+    padding-top: 100vh; } }
+
 @media screen and (max-width: 600px) {
   .list-element {
     margin-left: 2.5rem; }
@@ -858,6 +901,14 @@ body {
       left: 4.5rem; }
       .list-element:nth-child(even) div::before {
         left: -1.6rem; } }
+
+@media screen and (max-width: 414px) {
+  .timeline {
+    padding-top: 55vh; } }
+
+@media screen and (max-width: 375px) {
+  .timeline {
+    padding-top: 40rem; } }
 
 .resource {
   height: 100vh;
