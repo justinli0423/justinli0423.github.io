@@ -94,8 +94,7 @@ body {
   -ms-user-select: none;
   /* Internet Explorer/Edge */
   user-select: none;
-  /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */ }
+  /* Non-prefixed version, currently supported by Chrome and Opera */ }
 
 .heading-primary {
   position: absolute;
@@ -806,10 +805,10 @@ body {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.8); }
   .list-element div:hover .list-element__text {
     transition: all .4s .15s;
-    filter: blur(2px); }
+    filter: blur(3px); }
   .list-element div:hover .list-element__title {
     transition: all .4s .15s;
-    filter: blur(2px); }
+    filter: blur(3px); }
   .list-element div:hover .list-element__caption {
     transition: all .4s;
     animation: shade-up .4s linear;
