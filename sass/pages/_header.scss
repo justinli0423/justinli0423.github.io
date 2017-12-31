@@ -9,25 +9,28 @@
 
 .header-position {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
+    top: 15%;
+    left: 41.5%;
+    animation: intro-right .7s 1s linear;
+    animation-fill-mode: forwards;
+    
 }
 
 .composition {
     margin: 0 auto;
-    padding: 6rem;
+    width: 100%;
+    // padding: 6rem;
     position: relative;
     &__shape {
         position: relative;
         z-index: 10000;
-        width: 35rem;
-        height: 35rem;
+        width: 45rem;
+        height: 45rem;
         float: left;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         overflow: hidden;
-        transform: translateX(-4rem);
+        transform: translateX(-5rem);
     }
     &__photo {
         height: 100%;
