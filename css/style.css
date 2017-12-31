@@ -112,11 +112,17 @@ body {
   box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5); }
 
 .intro {
-  text-align: center;
-  margin-left: -18.5vw;
+  border: 8px solid #455A64;
+  background-clip: padding-box;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 15%;
   font-weight: 100;
-  padding-top: 34rem; }
+  margin-top: 3.5rem;
+  padding: 2rem 5rem; }
   .intro__heading-primary {
+    padding-top: 2rem;
     font-weight: 500;
     color: #fff;
     font-size: 5.5rem;
@@ -124,9 +130,7 @@ body {
   .intro__paragraph {
     color: #eee;
     font-size: 1.5rem;
-    line-height: 3rem;
-    display: inline-block;
-    width: 20vw; }
+    line-height: 3rem; }
 
 .timeline__intro {
   position: relative;
@@ -240,19 +244,11 @@ body {
     line-height: 2.5rem;
     margin-bottom: 1rem; }
 
-@media screen and (max-width: 1300px) {
-  .intro {
-    margin-left: -8vw; } }
-
 @media screen and (max-width: 1225px) {
   .resource__container {
     top: 30%; } }
 
 @media screen and (max-width: 1150px) {
-  .intro {
-    margin-left: -5vw; }
-    .intro__paragraph {
-      width: 25vw; }
   .resource__container {
     top: 45%;
     font-size: 7rem;
@@ -277,15 +273,6 @@ body {
     width: 100%; } }
 
 @media screen and (max-width: 800px) {
-  .intro {
-    text-align: center;
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    top: 5.5rem;
-    left: 5vw; }
-    .intro__paragraph {
-      width: 35vw; }
   .list-element {
     font-size: 1.2rem; }
     .list-element__title {
@@ -304,8 +291,6 @@ body {
       margin-top: 5rem; } }
 
 @media screen and (max-width: 667px) {
-  .intro {
-    top: 0; }
   .heading-primary {
     font-size: 4rem;
     padding: 1rem 1rem; }
@@ -318,19 +303,13 @@ body {
   .timeline__start {
     position: absolute;
     margin: -12rem auto;
-    left: 2.9rem; }
-  .intro {
-    padding-top: 24rem; } }
+    left: 2.9rem; } }
 
 @media screen and (max-width: 528px) {
   .resource {
     min-height: 1300px; }
     .resource__container {
       top: 40%; } }
-
-@media screen and (max-width: 500px) {
-  .intro__paragraph {
-    width: 45vw; } }
 
 @media screen and (max-width: 451px) {
   .resource {
@@ -344,10 +323,6 @@ body {
   .resource__container {
     top: 45vh;
     font-size: 4rem; } }
-
-@media screen and (max-width: 400px) {
-  .intro__paragraph {
-    width: 50vw; } }
 
 @media screen and (max-width: 375px) {
   .heading-primary {
@@ -627,146 +602,31 @@ body {
   animation: gradient 30s ease infinite;
   background-size: cover; }
 
+.header-position {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%); }
+
 .composition {
+  margin: 0 auto;
+  padding: 6rem;
   position: relative; }
+  .composition__shape {
+    position: relative;
+    z-index: 10000;
+    width: 35rem;
+    height: 35rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    overflow: hidden;
+    transform: translateX(-4rem); }
   .composition__photo {
-    transform: translateY(6vh);
-    position: absolute;
-    width: 35%;
-    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
-    transition: all .3s;
-    outline-offset: 1.75rem;
-    border-radius: 4px;
-    z-index: 10; }
-    .composition__photo--me {
-      top: 26rem;
-      right: 9vw; }
-    .composition__photo--canyon {
-      top: 30.5rem;
-      right: 0; }
-    .composition__photo--badminton {
-      top: 36rem;
-      right: 7vw; }
-    .composition__photo:hover {
-      z-index: 20;
-      outline: 1rem solid #999;
-      transform: scale(1.1) translateY(3rem); }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95) translateY(5.5rem);
-    filter: blur(2px); }
-
-@media screen and (max-width: 1300px) {
-  .composition__photo {
-    margin-right: 8rem;
-    transform: translateY(8rem); }
-    .composition__photo--me {
-      top: 25rem;
-      right: 11vw; }
-    .composition__photo--canyon {
-      top: 30rem;
-      right: 0; }
-    .composition__photo--badminton {
-      top: 35rem;
-      right: 7vw; }
-    .composition__photo:hover {
-      z-index: 20;
-      outline: 1rem solid #999;
-      transform: scale(1.15) translateY(8rem);
-      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.7); }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.9) translateY(8.5rem);
-    filter: blur(2px); } }
-
-@media screen and (max-width: 1000px) {
-  .composition__photo {
-    margin-right: 8rem;
-    transform: translateY(10rem); }
-    .composition__photo:hover {
-      z-index: 20;
-      outline: 1rem solid #999;
-      transform: scale(1.15) translateY(11rem);
-      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.7); }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.9) translateY(13rem);
-    filter: blur(2px); } }
-
-@media screen and (max-width: 800px) {
-  .composition {
-    position: absolute;
-    display: inline-block;
-    top: 15rem;
-    left: 0;
-    width: 100%;
-    height: auto; }
-    .composition__photo {
-      margin: 0;
-      width: 25%; }
-      .composition__photo--me {
-        top: 8rem;
-        left: 50%;
-        transform: translateX(-50%);
-        border: 2px solid #f7f7f7;
-        border-radius: 50%; }
-      .composition__photo--canyon {
-        display: none; }
-      .composition__photo--badminton {
-        display: none; }
-      .composition__photo:hover {
-        outline: none;
-        transform: none;
-        box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.7);
-        transform: translateX(-50%); }
-    .composition:hover .composition__photo:not(:hover) {
-      transform: none;
-      filter: blur(0); } }
-
-@media screen and (max-width: 799px) {
-  .composition__photo--me {
-    top: 1rem; } }
-
-@media screen and (max-width: 667px) {
-  .composition {
-    top: 30vh; } }
-
-@media screen and (max-width: 612px) {
-  .composition {
-    top: 21vh; } }
-
-@media screen and (max-width: 600px) {
-  .intro {
-    padding-top: 30rem; }
-  .composition__photo--me {
-    top: 2rem; } }
-
-@media screen and (max-width: 595px) {
-  .composition__photo {
-    width: 30vw; } }
-
-@media screen and (max-width: 425px) {
-  .composition__photo {
-    width: 35%; }
-    .composition__photo--me {
-      top: 6rem; } }
-
-@media screen and (max-width: 414px) {
-  .composition {
-    top: 6vh; }
-  .intro {
-    padding-top: 30rem; } }
-
-@media screen and (max-width: 400px) {
-  .composition__photo {
-    width: 45%; } }
-
-@media screen and (max-width: 384px) {
-  .composition {
-    top: 5vh; } }
-
-@media screen and (max-width: 375px) {
-  .composition {
-    top: 6vh; }
-    .composition__photo--me {
-      width: 35%; } }
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid #607D8B;
+    filter: brightness(0.7) saturate(1.5); }
 
 .timeline {
   background: rgba(0, 0, 0, 0.5);
