@@ -14,12 +14,20 @@ html {
     /* Note: declare font-size as percentage for user friendliness */
     /* this is root declaration-allows REM to be used to allow responsive fonts
     browser have default 16px, so 10px is 62.5% of 16px */
+    @media screen and (max-width: 1200px) {
+        font-size: 56.25%;
+    }
+    @media screen and (max-width: 900px) {
+        font-size: 50%;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 40%;
+    }
 }
 
 body {
     box-sizing: border-box;
-    background: linear-gradient(45deg, rgba($color-black, .6), rgba($color-black, .8), rgba($color-black, .9)), url(../img/material-wb.png); 
-    // background: linear-gradient(45deg, rgba($color-black, .6), rgba($color-black, .8), rgba($color-black, .9)), url(../img/material-grey.png); 
+    background: linear-gradient(45deg, rgba($color-black, .6), rgba($color-black, .8), rgba($color-black, .9)), url(../img/material-wb.png); // background: linear-gradient(45deg, rgba($color-black, .6), rgba($color-black, .8), rgba($color-black, .9)), url(../img/material-grey.png); 
     background-attachment: fixed;
     background-size: cover;
 }

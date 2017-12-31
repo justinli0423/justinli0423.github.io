@@ -68,10 +68,12 @@
 
 @keyframes intro-right {
     from {
-        left: 41.5%;
+        left: 72.7%;
+        transform: translate(-50%, 0);
     }
     to {
-        left: 20%;
+        left: 50vw;
+        transform: translate(-50%, 0);
     }
 }
 

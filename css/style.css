@@ -13,6 +13,15 @@ html {
   /* Note: declare font-size as percentage for user friendliness */
   /* this is root declaration-allows REM to be used to allow responsive fonts
     browser have default 16px, so 10px is 62.5% of 16px */ }
+  @media screen and (max-width: 1200px) {
+    html {
+      font-size: 56.25%; } }
+  @media screen and (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 40%; } }
 
 body {
   box-sizing: border-box;
@@ -76,9 +85,11 @@ body {
 
 @keyframes intro-right {
   from {
-    left: 41.5%; }
+    left: 72.7%;
+    transform: translate(-50%, 0); }
   to {
-    left: 20%; } }
+    left: 50vw;
+    transform: translate(-50%, 0); } }
 
 @keyframes intro-left {
   from {
@@ -135,20 +146,18 @@ body {
   border-top-left-radius: 25%;
   border-bottom-left-radius: 25%;
   font-weight: 100;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
   padding: 3rem 5rem;
-  transform: translateY(4.5rem);
   animation: intro-left .7s 1.7s linear;
   animation-fill-mode: forwards; }
   .intro__heading-primary {
-    transform: translateX(0.5rem);
+    transform: translateX(-0.3rem);
     padding-top: 3rem;
     font-weight: 500;
     color: #fff;
     font-size: 5.5rem;
     padding-bottom: 4rem; }
   .intro__paragraph {
-    transform: translateX(-0.55rem);
     color: #eee;
     font-size: 1.5rem;
     line-height: 3rem; }
@@ -366,14 +375,14 @@ body {
   background-color: #1565C0;
   padding: 2rem 2.2rem;
   border-radius: 50%;
-  transform: translateX(-2.5rem);
+  transform: translateX(-1.5rem);
   transition: all .2s ease-in-out; }
 
 .btn:hover, .btn:active {
   background-color: #0D47A1; }
 
 .btn:not(:last-child) {
-  margin-right: 5vw; }
+  margin-right: 9vw; }
 
 .scroll-down {
   position: relative;
@@ -599,14 +608,21 @@ body {
   .navigation-top {
     display: inline-block;
     width: 100%;
-    text-align: center;
     float: left; }
     .navigation-top__link:link, .navigation-top__link:visited {
-      float: right;
       display: inline-block;
-      margin-right: 3rem; }
+      text-align: center;
+      margin-right: 9rem; }
     .navigation-top__name {
       display: none; } }
+
+@media screen and (max-width: 820px) {
+  .navigation-top__link:link, .navigation-top__link:visited {
+    margin-right: 8vw; } }
+
+@media screen and (max-width: 780px) {
+  .navigation-top__link:link, .navigation-top__link:visited {
+    margin-right: 7vw; } }
 
 @media screen and (max-width: 667px) {
   .navigation-top {
@@ -626,14 +642,17 @@ body {
 
 .header-position {
   position: absolute;
+  width: 70%;
   top: 15%;
-  left: 41.5%;
+  left: 72.7%;
+  transform: translate(-50%, 0);
   animation: intro-right .7s 1s linear;
   animation-fill-mode: forwards; }
 
 .composition {
   margin: 0 auto;
   width: 100%;
+  padding: 6rem;
   position: relative; }
   .composition__shape {
     position: relative;

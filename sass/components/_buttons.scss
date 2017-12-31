@@ -14,7 +14,7 @@
             background-color: $color-blue;
             padding: 2rem 2.2rem;
             border-radius: 50%;
-            transform: translateX(-2.5rem);
+            transform: translateX(-1.5rem);
             transition: all .2s ease-in-out;
         }
         &:hover,
@@ -22,7 +22,7 @@
             background-color: $color-blue-dark;
         }
         &:not(:last-child) {
-            margin-right: 5vw;
+            margin-right: 9vw;
         }
     }
 

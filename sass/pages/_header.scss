@@ -9,8 +9,10 @@
 
 .header-position {
     position: absolute;
+    width: 70%;
     top: 15%;
-    left: 41.5%;
+    left: 72.7%;
+    transform: translate(-50%, 0);
     animation: intro-right .7s 1s linear;
     animation-fill-mode: forwards;
     
@@ -19,7 +21,7 @@
 .composition {
     margin: 0 auto;
     width: 100%;
-    // padding: 6rem;
+    padding: 6rem;
     position: relative;
     &__shape {
         position: relative;
