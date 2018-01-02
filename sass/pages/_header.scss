@@ -112,6 +112,17 @@
     }
 }
 
+@media screen and (max-width: 1280px) {
+    .header-position {
+        left: 80vw;
+    }
+    .composition {
+        &__shape {
+            transform: translateX(-13rem) translateY(2.5rem);
+        }
+    }
+}
+
 @media screen and (max-width: 1188px) {
     .header-position {
         left: 80.5vw;
