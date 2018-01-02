@@ -79,6 +79,25 @@
 
 }
 
+@media screen and (max-width: 734px) {
+    .navigation-top {
+        &__link:link,
+        &__link:visited {
+            margin-right: 6.7vw;
+        }
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .navigation-top {
+        &__link:link,
+        &__link:visited {
+            margin-right: 5.7vw;
+        }
+    }
+}
+
+
 @media screen and (max-width: 667px) {
     .navigation-top {
         display: none;

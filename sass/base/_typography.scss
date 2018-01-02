@@ -21,14 +21,13 @@ body {
     /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
-
 .heading-primary {
     position: absolute;
     left: 50%;
     text-align: center;
     transform: translateX(-50%);
     font-size: 7.5rem;
-    line-height: 8rem;    
+    line-height: 8rem;
     margin-top: 9vh;
     padding: 5rem 2rem;
     font-weight: 200;
@@ -71,8 +70,7 @@ body {
     &__intro {
         position: relative;
         cursor: default;
-    }
-    // Arrow under the 'timeline' title, maybe use for later
+    } // Arrow under the 'timeline' title, maybe use for later
     // &::after {
     //     position: absolute;
     //     top: 100%;
@@ -219,8 +217,12 @@ body {
 }
 
 // MEDIA QUERIES
-@media screen and (max-width: 1300px) {
-
+@media screen and (max-width: 1274px) {
+    .intro {
+        width: 85vw;
+        padding: 3rem 2rem;
+        transform: translateX(-9rem) translateY(1rem);
+    }
 }
 
 @media screen and (max-width: 1225px) {
@@ -231,8 +233,19 @@ body {
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
+    .intro {
+        transform: translateX(-9rem) translateY(2.5vw);
+    }
+}
 
+@media screen and (max-width: 1163px) {
+    .intro {
+        transform: translateX(-9rem) translateY(1vw);
+    }
+}
+
+@media screen and (max-width: 1150px) {
     .resource {
         &__container {
             top: 45%;
@@ -259,10 +272,44 @@ body {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .intro {
+        transform: translateX(-9rem) translateY(2vw);
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .intro {
+        position: absolute;
+        top: 25rem;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%) translateY(0);
+        border: 0px;
+        border-radius: 6px;
+        animation: none;
+        background-color: transparent;
+        visibility: visible;
+        opacity: 1;
+        width: 35%;
+    }
+}
+
 @media screen and (max-width: 982px) {
     .popup {
         &__content {
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .intro {
+        &__heading-primary {
+            font-size: 5.5rem;
+        }
+        &__paragraph {
+            font-size: 1.7rem;
         }
     }
 }
@@ -285,14 +332,11 @@ body {
     }
 }
 
-
-
 @media screen and (max-width: 736px) {
     .heading-primary {
         font-size: 5rem;
         padding: 1rem 2rem;
     }
-
     .resource {
         min-height: 40rem !important;
         &__container {
@@ -307,13 +351,14 @@ body {
     }
 }
 
-
 @media screen and (max-width: 667px) {
     .heading-primary {
         font-size: 4rem;
         padding: 1rem 1rem;
     }
-
+    .intro {
+        top: 22rem;
+    }
     .resource {
         &__container {
             font-size: 3rem;
@@ -326,6 +371,11 @@ body {
     }
 }
 
+@media screen and (max-width: 639px) {
+    .intro {
+        width: 40%;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .timeline {
@@ -335,7 +385,6 @@ body {
             left: 2.9rem;
         }
     }
-
 }
 
 @media screen and (max-width: 528px) {
@@ -345,9 +394,6 @@ body {
             top: 40%;
         }
     }
-}
-
-@media screen and (max-width: 500px) {
 }
 
 @media screen and (max-width: 451px) {
@@ -364,6 +410,11 @@ body {
         font-size: 5rem;
     }
 
+    .intro {
+        width: 87%;
+        top: 25rem;
+    }
+
     .resource {
         &__container {
             top: 45vh;
@@ -372,20 +423,19 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
-}
-
 @media screen and (max-width: 375px) {
     .heading-primary {
         font-size: 5rem;
     }
-
+    .intro {
+        width: 70%;
+        top: 15rem;
+    }
     .resource {
         &__container {
             top: 35vh;
             font-size: 5rem;
         }
-
         &__folders {
             &-caption {
                 margin-top: 5rem;
