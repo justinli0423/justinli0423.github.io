@@ -144,7 +144,7 @@
 
 @media screen and (max-width: 667px){
     .timeline {
-        padding-top: 100vh;
+        padding-top: 35vh;
     }
 }
 
@@ -175,7 +175,13 @@
 
 @media screen and (max-width: 414px){
     .timeline {
-        padding-top: 55vh;
+        padding-top: 55rem;
+    }
+}
+
+@media screen and (max-width: 412px){
+    .timeline {
+        padding-top: 40rem;
     }
 }
 

@@ -1,14 +1,8 @@
-// $(document).scroll(function () {
-//   var y = $(this).scrollTop();
-//   var x = $(this).width();
-//   if (y > 70) {
-//     $('.navigation-toggle').fadeIn();
-//   } else {
-//     $('.navigation-toggle').fadeOut();
-//   }
+// Smooth Scrolling
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
 
-// });
-
-// $(document).ready(function () {
-//   $('.navigation-toggle').fadeOut();
-// });
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 800);
+});

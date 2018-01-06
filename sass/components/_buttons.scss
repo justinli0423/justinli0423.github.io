@@ -54,6 +54,16 @@
         }
     }
 
+    @media screen and (max-width: 1280px) {
+        .scroll-down {
+            &,
+            &:link,
+            &:visited {
+                top: 71rem;
+            }
+        }
+    }
+
     @media screen and (max-width: 1024px) {
         .btn {
             &:visited,
@@ -129,7 +139,7 @@
         .scroll-down {
             &:visited,
             &:link {
-                top: 90rem;
+                top: 95rem;
                 font-size: 5rem;
             }
         }
@@ -141,6 +151,24 @@
             &:link {
                 top: 100rem;
                 font-size: 5rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 85rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 90rem;
             }
         }
     }

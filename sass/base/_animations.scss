@@ -106,11 +106,11 @@
     @media screen and (max-width:1280px) {
         @keyframes intro-right {
             from {
-                left: 78vw;
+                left: 73vw;
                 transform: translate(-50%, 0);
             }
             to {
-                left: 55vw;
+                left: 50vw;
                 transform: translate(-50%, 0);
             }
         }
@@ -120,6 +120,19 @@
         @keyframes intro-right {
             from {
                 left: 78vw;
+                transform: translate(-50%, 0);
+            }
+            to {
+                left: 52vw;
+                transform: translate(-50%, 0);
+            }
+        }
+    }
+
+    @media screen and (max-width:1188px) {
+        @keyframes intro-right {
+            from {
+                left: 78.5vw;
                 transform: translate(-50%, 0);
             }
             to {
