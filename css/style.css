@@ -513,7 +513,7 @@ body {
   transition: all .7s; }
   .scroll-down:link, .scroll-down:visited {
     position: absolute;
-    top: 87vh;
+    top: 90%;
     left: 50%;
     text-decoration: none;
     transform: translate(-50%, -50%);
