@@ -142,11 +142,31 @@
     }
 }
 
+@media screen and (max-width: 736px) and (orientation: landscape) {
+    .timeline {
+        padding-top: 85vh;
+    }
+}
+
+
+@media screen and (max-width: 736px) and (orientation: portrait) {
+    .timeline {
+        padding-top: 30vh;
+    }
+}
+
 @media screen and (max-width: 667px){
     .timeline {
         padding-top: 35vh;
     }
 }
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+    .timeline {
+        padding-top: 70vh;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     .list-element {
@@ -173,9 +193,15 @@
     }
 }
 
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    .timeline {
+        padding-top: 85vh;
+    }
+}
+
 @media screen and (max-width: 414px){
     .timeline {
-        padding-top: 55rem;
+        padding-top: 45vh;
     }
 }
 

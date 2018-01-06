@@ -54,6 +54,17 @@
         }
     }
 
+    @media screen and (max-width: 1400px) and (orientation: landscape) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 70rem;
+            }
+        }
+    }
+
+
+
     @media screen and (max-width: 1280px) {
         .scroll-down {
             &,
@@ -64,12 +75,39 @@
         }
     }
 
+    @media screen and (max-width: 1280px) and (orientation: landscape) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 67rem;
+            }
+        }
+    }
+
     @media screen and (max-width: 1024px) {
         .btn {
             &:visited,
             &:link {
                 font-size: 2.5rem;
                 padding: 2rem 2.2rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 125rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 80rem;
             }
         }
     }
@@ -109,6 +147,17 @@
         }
     }
 
+
+    @media screen and (max-width: 800px) and (orientation: portrait) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 105rem;
+            }
+        }
+    }
+
+
     @media screen and (max-width: 768px) {
         .scroll-down {
             &:visited,
@@ -118,6 +167,25 @@
         }
     }
 
+    @media screen and (max-width: 768px) and (orientation: portrait) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 120rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 736px) and (orientation: landscape) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 94rem;
+            }
+        }
+    }
+    
+
     @media screen and (max-width: 668px) {
         .btn {
             &:not(:last-child) {
@@ -125,6 +193,16 @@
             }
         }
     }
+
+    @media screen and (max-width: 667px) and (orientation: landscape) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 95rem;
+            }
+        }
+    }
+
 
     @media screen and (max-width: 640px) {
         .btn {
@@ -135,6 +213,33 @@
         }
     }
 
+    @media screen and (max-width: 600px) and (orientation: portrait) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 100rem;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 568px) and (orientation: landscape) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 95rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) and (orientation: landscape) {
+        .scroll-down {
+            &:visited,
+            &:link {
+                top: 92rem;
+            }
+        }
+    }
     @media screen and (max-width: 400px) {
         .scroll-down {
             &:visited,

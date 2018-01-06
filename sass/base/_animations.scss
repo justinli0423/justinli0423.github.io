@@ -142,6 +142,20 @@
         }
     }
 
+    @media screen and (max-width:1024px) {
+        @keyframes intro-right {
+            from {
+                left: 76vw;
+                transform: translate(-50%, 0);
+            }
+            to {
+                left: 50vw;
+                transform: translate(-50%, 0);
+            }
+        }
+    }
+
+
     @keyframes intro-left {
         from {
             visibility: hidden;

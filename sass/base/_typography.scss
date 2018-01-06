@@ -407,6 +407,8 @@ body {
     }
 }
 
+
+
 @media screen and (max-width: 528px) {
     .resource {
         min-height: 1300px;
@@ -415,6 +417,17 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 480px) and (orientation: landscape) {
+    .intro {
+        width: 60%;
+        &__heading-primary {
+            font-size: 4.5rem;
+        }
+    }
+}
+
+
 
 @media screen and (max-width: 451px) {
     .resource {

@@ -133,6 +133,15 @@ body {
       left: 52vw;
       transform: translate(-50%, 0); } } }
 
+@media screen and (max-width: 1024px) {
+  @keyframes intro-right {
+    from {
+      left: 76vw;
+      transform: translate(-50%, 0); }
+    to {
+      left: 50vw;
+      transform: translate(-50%, 0); } } }
+
 @keyframes intro-left {
   from {
     visibility: hidden;
@@ -440,6 +449,12 @@ body {
     .resource__container {
       top: 40%; } }
 
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  .intro {
+    width: 60%; }
+    .intro__heading-primary {
+      font-size: 4.5rem; } }
+
 @media screen and (max-width: 451px) {
   .resource {
     min-height: 1300px; }
@@ -516,14 +531,30 @@ body {
     opacity: 1;
     border: none; }
 
+@media screen and (max-width: 1400px) and (orientation: landscape) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 70rem; } }
+
 @media screen and (max-width: 1280px) {
   .scroll-down, .scroll-down:link, .scroll-down:visited {
     top: 71rem; } }
+
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 67rem; } }
 
 @media screen and (max-width: 1024px) {
   .btn:visited, .btn:link {
     font-size: 2.5rem;
     padding: 2rem 2.2rem; } }
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 125rem; } }
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 80rem; } }
 
 @media screen and (max-width: 993px) {
   .btn:not(:last-child) {
@@ -540,18 +571,46 @@ body {
   .scroll-down:visited, .scroll-down:link {
     top: 95rem; } }
 
+@media screen and (max-width: 800px) and (orientation: portrait) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 105rem; } }
+
 @media screen and (max-width: 768px) {
   .scroll-down:visited, .scroll-down:link {
     top: 100rem; } }
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 120rem; } }
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 94rem; } }
 
 @media screen and (max-width: 668px) {
   .btn:not(:last-child) {
     margin-right: 6vw; } }
 
+@media screen and (max-width: 667px) and (orientation: landscape) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 95rem; } }
+
 @media screen and (max-width: 640px) {
   .btn:not(:last-child) {
     margin-left: 3.5rem;
     margin-right: 4vw; } }
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 100rem; } }
+
+@media screen and (max-width: 568px) and (orientation: landscape) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 95rem; } }
+
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  .scroll-down:visited, .scroll-down:link {
+    top: 92rem; } }
 
 @media screen and (max-width: 400px) {
   .scroll-down:visited, .scroll-down:link {
@@ -868,6 +927,10 @@ body {
   .header-position {
     left: 80vw; } }
 
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .header-position {
+    left: 76vw; } }
+
 @media screen and (max-width: 993px) {
   .header-position {
     animation: none;
@@ -883,6 +946,10 @@ body {
     animation: none;
     width: 25vw;
     height: 25vw; } }
+
+@media screen and (max-width: 960px) and (orientation: landscape) {
+  .header {
+    min-height: 100rem; } }
 
 @media screen and (max-width: 900px) {
   .header-position {
@@ -902,6 +969,10 @@ body {
   .composition__shape {
     width: 30vw;
     height: 30vw; } }
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  .header {
+    min-height: 110rem; } }
 
 @media screen and (max-width: 707px) {
   .composition__shape {
@@ -1041,9 +1112,21 @@ body {
   .timeline {
     padding-top: 90vh; } }
 
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  .timeline {
+    padding-top: 85vh; } }
+
+@media screen and (max-width: 736px) and (orientation: portrait) {
+  .timeline {
+    padding-top: 30vh; } }
+
 @media screen and (max-width: 667px) {
   .timeline {
     padding-top: 35vh; } }
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+  .timeline {
+    padding-top: 70vh; } }
 
 @media screen and (max-width: 600px) {
   .list-element {
@@ -1063,9 +1146,13 @@ body {
       .list-element:nth-child(even) div::before {
         left: -1.6rem; } }
 
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  .timeline {
+    padding-top: 85vh; } }
+
 @media screen and (max-width: 414px) {
   .timeline {
-    padding-top: 55rem; } }
+    padding-top: 45vh; } }
 
 @media screen and (max-width: 412px) {
   .timeline {
