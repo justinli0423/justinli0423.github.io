@@ -132,45 +132,40 @@ body {
   .heading-primary {
     font-size: 5rem; } }
 
-.intro__btn {
-  margin-top: 1.5rem; }
-
-.btn, .btn:visited, .btn:link {
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 4rem;
-  color: #fff;
-  background-color: #1565C0;
-  padding: 2rem 2.2rem;
-  border-radius: 50%;
-  transform: translateX(-1.5rem);
-  transition: all .2s ease-in-out; }
-
-.btn:hover, .btn:active {
-  background-color: #0D47A1; }
-
-.btn:not(:last-child) {
-  margin-right: 9vw; }
-
-@media screen and (max-width: 1024px) {
-  .btn:visited, .btn:link {
-    font-size: 2.5rem;
-    padding: 2rem 2.2rem; } }
-
-@media screen and (max-width: 993px) {
-  .btn:not(:last-child) {
-    margin-left: 3.5rem;
-    margin-right: 9vw; } }
-
-@media screen and (max-width: 668px) {
-  .btn:not(:last-child) {
-    margin-right: 6vw; } }
-
-@media screen and (max-width: 640px) {
-  .btn:not(:last-child) {
-    margin-left: 3.5rem;
-    margin-right: 4vw; } }
+.btn {
+  font-family: 'Amatic SC', cursive;
+  margin: auto;
+  width: 20rem;
+  height: 10rem;
+  transform: translateY(100%);
+  transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 3);
+  transform-style: preserve-3d; }
+  .btn__challenge-me {
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 3rem;
+    text-decoration: none;
+    background-color: #455A64;
+    border: none;
+    line-height: 5rem;
+    height: 5rem; }
+  .btn::before, .btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform-origin: 50% 0 0;
+    transform: rotateX(-90deg);
+    width: 100%; }
+  .btn::before {
+    background-color: #607D8B;
+    height: calc(5rem/3); }
+  .btn::after {
+    background-color: #303f46;
+    height: calc(5rem/3); }
+  .btn:hover {
+    transform: rotateX(20deg) translateY(100%);
+    transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 3); }
 
 .popup {
   height: 100vh;
@@ -668,7 +663,7 @@ body {
   text-align: center;
   display: inline-block;
   margin: 2rem 2rem;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.4);
   text-decoration: none;
   width: 20rem;
   height: 16rem;
