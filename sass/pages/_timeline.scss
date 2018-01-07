@@ -7,12 +7,68 @@
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;
+    &__intro {
+        position: relative;
+        cursor: default;
+    }
+    &__start {
+        position: absolute;
+        margin: -12rem auto;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10000;
+        text-align: center;
+        font-size: 7rem;
+        color: $color-blue-grey-dark;
+    }
     & div ul {
         padding: 50px 0;
     }
 }
 
 .list-element {
+    list-style: none;
+    position: relative;
+    width: .8rem;
+    margin: -16rem auto;
+    padding-top: 17rem;
+    background: $color-grey-dark;
+    font-weight: 400;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    color: $color-grey-light-2;
+    &:first-child {
+        padding-top: 2rem;
+    }
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 300;
+        line-height: 3rem;
+        padding-bottom: .5rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid rgba($color-blue-grey, .7);
+    }
+    &__text {
+        line-height: 2.3rem;
+    }
+    &__caption {
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        border-radius: 0 0 .5rem .5rem;
+        padding-top: 1em;
+        color: transparent;
+        text-decoration: none;
+        &-cross {
+            text-decoration: line-through;
+        }
+    }
+    &:hover &__caption {
+        color: $color-blue-light;
+    }
     &::after {
         // Black circles
         content: "";
@@ -124,6 +180,15 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .list-element {
+        font-size: 1.2rem;
+        &__title {
+            font-size: 1.5rem;
+        }
+    }
+}
+
 @media screen and (max-width: 750px) {
     .list-element {
         &:nth-child(odd) div {
@@ -135,8 +200,7 @@
     }
 }
 
-
-@media screen and (max-width: 736px){
+@media screen and (max-width: 736px) {
     .timeline {
         padding-top: 90vh;
     }
@@ -148,14 +212,13 @@
     }
 }
 
-
 @media screen and (max-width: 736px) and (orientation: portrait) {
     .timeline {
         padding-top: 30vh;
     }
 }
 
-@media screen and (max-width: 667px){
+@media screen and (max-width: 667px) {
     .timeline {
         padding-top: 35vh;
     }
@@ -167,13 +230,19 @@
     }
 }
 
-
 @media screen and (max-width: 600px) {
+    .timeline {
+        &__start {
+            position: absolute;
+            margin: -12rem auto;
+            left: 2.9rem;
+        }
+    }
     .list-element {
         margin-left: 2.5rem;
         & div {
             width: calc(100vw - 9.5rem);
-            transform: translate3d(0,0,0) !important;
+            transform: translate3d(0, 0, 0) !important;
         }
         &:nth-child(odd) div {
             animation: slide-in .5s ease-in-out;
@@ -199,20 +268,19 @@
     }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
     .timeline {
         padding-top: 45vh;
     }
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 412px) {
     .timeline {
         padding-top: 40rem;
     }
 }
 
-
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
     .timeline {
         padding-top: 40rem;
     }

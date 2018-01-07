@@ -24,9 +24,10 @@ html {
 
 body {
     box-sizing: border-box;
-    background: linear-gradient(45deg, rgba($color-black, .6), rgba($color-black, .8), rgba($color-black, .9)), url(../img/material-wb.png); // background: linear-gradient(45deg, rgba($color-black, .6), rgba($color-black, .8), rgba($color-black, .9)), url(../img/material-grey.png); 
+    background: linear-gradient(45deg, rgba($color-black, .4), rgba($color-black, .6), rgba($color-black, .6)), url(../img/dark-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
+    filter: brightness(120%);
 }
 
 html,

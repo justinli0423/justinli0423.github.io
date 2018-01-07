@@ -5,16 +5,16 @@
     font-size: 1.9rem;
     display: inline-block;
     width: 100%;
-    border-bottom: 1px solid $color-grey-dark;
+    border-bottom: 2px solid $color-orange-dark;
     background-color: rgba($color-black, .5);
     a {
         &:first-child {
             text-align: left;
-            margin-top: 2rem;
-            float: left;
+            position: absolute;
+            top: 50%;
+            left: 2rem;
+            transform: translate(-50%, -50%);
             padding-left: 2rem;
-            margin-right: 8rem;
-            text-transform: capitalize;
             font-size: 3rem;
             font-weight: 300;
         }
