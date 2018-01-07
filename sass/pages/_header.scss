@@ -1,7 +1,6 @@
 .header {
     font-family: 'Amatic SC', cursive;
-    min-height: 100vh;
-    height: 100%;
+    height: 100vh;
     position: relative;
     background-attachment: fixed;
     background-size: cover;
@@ -38,5 +37,11 @@
         color: $color-orange-light;
         font-size: 3rem;
         line-height: 3rem;
+        @include media(500px) {
+            width: 35vw;
+        }
+        @include media(420px) {
+            width: 40vw;
+        }
     }
 }
