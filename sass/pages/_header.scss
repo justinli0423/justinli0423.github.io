@@ -20,6 +20,10 @@
         width: 100%;
         object-fit: cover;
     }
+
+    @include media(668px){
+        display: none;
+    }
 }
 
 .intro {
