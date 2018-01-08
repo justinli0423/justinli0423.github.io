@@ -214,13 +214,13 @@
 
 @media screen and (max-width: 736px) and (orientation: portrait) {
     .timeline {
-        padding-top: 30vh;
+        padding-top: 40rem;
     }
 }
 
 @media screen and (max-width: 667px) {
     .timeline {
-        padding-top: 35vh;
+        padding-top: 40rem;
     }
 }
 
@@ -264,7 +264,7 @@
 
 @media screen and (max-width: 600px) and (orientation: landscape) {
     .timeline {
-        padding-top: 85vh;
+        padding-top: 35rem;
     }
 }
 
@@ -275,12 +275,6 @@
 }
 
 @media screen and (max-width: 412px) {
-    .timeline {
-        padding-top: 40rem;
-    }
-}
-
-@media screen and (max-width: 375px) {
     .timeline {
         padding-top: 40rem;
     }

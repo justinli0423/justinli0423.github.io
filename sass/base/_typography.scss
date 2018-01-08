@@ -39,18 +39,9 @@ body {
 
 @media screen and (max-width: 736px) {
     .heading-primary {
-        font-size: 5rem;
-        padding: 1rem 2rem;
+        padding: 2rem 2rem;
     }
 }
-
-@media screen and (max-width: 667px) {
-    .heading-primary {
-        font-size: 4rem;
-        padding: 1rem 1rem;
-    }
-}
-
 @media screen and (max-width: 414px) {
     .heading-primary {
         font-size: 5rem;

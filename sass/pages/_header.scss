@@ -1,10 +1,19 @@
 .header {
     font-family: 'Amatic SC', cursive;
     height: 100vh;
+    min-height: 80rem;
     position: relative;
     background-attachment: fixed;
     background-size: cover;
 }
+
+// .breakout {
+//     @include absCenter;    
+//     top: 25%;
+//     background-color: #eee;
+//     display: block;
+//     margin: 0 auto;
+// }
 
 .me {
     display: none;

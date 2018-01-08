@@ -18,9 +18,9 @@
 
 <body>
     <div class="navigation-top">
-        <a class="navigation-top__name">
+        <span class="navigation-top__name">
             <i class="fa fa-user" aria-hidden="true"></i>
-        </a>
+        </span>
         <a href="https://www.linkedin.com/in/jli0423/" target="_blank" class="navigation-top__link">
             <i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
         <a href="https://github.com/Jli0423" target="_blank" class="navigation-top__link">
@@ -58,299 +58,302 @@
             </li>
         </ul>
     </nav>
-    <header class="header">
-        <div class="video">
-            <video class="video__container" autoplay loop>
-                <source src="img/Love-Coding.mp4" type="video/mp4">
-                <source src="img/Love-Coding.webm" type="video/mp4">
-            </video>
-        </div>
-        <div class="intro">
-            <div class="me">
-                <img src="img/grand-canyon.jpg" alt="ME" class="me__picture">
+    <main>
+        <header class="header">
+            <div class="video">
+                <video class="video__container" autoplay loop>
+                    <source src="img/Love-Coding.mp4" type="video/mp4">
+                    <source src="img/Love-Coding.webm" type="video/mp4">
+                </video>
             </div>
-            <h1 class="intro__heading-primary">
-                Justin Li
+            <!-- <div class="breakout">
+                        <canvas id="myCanvas" width="480" height="320"></canvas>
+                    </div> -->
+            <div class="intro">
+                <div class="me">
+                    <img src="img/grand-canyon.jpg" alt="ME" class="me__picture">
+                </div>
+                <h1 class="intro__heading-primary">
+                    Justin Li
+                </h1>
+                <p class="intro__paragraph">
+                    Aspiring me_n stack and web developer. Badminton fanatic. Bubbletea addict.
+                </p>
+                <div class="btn">
+                    <a href="#timeline" class="btn__challenge-me">Projects</a>
+                </div>
+            </div>
+        </header>
+        <div class="timeline__intro">
+            <h1 class="heading-primary">
+                Timeline
             </h1>
-            <p class="intro__paragraph">
-                Aspiring me_n stack and web Developer. Badminton fanatic. Pong master.
-            </p>
-            <div class="btn">
-                <a href="#/" class="btn__challenge-me">Challenge me!</a>
-            </div>
-            <div class="btn btn__mobile">
-                <a href="#timeline" class="btn__challenge-me btn__challenge-me--mobile">Timeline</a>
-            </div>
         </div>
-    </header>
-    <div class="timeline__intro">
-        <h1 class="heading-primary">
-            Timeline
-        </h1>
-    </div>
-    <section class="timeline" id="timeline">
-        <div>
-            <div class="timeline__start">
-                &#9673;
+        <section class="timeline" id="timeline">
+            <div>
+                <div class="timeline__start">
+                    &#9673;
+                </div>
+                <ul>
+                    <li class="list-element">
+                        <div>
+                            <h3 class="list-element__title">OG Portfolio - V2</h3>
+                            <span class="list-element__text">
+                                Took some time off making projects and learned more css/scss along with some responsive design (Since bootstrap pretty much
+                                does all the responsiveness for you). I realized every bootstrap-created website looks the
+                                same so I wanted to change it up a bit.
+                            </span>
+                            <a href="https://github.com/Jli0423/Jli0423.github.io" target="_blank" class="list-element__caption">Git &rArr;</a>
+                        </div>
+                    </li>
+                    <li class="list-element">
+                        <div>
+                            <h3 class="list-element__title">Student Certification Automation</h3>
+                            <span class="list-element__text">
+                                Using Selenium drivers along with the database I created as my first project, I was able to automate the process of autenticating
+                                students that met the requirements of the Ministry of Transportation. This application is
+                                still being used on the daily, and since this contains some private information, the repo
+                                for this project is private, sorry!
+                            </span>
+                            <a class="list-element__caption list-element__caption-cross">Git &rArr;</a>
+                        </div>
+                    </li>
+                    <li class="list-element">
+                        <div>
+                            <h3 class="list-element__title">CDA Official Website</h3>
+                            <span class="list-element__text">
+                                Probably one of my biggest projects to date. Combining frontend and backend tech to create Canadian Driving Academy's official
+                                website, with user-friendly admin management sessions using NPM's passport dependency and
+                                MongoLab. Looking back, I definitely didn't understand the frontend as much as I thought
+                                I did, and I didn't make it responsive either, so the frontend of this project will be completely
+                                revamped in the near future (whenever I have time).
+                            </span>
+                            <a href="https://github.com/Jli0423/CDA-Web" target="_blank" class="list-element__caption">Git &rArr;</a>
+                        </div>
+                    </li>
+                    <li class="list-element">
+                        <div>
+                            <h3 class="list-element__title">OG Portfolio</h3>
+                            <span class="list-element__text">
+                                First attempt of a mobile-first, responsive design personal portfolio after learning bootstrap. At this point I didn't have
+                                much to put in a portfolio (and still don't) but I thought it was pretty neat to have a personal
+                                website since everyone around me either had a website or a blog.
+                            </span>
+                            <a href="https://github.com/Jli0423/Jli0423.github.io----old" target="_blank" class="list-element__caption">Git &rArr;</a>
+                        </div>
+                    </li>
+                    <li class="list-element">
+                        <div>
+                            <h3 class="list-element__title">Text Me Maybe</h3>
+                            <span class="list-element__text">
+                                After sometime investigating Node's NPM ecosystem, I found out about Socket.io. Used Socket.io along with Moment and Express
+                                to create a small real time online messaging application with private chat rooms and location
+                                display.
+                            </span>
+                            <a href="https://github.com/Jli0423/Chat-App" target="_blank" class="list-element__caption">Git &rArr;</a>
+                        </div>
+                    </li>
+                    <li class="list-element">
+                        <div>
+                            <h3 class="list-element__title">CDA Database</h3>
+                            <span class="list-element__text">
+                                First real project after learning Node JS along with MongoDB. This started out as a practice project and later got turned
+                                into a real world application that I still use on the daily. Now it is being used by the
+                                Canadian Driving Academy for student data storage.
+                            </span>
+                            <a href="https://github.com/Jli0423/CDA-Database" target="_blank" class="list-element__caption">Git &rArr;</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li class="list-element">
-                    <div>
-                        <h3 class="list-element__title">OG Portfolio - V2</h3>
-                        <span class="list-element__text">
-                            Took some time off making projects and learned more css/scss along with some responsive design (Since bootstrap pretty much
-                            does all the responsiveness for you). I realized every bootstrap-created website looks the same
-                            so I wanted to change it up a bit.
-                        </span>
-                        <a href="https://github.com/Jli0423/Jli0423.github.io" target="_blank" class="list-element__caption">Git &rArr;</a>
-                    </div>
-                </li>
-                <li class="list-element">
-                    <div>
-                        <h3 class="list-element__title">Student Certification Automation</h3>
-                        <span class="list-element__text">
-                            Using Selenium drivers along with the database I created as my first project, I was able to automate the process of autenticating
-                            students that met the requirements of the Ministry of Transportation. This application is still
-                            being used on the daily, and since this contains some private information, the repo for this
-                            project is private, sorry!
-                        </span>
-                        <a class="list-element__caption list-element__caption-cross">Git &rArr;</a>
-                    </div>
-                </li>
-                <li class="list-element">
-                    <div>
-                        <h3 class="list-element__title">CDA Official Website</h3>
-                        <span class="list-element__text">
-                            Probably one of my biggest projects to date. Combining frontend and backend tech to create Canadian Driving Academy's official
-                            website, with user-friendly admin management sessions using NPM's passport dependency and MongoLab.
-                            Looking back, I definitely didn't understand the frontend as much as I thought I did, and I didn't
-                            make it responsive either, so the frontend of this project will be completely revamped in the
-                            near future (whenever I have time).
-                        </span>
-                        <a href="https://github.com/Jli0423/CDA-Web" target="_blank" class="list-element__caption">Git &rArr;</a>
-                    </div>
-                </li>
-                <li class="list-element">
-                    <div>
-                        <h3 class="list-element__title">OG Portfolio</h3>
-                        <span class="list-element__text">
-                            First attempt of a mobile-first, responsive design personal portfolio after learning bootstrap. At this point I didn't have
-                            much to put in a portfolio (and still don't) but I thought it was pretty neat to have a personal
-                            website since everyone around me either had a website or a blog.
-                        </span>
-                        <a href="https://github.com/Jli0423/Jli0423.github.io----old" target="_blank" class="list-element__caption">Git &rArr;</a>
-                    </div>
-                </li>
-                <li class="list-element">
-                    <div>
-                        <h3 class="list-element__title">Text Me Maybe</h3>
-                        <span class="list-element__text">
-                            After sometime investigating Node's NPM ecosystem, I found out about Socket.io. Used Socket.io along with Moment and Express
-                            to create a small real time online messaging application with private chat rooms and location
-                            display.
-                        </span>
-                        <a href="https://github.com/Jli0423/Chat-App" target="_blank" class="list-element__caption">Git &rArr;</a>
-                    </div>
-                </li>
-                <li class="list-element">
-                    <div>
-                        <h3 class="list-element__title">CDA Database</h3>
-                        <span class="list-element__text">
-                            First real project after learning Node JS along with MongoDB. This started out as a practice project and later got turned
-                            into a real world application that I still use on the daily. Now it is being used by the Canadian
-                            Driving Academy for student data storage.
-                        </span>
-                        <a href="https://github.com/Jli0423/CDA-Database" target="_blank" class="list-element__caption">Git &rArr;</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="resource" id="projects">
-        <h1 class="resource__heading-primary heading-primary">
-            Other Projects
-        </h1>
+        </section>
+        <section class="resource" id="projects">
+            <h1 class="resource__heading-primary heading-primary">
+                Other Projects
+            </h1>
 
-        <div class="resource__container" id="resource">
-            <div class="resource__folders">
-                <a href="#popup-1" class="fa-stack fa-lg resource__icon-stack">
-                    <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
-                    <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
-                    <p class="resource__folders-caption">HTML/CSS</p>
+            <div class="resource__container" id="resource">
+                <div class="resource__folders">
+                    <a href="#popup-1" class="fa-stack fa-lg resource__icon-stack">
+                        <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
+                        <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
+                        <p class="resource__folders-caption">HTML/CSS</p>
+                    </a>
+                </div>
+                <div class="resource__folders">
+                    <a href="#popup-2" class="fa-stack fa-lg resource__icon-stack">
+                        <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
+                        <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
+                        <p class="resource__folders-caption">Javascript</p>
+                    </a>
+                </div>
+                <div class="resource__folders">
+                    <a href="#popup-3" class="fa-stack fa-lg resource__icon-stack">
+                        <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
+                        <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
+                        <p class="resource__folders-caption">Node Js</p>
+                    </a>
+                </div>
+                <div class="resource__folders">
+                    <a href="#popup-4" class="fa-stack fa-lg resource__icon-stack">
+                        <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
+                        <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
+                        <p class="resource__folders-caption">Others</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- pop up from folder -->
+        <div class="popup" id="popup-1">
+            <div class="popup__content">
+                <a target="_blank" href="https://github.com/Jli0423/Jli0423.github.io" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Current Website</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/Jli0423.github.io----old" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Website v1</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/Website-Template" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Bootstrap Template</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/Site-v2---template" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Scss/Sass Template</p>
+                    </div>
                 </a>
             </div>
-            <div class="resource__folders">
-                <a href="#popup-2" class="fa-stack fa-lg resource__icon-stack">
-                    <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
-                    <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
-                    <p class="resource__folders-caption">Javascript</p>
+            <a href="#resource" class="popup__close"></a>
+        </div>
+        <div class="popup" id="popup-2">
+            <div class="popup__content">
+                <a target="_blank" href="https://github.com/Jli0423/MiniBreakout" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Mini Breakout</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/Tanks.io" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Tanks.io</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/CountDownClock" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Countdown Clock</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/Music-Master" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Music Master (React JS)</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/JS-Practice-Project" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Dice Roller</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/Budget-Calc" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Budget Calculator</p>
+                    </div>
                 </a>
             </div>
-            <div class="resource__folders">
-                <a href="#popup-3" class="fa-stack fa-lg resource__icon-stack">
-                    <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
-                    <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
-                    <p class="resource__folders-caption">Node Js</p>
+            <a href="#resource" class="popup__close"></a>
+        </div>
+        <div class="popup" id="popup-3">
+            <div class="popup__content">
+                <a target="_blank" href="https://github.com/Jli0423/Chat-App" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Text Me Maybe</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://github.com/Jli0423/CDA-Web" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">CDA Site</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://github.com/Jli0423/CDA-Database" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">CDA Database</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://github.com/Jli0423/Web-Server" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Web Server</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/Database-Base" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Mongo Database</p>
+                    </div>
                 </a>
             </div>
-            <div class="resource__folders">
-                <a href="#popup-4" class="fa-stack fa-lg resource__icon-stack">
-                    <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
-                    <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
-                    <p class="resource__folders-caption">Others</p>
+            <a href="#resource" class="popup__close"></a>
+        </div>
+        <div class="popup" id="popup-4">
+            <div class="popup__content">
+                <a target="_blank" href="https://github.com/Jli0423/CashFlow101" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Cashflow 101
+                            <br>&nbsp;</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/LeetSol" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Leet Code Solutions</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/Machine-Learning" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Machine Learning</p>
+                    </div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Jli0423/Connect-4" class="popup__files">
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <p class="popup__files-caption">Connect Four</p>
+                    </div>
                 </a>
             </div>
+            <a href="#resource" class="popup__close"></a>
         </div>
-    </section>
-    <!-- pop up from folder -->
-    <div class="popup" id="popup-1">
-        <div class="popup__content">
+    </main>
+    <!-- <script type="text/javascript" src="js/breakout.js"></script>
 
-            <a target="_blank" href="https://github.com/Jli0423/Jli0423.github.io" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Current Website</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/Jli0423.github.io----old" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Website v1</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/Website-Template" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Bootstrap Template</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/Site-v2---template" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Scss/Sass Template</p>
-                </div>
-            </a>
-        </div>
-        <a href="#resource" class="popup__close"></a>
-    </div>
-    <div class="popup" id="popup-2">
-        <div class="popup__content">
-            <a target="_blank" href="https://github.com/Jli0423/MiniBreakout" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Mini Breakout</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/Tanks.io" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Tanks.io</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/CountDownClock" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Countdown Clock</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/Music-Master" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Music Master (React JS)</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/JS-Practice-Project" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Dice Roller</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/Budget-Calc" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Budget Calculator</p>
-                </div>
-            </a>
-        </div>
-        <a href="#resource" class="popup__close"></a>
-    </div>
-    <div class="popup" id="popup-3">
-        <div class="popup__content">
-            <a target="_blank" href="https://github.com/Jli0423/Chat-App" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Text Me Maybe</p>
-                </div>
-            </a>
-            <a target="_blank" href="https://github.com/Jli0423/CDA-Web" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">CDA Site</p>
-                </div>
-            </a>
-            <a target="_blank" href="https://github.com/Jli0423/CDA-Database" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">CDA Database</p>
-                </div>
-            </a>
-            <a target="_blank" href="https://github.com/Jli0423/Web-Server" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Web Server</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/Database-Base" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Mongo Database</p>
-                </div>
-            </a>
-        </div>
-        <a href="#resource" class="popup__close"></a>
-    </div>
-    <div class="popup" id="popup-4">
-        <div class="popup__content">
-            <a target="_blank" href="https://github.com/Jli0423/CashFlow101" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Cashflow 101
-                        <br>&nbsp;</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/LeetSol" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Leet Code Solutions</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/Machine-Learning" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Machine Learning</p>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/Jli0423/Connect-4" class="popup__files">
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <p class="popup__files-caption">Connect Four</p>
-                </div>
-            </a>
-        </div>
-        <a href="#resource" class="popup__close"></a>
-    </div>
 </body>
 
 </html>

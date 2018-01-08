@@ -7,17 +7,15 @@
     width: 100%;
     border-bottom: 2px solid $color-orange-dark;
     background-color: rgba($color-black, .5);
-    a {
-        &:first-child {
-            text-align: left;
-            position: absolute;
-            top: 50%;
-            left: 2rem;
-            transform: translate(-50%, -50%);
-            padding-left: 2rem;
-            font-size: 3rem;
-            font-weight: 300;
-        }
+    &__name {
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translate(-50%, -50%);
+        padding-left: 2rem;
+        font-size: 3rem;
+        font-weight: 300;
     }
     &__link {
         transition: all .3s;
@@ -57,7 +55,6 @@
         }
     }
 }
-
 
 @media screen and (max-width: 667px) {
     .navigation-top {
