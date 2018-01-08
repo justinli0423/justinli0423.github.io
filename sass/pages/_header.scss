@@ -6,6 +6,20 @@
     background-size: cover;
 }
 
+.me {
+    display: none;
+    transform: translateY(-10%);
+    &__picture {
+        width: 25rem;
+        border-radius: 50%;
+        border: 5px solid $color-blue-grey-light;
+        filter: brightness(.6);
+    }
+    @include media(668px) {
+        display: block;
+    }
+}
+
 .video {
     position: absolute;
     top: 0;
@@ -15,13 +29,12 @@
     opacity: .35;
     z-index: -1;
     overflow: hidden;
-    &__container{
+    &__container {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-
-    @include media(668px){
+    @include media(668px) {
         display: none;
     }
 }
@@ -29,11 +42,14 @@
 .intro {
     text-align: center;
     font-weight: 700;
-    @include absCenter;    
+    @include absCenter;
+    @include media(668px) {
+        top: 45%;
+    }
     &__heading-primary {
         color: $color-white;
         font-size: 8rem;
-        margin-bottom: 5rem;
+        margin: 5rem 0;
     }
     &__paragraph {
         display: inline-block;
