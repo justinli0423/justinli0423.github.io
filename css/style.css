@@ -217,6 +217,13 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%) scale(0.5); } }
 
+.particles-js {
+  position: fixed;
+  left: 0%;
+  width: 99vw;
+  display: block;
+  z-index: 1; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -366,7 +373,7 @@ body {
 .header {
   font-family: 'Amatic SC', cursive;
   height: 100vh;
-  min-height: 80rem;
+  min-height: 62rem;
   position: relative;
   background-attachment: fixed;
   background-size: cover; }
@@ -452,6 +459,7 @@ body {
     padding: 50px 0; }
 
 .list-element {
+  z-index: 10000;
   list-style: none;
   position: relative;
   width: .8rem;

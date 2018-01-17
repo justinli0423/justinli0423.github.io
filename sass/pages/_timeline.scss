@@ -1,7 +1,7 @@
 .timeline {
     background: rgba($color-black, .5);
     border-top: 2px solid $color-grey-dark-2;
-    border-bottom: 2px solid $color-grey-dark-2;
+    border-bottom: 2px solid $color-grey-dark-2;    
     padding-top: 50rem;
     padding-bottom: 20rem;
     overflow-x: hidden;
@@ -27,6 +27,7 @@
 }
 
 .list-element {
+    z-index: 10000;
     list-style: none;
     position: relative;
     width: .8rem;
