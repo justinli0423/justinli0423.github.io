@@ -388,8 +388,10 @@ body {
 
 .me {
   display: none;
+  z-index: 1000;
   transform: translateY(-10%); }
   .me__picture {
+    z-index: inherit;
     width: 25rem;
     border-radius: 50%;
     border: 5px solid #607D8B;
