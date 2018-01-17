@@ -5,8 +5,13 @@
     position: relative;
     background-attachment: fixed;
     background-size: cover;
+    @include media-o(800px, landscape) {
+        min-height: 80rem;
+    }
+    @include media(700px) {
+        min-height: 80rem;
+    }
 }
-
 // .breakout {
 //     @include absCenter;    
 //     top: 25%;
@@ -53,6 +58,12 @@
     font-weight: 700;
     @include absCenter;
     @include media(668px) {
+        top: 45%;
+    }
+    @include media-o(668px, landscape) {
+        top: 50%;
+    }
+    @include media(480px) {
         top: 45%;
     }
     &__heading-primary {

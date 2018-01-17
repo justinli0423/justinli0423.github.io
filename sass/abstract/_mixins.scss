@@ -18,3 +18,9 @@
         @content;
     }
 }
+
+@mixin media-o($width, $orientation) {
+    @media screen and (max-width: $width) and (orientation: $orientation) {
+        @content;
+    }
+}
