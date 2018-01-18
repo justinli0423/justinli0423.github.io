@@ -708,7 +708,7 @@ body {
       font-size: 2rem; }
     .resource__folders a:visited,
     .resource__folders a:link {
-      z-index: 100;
+      z-index: 10000;
       text-decoration: none;
       color: inherit; }
     .resource__folders-open {
@@ -720,7 +720,7 @@ body {
       transform: translateX(1rem); }
 
 .popup {
-  z-index: 100000; }
+  z-index: 1000000; }
   .popup__files {
     font-size: 5rem;
     text-align: center;
