@@ -17,7 +17,7 @@
           "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 10
         },
         "image": {
           "src": "img/github.svg",
@@ -31,12 +31,12 @@
         "anim": {
           "enable": false,
           "speed": 0.5,
-          "opacity_min": 0.1,
+          "opacity_min": 0.05,
           "sync": false
         }
       },
       "size": {
-        "value": 10,
+        "value": 7,
         "random": true,
         "anim": {
           "enable": false,
@@ -47,7 +47,7 @@
       },
       "line_linked": {
         "enable": true,
-        "distance": 300,
+        "distance": 350,
         "color": "#ffffff",
         "opacity": 0.1,
         "width": 2
@@ -72,19 +72,19 @@
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true
       },
       "modes": {
         "grab": {
-          "distance": 800,
+          "distance": 400,
           "line_linked": {
-            "opacity": 1
+            "opacity": 0.1
           }
         },
         "bubble": {

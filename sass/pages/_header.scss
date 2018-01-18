@@ -22,10 +22,9 @@
 
 .me {
     display: none;
-    z-index: 1000;
     transform: translateY(-10%);
     &__picture {
-        z-index: inherit;
+        z-index: 1000;
         width: 25rem;
         border-radius: 50%;
         border: 5px solid $color-blue-grey-light;
@@ -33,6 +32,7 @@
     }
     @include media(668px) {
         display: block;
+        z-index: 1000;
     }
 }
 
