@@ -1,5 +1,5 @@
 // Smooth Scrolling
-$(document).on('click', 'a[href^="#timeline"]', function (event) {
+$(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -8,6 +8,6 @@ $(document).on('click', 'a[href^="#timeline"]', function (event) {
 });
 
 // particle js
-particlesJS.load('particles-js', 'json/particles.json', function() {
+particlesJS.load('particles-js', 'json/particles.json', function () {
     console.log('callback - particles.js config loaded');
-  });
+});

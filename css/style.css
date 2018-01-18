@@ -288,7 +288,10 @@ body {
     transition-delay: 0s, 0s, 0.3s;
     /* this removes the transition delay so the menu will be visible while the other styles transition */ }
   .navigation-toggle__item {
-    height: 6rem; }
+    height: 6rem;
+    position: relative; }
+    .navigation-toggle__item:focus {
+      outline: none; }
   .navigation-toggle__list {
     height: 0;
     visibility: hidden;
@@ -301,16 +304,17 @@ body {
     transform: translateY(-5em);
     z-index: -1;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; }
-  .navigation-toggle__link:link, .navigation-toggle__link:visited {
-    display: inline-block;
+  .navigation-toggle__link:link, .navigation-toggle__link:visited, .navigation-toggle__link:focus {
     width: 100%;
     transition: all .1s linear;
     text-decoration: none;
+    outline: none;
     font-size: 2.5rem;
     font-weight: 400;
     max-height: 1rem;
     color: #fff; }
   .navigation-toggle__link i {
+    outline: none;
     transition: background-color .3s;
     background-color: #F4511E;
     padding: 1rem 1rem;
