@@ -1,6 +1,4 @@
 .timeline {
-    background: linear-gradient(45deg, rgba($color-black, .4), rgba($color-black, .6), rgba($color-black, .6)), url("../img/gradient.jpg");
-    background-size: 250%;
     border-top: 2px solid $color-grey-dark-2;
     border-bottom: 2px solid $color-grey-dark-2;    
     padding-top: 50rem;
@@ -8,7 +6,6 @@
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;
-    animation: side-scroll 300s linear infinite;
     &__intro {
         position: relative;
         cursor: default;

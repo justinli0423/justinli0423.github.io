@@ -469,16 +469,13 @@ body {
         width: 40vw; } }
 
 .timeline {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/gradient.jpg");
-  background-size: 250%;
   border-top: 2px solid #999;
   border-bottom: 2px solid #999;
   padding-top: 50rem;
   padding-bottom: 20rem;
   overflow-x: hidden;
   overflow-y: hidden;
-  width: 100%;
-  animation: side-scroll 300s linear infinite; }
+  width: 100%; }
   .timeline__intro {
     position: relative;
     cursor: default; }
