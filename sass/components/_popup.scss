@@ -31,6 +31,15 @@
     &:target &__content {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
+        @include media-o(812px, landscape) {
+            transform: translate(-50%, -50%) scale(.6);
+        }
+        @include media(500px) {
+            transform: translate(-50%, -50%) scale(.6);
+        }
+        @include media(450px) {
+            transform: translate(-50%, -50%) scale(.5);
+        }
     } // set the close button to be entire background
     &__close {
         &:link,
@@ -41,24 +50,6 @@
             height: 100vh;
             display: inline-block;
             z-index: 10;
-        }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .popup {
-        &:target &__content {
-            opacity: 1;
-            transform: translate(-50%, -50%) scale(.7);
-        }
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .popup {
-        &:target &__content {
-            opacity: 1;
-            transform: translate(-50%, -50%) scale(.5);
         }
     }
 }

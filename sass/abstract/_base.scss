@@ -4,20 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    /* this universal selector with inherit will have all child elements
-    (so all elements in this case since this is universal selector)
-    to inherit the body's box sizing */
 }
 
 html {
     font-size: 62.5%;
-    /* Note: declare font-size as percentage for user friendliness */
     /* this is root declaration-allows REM to be used to allow responsive fonts
     browser have default 16px, so 10px is 62.5% of 16px */
-    @media screen and (max-width: 1200px) {
+    @include media(1200px) {
         font-size: 56.25%;
     }
-    @media screen and (max-width: 900px) {
+    @include media(900px) {
         font-size: 50%;
     }
 }
@@ -27,6 +23,19 @@ body {
     background: linear-gradient(45deg, rgba($color-black, .4), rgba($color-black, .6), rgba($color-black, .6)), url(../img/dark-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
+    overflow-x: hidden;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
     filter: brightness(120%);
 }
 

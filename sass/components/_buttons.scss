@@ -1,7 +1,6 @@
 .btn {
     font-family: 'Amatic SC', cursive;
-    position: absolute;
-    left: 50%;
+    @include absCenter;
     width: 20rem;
     top: 150%;
     transform: translate(-50%, 100%);
@@ -44,7 +43,7 @@
     }
 }
 
-// Might use for future 
+// -----------------Might use for future 
 // .intro__btn {
 //     margin-top: 1.5rem;
 // }
@@ -96,37 +95,5 @@
 //         color: $color-blue;
 //         opacity: 1;
 //         border: none;
-//     }
-// }
-// @media screen and (max-width: 1024px) {
-//     .btn {
-//         &:visited,
-//         &:link {
-//             font-size: 2.5rem;
-//             padding: 2rem 2.2rem;
-//         }
-//     }
-// }
-// @media screen and (max-width: 993px) {
-//     .btn {
-//         &:not(:last-child) {
-//             margin-left: 3.5rem;
-//             margin-right: 9vw;
-//         }
-//     }
-// }
-// @media screen and (max-width: 668px) {
-//     .btn {
-//         &:not(:last-child) {
-//             margin-right: 6vw;
-//         }
-//     }
-// }
-// @media screen and (max-width: 640px) {
-//     .btn {
-//         &:not(:last-child) {
-//             margin-left: 3.5rem;
-//             margin-right: 4vw;
-//         }
 //     }
 // }

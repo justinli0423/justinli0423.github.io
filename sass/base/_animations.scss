@@ -1,3 +1,53 @@
+// ---------------for background gradient
+@keyframes gradient {
+    0% {
+        background-position: 50% 20%
+    }
+    50% {
+        background-position: 50% 80%
+    }
+    100% {
+        background-position: 50% 20%
+    }
+}
+
+
+// ---------------for timeline 
+@keyframes shade-up {
+    0% {
+        height: 0em;
+        opacity: 0;
+        border-top: .1px solid $color-grey-dark;
+        background-color: transparent;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        border-top: 3px solid $color-grey-dark;
+        height: 3em;
+        background-color: $color-grey-light-2;
+        color: $color-black;
+        z-index: 100;
+        height: 3em;
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        left: 35rem;
+    }
+    to {
+        opacity: 1;
+        left: 4.5rem;
+    }
+}
+
+
+// ---------------not used for now
 @keyframes side-scroll {
     from{
         background-position: 0% 50%;
@@ -27,49 +77,5 @@
     100% {
         padding: 2rem 2.7rem;
         opacity: .1;
-    }
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 50% 20%
-    }
-    50% {
-        background-position: 50% 80%
-    }
-    100% {
-        background-position: 50% 20%
-    }
-}
-
-@keyframes shade-up {
-    0% {
-        height: 0em;
-        opacity: 0;
-        border-top: .1px solid $color-grey-dark;
-        background-color: transparent;
-    }
-    40% {
-        opacity: 0;
-    }
-    100% {
-        border-top: 3px solid $color-grey-dark;
-        height: 3em;
-        background-color: $color-grey-light-2;
-        color: $color-black;
-        z-index: 100;
-        height: 3em;
-        opacity: 1;
-    }
-}
-
-@keyframes slide-in {
-    from {
-        opacity: 0;
-        left: 35rem;
-    }
-    to {
-        opacity: 1;
-        left: 4.5rem;
     }
 }

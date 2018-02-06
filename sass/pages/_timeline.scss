@@ -1,11 +1,35 @@
 .timeline {
     border-top: 2px solid $color-grey-dark-2;
-    border-bottom: 2px solid $color-grey-dark-2;    
+    border-bottom: 2px solid $color-grey-dark-2;
     padding-top: 50rem;
     padding-bottom: 20rem;
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;
+    @include media(736px) {
+        padding-top: 90vh;
+    }
+    @include media-o(736px, landscape) {
+        padding-top: 85vh;
+    }
+    @include media-o(736px, portrait) {
+        padding-top: 40rem;
+    }
+    @include media(667px) {
+        padding-top: 40rem;
+    }
+    @include media-o(667px, landscape) {
+        padding-top: 45rem;
+    }
+    @include media-o(600px, landscape) {
+        padding-top: 35rem;
+    }
+    @include media(414px) {
+        padding-top: 45vh;
+    }
+    @include media(412px) {
+        padding-top: 40rem;
+    }
     &__intro {
         position: relative;
         cursor: default;
@@ -19,6 +43,11 @@
         text-align: center;
         font-size: 7rem;
         color: $color-blue-grey-dark;
+        @include media(600px) {
+            position: absolute;
+            margin: -12rem auto;
+            left: 2.9rem;
+        }
     }
     & div ul {
         padding: 50px 0;
@@ -161,12 +190,8 @@
         transform: none;
         visibility: visible;
         opacity: 1;
-    }
-}
-
-// Media Queries
-@media screen and (max-width: 1000px) {
-    .list-element {
+    } // more efficient to have 1 instead of split into 3
+    @include media(1000px) {
         & div {
             width: 35vw;
         }
@@ -177,19 +202,13 @@
             left: 5vw;
         }
     }
-}
-
-@media screen and (max-width: 800px) {
-    .list-element {
+    @include media(800px) {
         font-size: 1.2rem;
         &__title {
             font-size: 1.5rem;
         }
     }
-}
-
-@media screen and (max-width: 750px) {
-    .list-element {
+    @include media(750px) {
         &:nth-child(odd) div {
             left: -40vw;
         }
@@ -197,47 +216,7 @@
             left: 6vw;
         }
     }
-}
-
-@media screen and (max-width: 736px) {
-    .timeline {
-        padding-top: 90vh;
-    }
-}
-
-@media screen and (max-width: 736px) and (orientation: landscape) {
-    .timeline {
-        padding-top: 85vh;
-    }
-}
-
-@media screen and (max-width: 736px) and (orientation: portrait) {
-    .timeline {
-        padding-top: 40rem;
-    }
-}
-
-@media screen and (max-width: 667px) {
-    .timeline {
-        padding-top: 40rem;
-    }
-}
-
-@media screen and (max-width: 667px) and (orientation: landscape) {
-    .timeline {
-        padding-top: 45rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .timeline {
-        &__start {
-            position: absolute;
-            margin: -12rem auto;
-            left: 2.9rem;
-        }
-    }
-    .list-element {
+    @include media(600px) {
         margin-left: 2.5rem;
         & div {
             width: calc(100vw - 9.5rem);
@@ -258,23 +237,5 @@
                 left: -1.6rem;
             }
         }
-    }
-}
-
-@media screen and (max-width: 600px) and (orientation: landscape) {
-    .timeline {
-        padding-top: 35rem;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .timeline {
-        padding-top: 45vh;
-    }
-}
-
-@media screen and (max-width: 412px) {
-    .timeline {
-        padding-top: 40rem;
     }
 }

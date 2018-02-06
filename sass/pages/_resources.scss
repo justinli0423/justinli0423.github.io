@@ -18,12 +18,20 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
+        @include media-o(812px, landscape) {
+            top: 80%;
+        }
+        @include media-o(640px, landscape) {
+            top: 65%;
+        }
         @include media(511px) {
             top: 35%;
         }
-
         @include media(480px) {
-             top: 50%;
+            top: 50%;
+        }
+        @include media-o(480px, landscape) {
+            top: 65%;
         }
     }
     &__folders {
@@ -88,20 +96,12 @@
             margin-bottom: 1rem;
         }
     }
-}
-
-@media screen and (max-width: 1042px) {
-    .popup {
-        &__content {
-            padding-left: 0 !important;
-            text-align: center !important;
+    &__content {
+        @include media(1042px) {
+            padding-left: 0;
+            text-align: center;
         }
-    }
-}
-
-@media screen and (max-width: 982px) {
-    .popup {
-        &__content {
+        @include media(982px) {
             width: 100%;
         }
     }
