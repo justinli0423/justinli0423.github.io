@@ -1,5 +1,5 @@
 .resource {
-    height: 100vh; // min-height: 880px;
+    height: 100vh;
     position: relative;
     background-attachment: fixed;
     animation: gradient 30s ease infinite;
@@ -19,22 +19,11 @@
         flex-direction: row;
         justify-content: space-around;
         @include media-o(812px, landscape) {
-            top: 80%;
-        }
-        @include media-o(640px, landscape) {
-            top: 65%;
-        }
-        @include media(511px) {
-            top: 35%;
-        }
-        @include media(480px) {
-            top: 50%;
-        }
-        @include media-o(480px, landscape) {
-            top: 65%;
+            top: 80vh;
         }
     }
     &__folders {
+        // set width of all flex items to relative '1'
         flex-grow: 1;
         color: $color-white;
         transition: all .2s;
@@ -59,50 +48,6 @@
                 display: initial;
                 transform: translateX(1rem);
             }
-        }
-    }
-}
-
-.popup {
-    z-index: 1000000;
-    &__files {
-        font-size: 5rem;
-        text-align: center;
-        display: inline-block;
-        margin: 2rem 2rem;
-        border: 2px solid rgba($color-black, .4);
-        text-decoration: none;
-        width: 20rem;
-        height: 16rem;
-        color: $color-grey-dark-2;
-        & div {
-            width: 100%;
-            padding-top: 2rem;
-        }
-        &:hover {
-            transition: all .5s;
-            color: $color-blue-light;
-            border: 2px solid rgba($color-blue-light, .6);
-        }
-        &-caption {
-            padding: 0 1rem;
-            vertical-align: top;
-            display: inline-block;
-            font-size: 2.5rem;
-            font-weight: 600;
-            width: 100%;
-            margin-top: 1.5rem;
-            line-height: 2.5rem;
-            margin-bottom: 1rem;
-        }
-    }
-    &__content {
-        @include media(1042px) {
-            padding-left: 0;
-            text-align: center;
-        }
-        @include media(982px) {
-            width: 100%;
         }
     }
 }

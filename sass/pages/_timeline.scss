@@ -5,7 +5,7 @@
     padding-bottom: 20rem;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 100%;
+    width: 100%; // Need another way to fix this later - disgusting
     @include media(736px) {
         padding-top: 90vh;
     }
@@ -45,7 +45,7 @@
         color: $color-blue-grey-dark;
         @include media(600px) {
             position: absolute;
-            margin: -12rem auto;
+            margin: -11rem auto;
             left: 2.9rem;
         }
     }
@@ -54,6 +54,7 @@
     }
 }
 
+//center bar -- just a tiny width of table ;)
 .list-element {
     list-style: none;
     position: relative;
@@ -79,7 +80,7 @@
     &__text {
         line-height: 2.3rem;
     }
-    &__caption {
+    &__link {
         position: absolute;
         display: inline-block;
         width: 100%;
@@ -94,7 +95,7 @@
             text-decoration: line-through;
         }
     }
-    &:hover &__caption {
+    &:hover &__link {
         color: $color-blue-light;
     }
     &::after {
@@ -120,7 +121,7 @@
         padding: 1.5rem;
         background: rgba($color-blue-grey-dark, .7);
         border-radius: 5px;
-        box-shadow: 0 .5rem .5rem rgba($color-black, .8);
+        box-shadow: 0 .5rem .5rem rgba($color-black, .8); // blur filter in chrome lags -- fix later
         &:hover .list-element__text {
             transition: all .4s .15s;
             filter: blur(3px);
@@ -129,7 +130,7 @@
             transition: all .4s .15s;
             filter: blur(3px);
         }
-        &:hover .list-element__caption {
+        &:hover .list-element__link {
             transition: all .4s;
             animation: shade-up .4s linear;
             animation-fill-mode: forwards;
@@ -168,6 +169,7 @@
 
 // Transitions
 .list-element {
+    // circles
     &::after {
         transition: background .5s ease-in-out;
     }
@@ -179,18 +181,18 @@
         visibility: hidden;
         opacity: 0;
         transition: all .5s ease-in-out;
-    }
+    } //slide in animations
     &:nth-child(odd) div {
-        transform: translate3d(-20rem, 0, 0);
+        transform: translateX(-20rem);
     }
     &:nth-child(even) div {
-        transform: translate3d(20rem, 0, 0);
+        transform: translateX(20rem);
     }
     &.in-view div {
         transform: none;
         visibility: visible;
         opacity: 1;
-    } // more efficient to have 1 instead of split into 3
+    } // more efficient to have 1 section of query here instead of split into 3
     @include media(1000px) {
         & div {
             width: 35vw;
@@ -219,8 +221,9 @@
     @include media(600px) {
         margin-left: 2.5rem;
         & div {
-            width: calc(100vw - 9.5rem);
-            transform: translate3d(0, 0, 0) !important;
+            width: calc(100vw - 9.5rem); 
+            //Need to override the other translates since the other ones are more target-specific
+            transform: translateX(0) !important;
         }
         &:nth-child(odd) div {
             animation: slide-in .5s ease-in-out;

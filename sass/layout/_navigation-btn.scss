@@ -22,7 +22,7 @@
         &:active {
             background-color: $color-blue-dark;
         }
-    }
+    } // selects child __list element
     &__parent:active~&__list,
     &__parent:focus~&__list,
     &__parent:focus-within~&__list {
@@ -31,13 +31,6 @@
         z-index: 1000;
         transition-delay: 0s, 0s, 0.3s;
         /* this removes the transition delay so the menu will be visible while the other styles transition */
-    }
-    &__item {
-        height: 6rem;
-        position: relative;
-        &:focus {
-            outline: none;
-        }
     }
     &__list {
         height: 0;
@@ -48,16 +41,22 @@
         top: 100%;
         left: 0;
         width: 100%;
-        transform: translateY(-5em);
+        transform: translateY(-5.5em);
         z-index: -1;
-        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s;
+    }
+    &__item {
+        height: 6rem;
+        position: relative;
+        &:focus {
+            outline: none;
+        }
     }
     &__link {
         &:link,
         &:visited,
         &:focus {
             width: 100%;
-            transition: all .1s linear;
             text-decoration: none;
             outline: none;
             font-size: 2.5rem;
@@ -77,6 +76,7 @@
         }
         &:hover i,
         &:active i {
+            transition: all .1s linear;
             background-color: $color-orange-dark;
         }
     }

@@ -46,6 +46,7 @@
         }
         &:visited,
         &:link {
+            //flex box overrides float, so no media query needed
             margin: 2rem 0;
             font-weight: 400;
             float: right;

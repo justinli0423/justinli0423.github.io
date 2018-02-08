@@ -1,4 +1,4 @@
-var items = document.getElementsByClassName("list-element")
+var items = document.getElementsByClassName("list-element");
 
 function isElementInViewport(el) {
     // returns the smallest rectangle that bounds the element
@@ -19,6 +19,7 @@ function isElementOutOfPort(el) {
     );
 }
 
+// callback func after every reaload,scroll, resize to check every list element to see if it's in view
 function callbackFunc() {
     for(var i = 0; i < items.length; i++){
         if(isElementInViewport(items[i])) {

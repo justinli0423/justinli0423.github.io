@@ -1,3 +1,4 @@
+// Allows the floated element to stay within container
 @mixin clearfix {
     &::after {
         content: "";
