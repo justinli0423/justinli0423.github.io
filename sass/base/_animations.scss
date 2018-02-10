@@ -1,3 +1,37 @@
+// ---------------intro animation
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95);
+    }
+    100% {
+        transform: rotateZ(360deg) scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
+    }
+    100% {
+        transform: rotateZ(-360deg) scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes hidden {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 // ---------------for background gradient
 @keyframes gradient {
     0% {
@@ -10,7 +44,6 @@
         background-position: 50% 20%
     }
 }
-
 
 // ---------------for timeline 
 @keyframes shade-up {
@@ -34,7 +67,6 @@
     }
 }
 
-
 @keyframes slide-in {
     from {
         opacity: 0;
@@ -46,16 +78,16 @@
     }
 }
 
-
 // ---------------not used for now
 @keyframes side-scroll {
-    from{
+    from {
         background-position: 0% 50%;
     }
     to {
         background-position: 100% 50%;
     }
 }
+
 @keyframes glow {
     from {
         text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 10px #228DFF, 0 0 15px #228DFF,
