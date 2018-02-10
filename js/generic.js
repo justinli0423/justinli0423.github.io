@@ -11,8 +11,8 @@ $(document).on('click', '.clicker', () => {
     setTimeout(() => {
         $('.loading').addClass('hidden');
         $('.overflow').removeClass('overflow');
-
     }, 800);
+    window.scrollTo(0, 0);
 });
 
 // Smooth Scrolling - per ID
