@@ -1,15 +1,3 @@
-.overflow {
-    overflow: hidden;
-}
-
-.show {
-    opacity: 1 !important;
-}
-
-.clicker {
-    cursor: pointer;
-}
-
 .loading {
     font-family: 'Amatic SC', cursive;
     display: inline-block;
@@ -17,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 100000000;
-    background-color: $color-orange;
+    background: linear-gradient(45deg, rgba($color-black, .4), rgba($color-black, .6), rgba($color-black, .6)), url(../img/dark-bg.jpg);
     filter: brightness(.7);
     &__animation {
         color: $color-grey-light-1;
@@ -72,7 +60,19 @@
 }
 
 .hidden {
-    animation: hidden .5s linear;
+    animation: hidden .3s linear;
     animation-fill-mode: forwards;
     z-index: -100;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.show {
+    opacity: 1 !important;
+}
+
+.clicker {
+    cursor: pointer;
 }

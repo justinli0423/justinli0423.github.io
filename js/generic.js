@@ -5,13 +5,18 @@ setTimeout(() => {
 }, 4000);
 
 $(document).on('click', '.clicker', () => {
-    $('.loading__animation').addClass('hidden');
-    $('.loading').addClass('hidden');
-    $('.overflow').removeClass('overflow');
+    setTimeout(() => {
+        $('.loading__animation').addClass('hidden');
+    }, 500);
+    setTimeout(() => {
+        $('.loading').addClass('hidden');
+        $('.overflow').removeClass('overflow');
+
+    }, 800);
 });
 
 // Smooth Scrolling - per ID
-$(document).on('click', 'a[href^="#timeline"]', function(event) {
+$(document).on('click', 'a[href^="#timeline"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -20,7 +25,7 @@ $(document).on('click', 'a[href^="#timeline"]', function(event) {
 });
 
 
-$(document).on('click', 'a[href^="#top"]', function(event) {
+$(document).on('click', 'a[href^="#top"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -29,7 +34,7 @@ $(document).on('click', 'a[href^="#top"]', function(event) {
 });
 
 
-$(document).on('click', 'a[href^="#projects"]', function(event) {
+$(document).on('click', 'a[href^="#projects"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({

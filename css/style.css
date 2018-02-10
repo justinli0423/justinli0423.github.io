@@ -706,15 +706,6 @@ body {
       .list-element:nth-child(even) div::before {
         left: -1.6rem; } }
 
-.overflow {
-  overflow: hidden; }
-
-.show {
-  opacity: 1 !important; }
-
-.clicker {
-  cursor: pointer; }
-
 .loading {
   font-family: 'Amatic SC', cursive;
   display: inline-block;
@@ -722,7 +713,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 100000000;
-  background-color: #F4511E;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/dark-bg.jpg);
   filter: brightness(0.7); }
   .loading__animation {
     color: #f7f7f7;
@@ -774,9 +765,18 @@ body {
       animation: rotate2 2s -0.5s linear infinite; }
 
 .hidden {
-  animation: hidden .5s linear;
+  animation: hidden .3s linear;
   animation-fill-mode: forwards;
   z-index: -100; }
+
+.overflow {
+  overflow: hidden; }
+
+.show {
+  opacity: 1 !important; }
+
+.clicker {
+  cursor: pointer; }
 
 .resource {
   height: 100vh;
