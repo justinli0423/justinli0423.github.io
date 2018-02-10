@@ -1,34 +1,19 @@
 .timeline {
     border-top: 2px solid $color-grey-dark-2;
     border-bottom: 2px solid $color-grey-dark-2;
-    padding-top: 50rem;
+    padding-top: 50em;
     padding-bottom: 20rem;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 100%; // Need another way to fix this later - disgusting
-    @include media(736px) {
-        padding-top: 90vh;
+    width: 100%;
+    @include media(500px) {
+        padding-top: 45em;
     }
-    @include media-o(736px, landscape) {
-        padding-top: 85vh;
+    @include media-o(700px) {
+        padding-top: 45em;
     }
-    @include media-o(736px, portrait) {
-        padding-top: 40rem;
-    }
-    @include media(667px) {
-        padding-top: 40rem;
-    }
-    @include media-o(667px, landscape) {
-        padding-top: 45rem;
-    }
-    @include media-o(600px, landscape) {
-        padding-top: 35rem;
-    }
-    @include media(414px) {
-        padding-top: 45vh;
-    }
-    @include media(412px) {
-        padding-top: 40rem;
+    @include media(400) {
+        padding-top: 40em;
     }
     &__intro {
         position: relative;
@@ -221,8 +206,7 @@
     @include media(600px) {
         margin-left: 2.5rem;
         & div {
-            width: calc(100vw - 9.5rem); 
-            //Need to override the other translates since the other ones are more target-specific
+            width: calc(100vw - 9.5rem); //Need to override the other translates since the other ones are more target-specific
             transform: translateX(0) !important;
         }
         &:nth-child(odd) div {

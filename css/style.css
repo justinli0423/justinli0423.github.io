@@ -61,6 +61,18 @@ body {
   to {
     opacity: 0; } }
 
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes cursor-blink {
+  0%, 100% {
+    border-color: transparent; }
+  50% {
+    border-color: #D84315; } }
+
 @keyframes gradient {
   0% {
     background-position: 50% 20%; }
@@ -508,35 +520,20 @@ body {
 .timeline {
   border-top: 2px solid #999;
   border-bottom: 2px solid #999;
-  padding-top: 50rem;
+  padding-top: 50em;
   padding-bottom: 20rem;
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100%; }
-  @media screen and (max-width: 736px) {
+  @media screen and (max-width: 500px) {
     .timeline {
-      padding-top: 90vh; } }
-  @media screen and (max-width: 736px) and (orientation: landscape) {
+      padding-top: 45em; } }
+  @media screen and (max-width: 700px) and (orientation: landscape) {
     .timeline {
-      padding-top: 85vh; } }
-  @media screen and (max-width: 736px) and (orientation: portrait) {
+      padding-top: 45em; } }
+  @media screen and (max-width: 400) {
     .timeline {
-      padding-top: 40rem; } }
-  @media screen and (max-width: 667px) {
-    .timeline {
-      padding-top: 40rem; } }
-  @media screen and (max-width: 667px) and (orientation: landscape) {
-    .timeline {
-      padding-top: 45rem; } }
-  @media screen and (max-width: 600px) and (orientation: landscape) {
-    .timeline {
-      padding-top: 35rem; } }
-  @media screen and (max-width: 414px) {
-    .timeline {
-      padding-top: 45vh; } }
-  @media screen and (max-width: 412px) {
-    .timeline {
-      padding-top: 40rem; } }
+      padding-top: 40em; } }
   .timeline__intro {
     position: relative;
     cursor: default; }
@@ -712,26 +709,54 @@ body {
 .overflow {
   overflow: hidden; }
 
+.show {
+  opacity: 1 !important; }
+
+.clicker {
+  cursor: pointer; }
+
 .loading {
   font-family: 'Amatic SC', cursive;
   display: inline-block;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #607D8B;
-  z-index: 10000000000000; }
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000000;
+  background-color: #F4511E;
+  filter: brightness(0.7); }
   .loading__animation {
     color: #f7f7f7;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 35rem;
-    height: 35rem;
-    line-height: 35rem;
+    width: 50rem;
+    height: 50rem;
+    line-height: 50rem;
     text-align: center;
     font-size: 7rem;
     font-weight: 900; }
+    .loading__animation p {
+      overflow: hidden;
+      border-right: 0 solid #D84315;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: normal;
+      animation: typing 2s steps(22) infinite, cursor-blink 0.5s steps(1) infinite; }
+    @media screen and (max-width: 500px) {
+      .loading__animation {
+        width: 35rem;
+        height: 35rem;
+        line-height: 35rem;
+        font-size: 5rem; } }
+    @media screen and (max-width: 800px) and (orientation: landscape) {
+      .loading__animation {
+        width: 35rem;
+        height: 35rem;
+        line-height: 35rem;
+        font-size: 5rem; } }
+    .loading__animation span {
+      opacity: 0; }
     .loading__animation:after, .loading__animation:before {
       content: "";
       border-radius: 50%;
@@ -749,8 +774,9 @@ body {
       animation: rotate2 2s -0.5s linear infinite; }
 
 .hidden {
-  animation: hidden 1s linear;
-  animation-fill-mode: forwards; }
+  animation: hidden .5s linear;
+  animation-fill-mode: forwards;
+  z-index: -100; }
 
 .resource {
   height: 100vh;

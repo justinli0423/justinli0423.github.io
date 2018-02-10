@@ -1,23 +1,17 @@
-// Header timeout
+// Entrance effect
 setTimeout(() => {
-    $('.loading__animation').addClass('hidden');
-}, 2000);
-setTimeout(() => {
-    $('.overflow').removeClass('overflow');
-    $('.loading').addClass('hidden');
+    $('.loading__animation').addClass('clicker');
+    $('.clicker').text("Click here!");
 }, 3000);
 
+$(document).on('click', '.clicker', () => {
+    $('.loading__animation').addClass('hidden');
+    $('.loading').addClass('hidden');
+    $('.overflow').removeClass('overflow');
+});
+
 // Smooth Scrolling - per ID
-$(document).on('click', 'a[href^="#timeline"]', (event) => {
-    event.preventDefault(); 
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 800);
-});
-
-
-$(document).on('click', 'a[href^="#top"]', (event) =>  {
+$(document).on('click', 'a[href^="#timeline"]', function(event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -26,7 +20,7 @@ $(document).on('click', 'a[href^="#top"]', (event) =>  {
 });
 
 
-$(document).on('click', 'a[href^="#projects"]', (event) =>  {
+$(document).on('click', 'a[href^="#top"]', function(event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -34,12 +28,19 @@ $(document).on('click', 'a[href^="#projects"]', (event) =>  {
     }, 800);
 });
 
-// particle js
-particlesJS.load('particles-js', 'json/particles.json', () => {
-    console.log('callback - particles.js config loaded');
+
+$(document).on('click', 'a[href^="#projects"]', function(event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 800);
 });
 
 // load page on top
 window.onbeforeunload = () => {
     window.scrollTo(0, 0);
 }
+
+// particle js
+particlesJS.load('particles-js', 'json/particles.json');
