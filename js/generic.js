@@ -2,7 +2,7 @@
 setTimeout(() => {
     $('.loading__animation').addClass('clicker');
     $('.clicker').text("Click here!");
-}, 3000);
+}, 4000);
 
 $(document).on('click', '.clicker', () => {
     $('.loading__animation').addClass('hidden');

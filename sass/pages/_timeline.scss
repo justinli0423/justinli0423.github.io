@@ -6,15 +6,6 @@
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;
-    @include media(500px) {
-        padding-top: 45em;
-    }
-    @include media-o(700px) {
-        padding-top: 45em;
-    }
-    @include media(400) {
-        padding-top: 40em;
-    }
     &__intro {
         position: relative;
         cursor: default;
@@ -36,6 +27,15 @@
     }
     & div ul {
         padding: 50px 0;
+    }
+    @include media(500px) {
+        padding-top: 45em;
+    }
+    @include media-o(700px) {
+        padding-top: 45em;
+    }
+    @include media(400) {
+        padding-top: 40em;
     }
 }
 
