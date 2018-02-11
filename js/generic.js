@@ -1,17 +1,19 @@
 // Entrance effect
 setTimeout(() => {
     $('.loading__animation').addClass('clicker');
-    $('.clicker').text("Click here!");
+    $('.clicker').text("Click me!");
 }, 4000);
 
 $(document).on('click', '.clicker', () => {
+    $('.loading__animation').addClass('hidden');    
+    $('.loading').addClass('scale');    
     setTimeout(() => {
-        $('.loading__animation').addClass('hidden');
-    }, 500);
+        $('.hidden-display').removeClass('hidden-display');
+    }, 200);
     setTimeout(() => {
         $('.loading').addClass('hidden');
         $('.overflow').removeClass('overflow');
-    }, 800);
+    }, 500);
     window.scrollTo(0, 0);
 });
 

@@ -34,6 +34,29 @@
             line-height: 35rem;
             font-size: 5rem;
         }
+        @include media-o(800px, landscape) {
+            width: 35rem;
+            height: 35rem;
+            line-height: 35rem;
+            font-size: 5rem;
+        }
+
+        @include media(320px) {
+            width: 25rem;
+            height: 25rem;
+            line-height: 25rem;
+            font-size: 4rem;
+        }
+
+        
+        @include media-o(480px, landscape) {
+            width: 25rem;
+            height: 25rem;
+            line-height: 25rem;
+            font-size: 4rem;
+        }
+
+
         & span {
             opacity: 0;
         }
@@ -59,6 +82,12 @@
     }
 }
 
+
+// side classes 
+
+.hidden-display {
+    display: none;
+}
 .hidden {
     animation: hidden .3s linear;
     animation-fill-mode: forwards;
@@ -75,4 +104,10 @@
 
 .clicker {
     cursor: pointer;
+}
+
+.scale {
+    backface-visibility: hidden;
+    animation-fill-mode: forwards;    
+    animation: zoom-in 2s linear;
 }
