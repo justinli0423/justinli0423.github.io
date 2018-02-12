@@ -1,9 +1,13 @@
 // Entrance effect
+
+// entrance click after 4s
 setTimeout(() => {
     $('.loading__animation').addClass('clicker');
     $('.clicker').text("Click me!");
 }, 4000);
 
+
+// zoom in and loading animation
 $(document).on('click', '.clicker', () => {
     $('.loading__animation').addClass('hidden');    
     $('.loading').addClass('scale');    
@@ -15,6 +19,9 @@ $(document).on('click', '.clicker', () => {
         $('.overflow').removeClass('overflow');
     }, 500);
     window.scrollTo(0, 0);
+    $('.hidden').css(
+        'display', 'none'
+    );
 });
 
 // Smooth Scrolling - per ID
