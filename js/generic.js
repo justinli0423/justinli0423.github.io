@@ -9,8 +9,8 @@ setTimeout(() => {
 
 // zoom in and loading animation
 $(document).on('click', '.clicker', () => {
-    $('.loading__animation').addClass('hidden');    
-    $('.loading').addClass('scale');    
+    $('.loading__animation').addClass('hidden');
+    $('.loading').addClass('scale');
     setTimeout(() => {
         $('.hidden-display').removeClass('hidden-display');
     }, 200);
@@ -18,10 +18,21 @@ $(document).on('click', '.clicker', () => {
         $('.loading').addClass('hidden');
         $('.overflow').removeClass('overflow');
     }, 500);
+    setTimeout(() => {
+        $('.loading').css(
+            'display', 'none'
+        );
+
+        $('.hidden').css(
+            'display', 'none'
+        );
+
+        // particle js - must load after body becomes unhidden for canvas to have 
+        // proper dimension
+        particlesJS.load('particles-js', 'json/particles.json');
+
+    }, 800);
     window.scrollTo(0, 0);
-    $('.hidden').css(
-        'display', 'none'
-    );
 });
 
 // Smooth Scrolling - per ID
@@ -55,6 +66,3 @@ $(document).on('click', 'a[href^="#projects"]', function (event) {
 window.onbeforeunload = () => {
     window.scrollTo(0, 0);
 }
-
-// particle js
-particlesJS.load('particles-js', 'json/particles.json');

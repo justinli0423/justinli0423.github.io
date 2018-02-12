@@ -194,7 +194,7 @@ body {
   @media screen and (max-width: 668px) {
     .btn {
       top: 100%; } }
-  .btn__challenge-me {
+  .btn__timeline {
     color: #fff;
     display: block;
     width: 100%;
