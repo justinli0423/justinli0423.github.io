@@ -23,6 +23,10 @@ $color-grey-light-2: #eee;
 $color-white: #fff;
 $color-black: #000;
 
+$color-space-blue: #1B2735;
+$color-space-black: #090A0F;
+
+
 // FONT SIZES
 $default-font-size: 1.6rem;
 
@@ -31,3 +35,8 @@ $grid-width: 114rem;
 // blank spaces for grid
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+// parallax stars
+$small-stars: stars-boxshadow(700);
+$medium-stars: stars-boxshadow(200); 
+$large-stars: stars-boxshadow(100); 

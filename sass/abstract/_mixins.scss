@@ -29,11 +29,8 @@
 // type writer animation
 @mixin type($steps, $cursor-size: '.15em', $type-speed: '2s', $cursor-blink-speed: '.5s') {
     overflow: hidden; // hides content outside of box
-    border-right: $cursor-size solid $color-orange-dark; // cursor
     white-space: nowrap; // ensures everything is 1 line
-    margin: 0 auto; // center;
+    margin: 0 auto; // center text;
     letter-spacing: normal;
-    animation: 
-        typing $type-speed steps($steps) infinite, // steps breaks animation into n partial animations
-        cursor-blink $cursor-blink-speed steps(1) infinite;
+    animation: typing $type-speed steps($steps) infinite;
 }
