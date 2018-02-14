@@ -121,8 +121,12 @@
     opacity: 1 !important;
 }
 
-.clicker {
+// remove blue select active box for touch input
+.clicker, .clicker:active, .clicker:focus, .clicker:focus:active {
     cursor: pointer;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: none;
 }
 
 .scale {
