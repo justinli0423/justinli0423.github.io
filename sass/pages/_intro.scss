@@ -76,9 +76,12 @@
 
     // top left corner in nav
     &__animation-icon {
-        left: 2rem;
+        left: 4rem;
         width: 3rem;
         height: 2px;
+        @include media(950px) {
+            display: none;
+        }
     }
 }
 

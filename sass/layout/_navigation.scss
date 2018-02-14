@@ -17,20 +17,20 @@
     @include media(667px) {
         display: none;
     }
-    &__name {
-        text-align: left;
+    &__time {
+        font-family: 'Faster One', cursive;
+        opacity: .5;
+        color: $color-orange-light;
+        font-size: 2rem;
+        font-weight: 100;
         position: absolute;
+        display: inline-block;
+        width: 20rem;
+        left: 7rem;
         top: 50%;
-        left: 2rem;
-        transform: translate(-50%, -50%);
-        padding-left: 2rem;
-        font-size: 3rem;
-        font-weight: 300;
+        transform: translateY(-50%);
         @include media(950px) {
             display: none;
-        }
-        @include media(667px) {
-            padding-bottom: 2rem;
         }
     }
     &__link {
@@ -64,11 +64,10 @@
 
 .close {
     animation: slide-down .2s ease-in;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
 
 .open {
     animation: slide-up .2s ease-out;
-    animation-fill-mode:forwards;
-    
+    animation-fill-mode: forwards;
 }
