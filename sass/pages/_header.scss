@@ -1,3 +1,4 @@
+// background for header
 .header {
     font-family: 'Amatic SC', cursive;
     height: 100vh;
@@ -40,6 +41,7 @@
     }
 }
 
+// mobile display picture
 .me {
     display: none;
     transform: translateY(-10%);
@@ -56,6 +58,7 @@
     }
 }
 
+// background video
 .video {
     position: absolute;
     top: 0;

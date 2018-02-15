@@ -1,3 +1,4 @@
+// container
 .timeline {
     border-top: 2px solid $color-grey-dark-2;
     border-bottom: 2px solid $color-grey-dark-2;
@@ -6,6 +7,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;
+    // title
     &__intro {
         position: relative;
         cursor: default;
@@ -39,7 +41,7 @@
     }
 }
 
-//center bar -- just a tiny width of table ;)
+// Every list element
 .list-element {
     list-style: none;
     position: relative;
@@ -51,6 +53,7 @@
     font-size: 1.4rem;
     border-radius: 3px;
     color: rgba($color-grey-light-2, .7);
+    // offset first child to give it more space
     &:first-child {
         padding-top: 2rem;
     }
@@ -95,10 +98,9 @@
         border-radius: 50%;
         box-shadow: .1rem .2rem .2rem rgba($color-black, .3);
         background: inherit;
-    }
-    &::after {
         pointer-events: none;
     }
+    // the actual timeline object
     & div {
         position: relative;
         bottom: 0;
@@ -138,6 +140,7 @@
         left: -43.9rem;
         &::before {
             right: -1.6rem;
+            // border width: top | right | bottom | left
             border-width: .8rem 0 .8rem 1.6rem;
             border-color: transparent transparent transparent rgba($color-blue-grey-dark, .7);
         }

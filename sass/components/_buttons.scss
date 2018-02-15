@@ -20,6 +20,7 @@
         line-height: 5rem;
         height: 5rem;
     }
+    // pseudo elements for 3d effects
     &::before,
     &::after {
         content: "";

@@ -7,6 +7,7 @@
     z-index: 100000000;
     background: radial-gradient(ellipse at bottom, $color-space-blue 0%, $color-space-black 100%);
     filter: brightness(.7);
+    // styling for center element (loading section)
     &__animation,
     &__animation-icon {
         color: $color-grey-light-1;
@@ -20,6 +21,7 @@
         text-align: center;
         font-size: 7rem;
         font-weight: 900;
+        // center loading words
         & p {
             @include type(22, 0, 2s, .5s);
         }
@@ -47,6 +49,7 @@
             line-height: 25rem;
             font-size: 4rem;
         }
+        // creating the circle - pseudo elements so the div itself doesn't rotate
         &:after,
         &:before {
             content: "";
@@ -66,7 +69,8 @@
             box-shadow: inset 0 -17.5px 0 rgba($color-blue-dark, 0.6), inset -17.5px 0 0 rgba($color-blue, 0.6);
             animation: rotate2 2s -0.5s linear infinite;
         }
-    } // top left corner in nav
+    }
+     // top left corner in nav
     &__animation-icon {
         left: 4rem;
         width: 3rem;

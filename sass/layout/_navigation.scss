@@ -17,6 +17,7 @@
     @include media(667px) {
         display: none;
     }
+    // Digital Time
     &__time {
         font-family: 'Faster One', cursive;
         opacity: .5;
