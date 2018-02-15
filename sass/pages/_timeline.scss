@@ -173,6 +173,7 @@
     &:nth-child(even) div {
         transform: translateX(20rem);
     }
+    // shows list element by removing translateX
     &.in-view div {
         transform: none;
         visibility: visible;

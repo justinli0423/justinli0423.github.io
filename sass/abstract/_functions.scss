@@ -3,6 +3,7 @@
     // random box shadow
     $value: '#{random(2000)}px #{random(2000)}px 1px #fff';
     @for $index from 1 through $number {
+        // string concactination to create a list of box shadows
         $value: '#{$value}, #{random(2000)}px #{random(2000)}px 1px #FFF';
     }
     @return unquote($value);
