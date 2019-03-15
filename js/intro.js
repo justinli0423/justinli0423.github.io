@@ -1,9 +1,9 @@
 // ---------------------Entrance effect
-// entrance click after 4s
+// entrance click after 2s
 setTimeout(() => {
     $('.loading__animation').addClass('clicker');
     $('.clicker').text("Click me!");
-}, 4000);
+}, 2000);
 
 
 // zoom in and loading animation
@@ -27,11 +27,6 @@ $(document).on('click', '.clicker', () => {
         $('.hidden').css(
             'display', 'none'
         );
-
-        // particle js - must load after body becomes unhidden for canvas to have 
-        // proper dimension
-        particlesJS.load('particles-js', 'json/particles.json');
-
     }, 800);
     // load on top
     window.scrollTo(0, 0);

@@ -67,6 +67,9 @@
     }
     &__text {
         line-height: 2.3rem;
+        & ul {
+            padding: 0 20px !important;
+        }
     }
     &__link {
         position: absolute;
@@ -109,19 +112,19 @@
         background: rgba($color-blue-grey-dark, .7);
         border-radius: 5px;
         box-shadow: 0 .5rem .5rem rgba($color-black, .8); // blur filter in chrome lags -- fix later
-        &:hover .list-element__text {
-            transition: all .4s .15s;
-            filter: blur(3px);
-        }
-        &:hover .list-element__title {
-            transition: all .4s .15s;
-            filter: blur(3px);
-        }
-        &:hover .list-element__link {
-            transition: all .4s;
-            animation: shade-up .4s linear;
-            animation-fill-mode: forwards;
-        }
+        // &:hover .list-element__text {
+        //     transition: all .4s .15s;
+        //     filter: blur(3px);
+        // }
+        // &:hover .list-element__title {
+        //     transition: all .4s .15s;
+        //     filter: blur(3px);
+        // }
+        // &:hover .list-element__link {
+        //     transition: all .4s;
+        //     animation: shade-up .4s linear;
+        //     animation-fill-mode: forwards;
+        // }
         &::before {
             // triangular arrows
             content: "";

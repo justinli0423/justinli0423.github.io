@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/intro.js"></script>
     <script type="text/javascript" src="js/timeline.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
@@ -38,8 +37,6 @@
             <i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
         <a href="https://github.com/Jli0423" target="_blank" class="navigation-top__link">
             <i class="fa fa-github" aria-hidden="true"></i>Github</a>
-        <a href="#timeline" class="navigation-top__link">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>Timeline</a>
         <a href="#" onClick="window.open('./pdf/JustinLiResume.pdf')" class="navigation-top__link">
             <i class="fa fa-file-text-o" aria-hidden="true"></i>Resume</a>
     </div>
@@ -90,17 +87,19 @@
                     Justin Li
                 </h1>
                 <p class="intro__paragraph">
-                    Self-Proclaimed me_n Stack Developer. Bubbletea Addict. Badminton Fanatic.
+                    Web Applications Developer @ Dejero Labs
+                    <br/>
+                    Computer Engineering @ University of Waterloo
                 </p>
                 <div class="btn">
-                    <a href="#timeline" class="btn__timeline">Timeline</a>
+                    <a href="#timeline" class="btn__timeline">Experiences</a>
                 </div>
             </div>
         </header>
         <!-- timeline section -->
         <div class="timeline__intro">
             <h1 class="heading-primary">
-                Timeline
+                Experiences
             </h1>
         </div>
         <section class="timeline" id="timeline">
@@ -111,71 +110,50 @@
                 <ul>
                     <li class="list-element">
                         <div>
-                            <h3 class="list-element__title">OG Portfolio - V2</h3>
+                            <h3 class="list-element__title">Web Applications Developer <br/> @ Dejero Labs</h3>
                             <span class="list-element__text">
-                                Took some time off making projects and learned more css/scss along with some responsive design (Since bootstrap pretty much
-                                does all the responsiveness for you). I realized every bootstrap-created website looks the
-                                same so I wanted to change it up a bit.
+                                TBD
                             </span>
-                            <a href="https://github.com/Jli0423/Jli0423.github.io" target="_blank" class="list-element__link">Git &rArr;</a>
                         </div>
                     </li>
                     <li class="list-element">
                         <div>
-                            <h3 class="list-element__title">Student Certification Automation</h3>
+                            <h3 class="list-element__title">Software Developer <br/> @ Opentext</h3>
                             <span class="list-element__text">
-                                Using Selenium drivers along with the database I created as my first project, I was able to automate the process of autenticating
-                                students that met the requirements of the Ministry of Transportation. This application is
-                                still being used on the daily, and since this contains some private information, the repo
-                                for this project is private, sorry!
+                                <ul class="list-element_list">
+                                    <li>
+                                        Constructed a user interface to allow end users to submit error reports; paginated through user history via REST API which automated 90% of the error reporting process
+                                    </li>
+                                    <li>
+                                        Developed APIs for the OpenTe
+                                        xt Core’s web client as well as middleware authentication for secure dataflow to and from OpenText’s PostgreSQL database
+                                    </li>
+                                    <li>
+                                        Engineered segments of the user interface showcased at the 2018 Enterprise World which consisted of over 4 thousand attendees using Angular.js
+                                    </li>
+                                    <li>
+                                        Contributed in adding additional functionality to OpenText’s NPM modules
+                                    </li>
+                                </ul>
                             </span>
-                            <a class="list-element__link list-element__link-cross">Git &rArr;</a>
                         </div>
                     </li>
                     <li class="list-element">
                         <div>
-                            <h3 class="list-element__title">CDA Official Website</h3>
+                            <h3 class="list-element__title">Software Developer <br/> @ Bunjee</h3>
                             <span class="list-element__text">
-                                Probably one of my biggest projects to date. Combining frontend and backend tech to create Canadian Driving Academy's official
-                                website, with user-friendly admin management sessions using NPM's passport dependency and
-                                MongoLab. Looking back, I definitely didn't understand the frontend as much as I thought
-                                I did, and I didn't make it responsive either, so the frontend of this project will be completely
-                                revamped in the near future (whenever I have time).
+                                <ul class="list-element_list">
+                                    <li>
+                                        Aggregated and structured information on customer usage obtained through MongoDB APIs which eased up workload for analytics                                    </li>
+                                    <li>
+                                        Relocated client-side data aggregation obtained through MongoDB APIs to the server-side; optimized client CPU usage by up to 15%
+                                    </li>
+                                    <li>
+                                        Created APIs to handle data transfers between Express.js and Angular.js; secured dataflow and allowed events to be properly displayed on Google Maps                                    </li>
+                                    <li>
+                                        Automated data fetching for over 20 event webpages through web scrapers developed using Jsoup                                     </li>
+                                </ul>
                             </span>
-                            <a href="https://github.com/Jli0423/CDA-Web" target="_blank" class="list-element__link">Git &rArr;</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div>
-                            <h3 class="list-element__title">OG Portfolio</h3>
-                            <span class="list-element__text">
-                                First attempt of a mobile-first, responsive design personal portfolio after learning bootstrap. At this point I didn't have
-                                much to put in a portfolio (and still don't) but I thought it was pretty neat to have a personal
-                                website since everyone around me either had a website or a blog.
-                            </span>
-                            <a href="https://github.com/Jli0423/Jli0423.github.io----old" target="_blank" class="list-element__link">Git &rArr;</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div>
-                            <h3 class="list-element__title">Text Me Maybe</h3>
-                            <span class="list-element__text">
-                                After sometime investigating Node's NPM ecosystem, I found out about Socket.io. Used Socket.io along with Moment and Express
-                                to create a small real time online messaging application with private chat rooms and location
-                                display.
-                            </span>
-                            <a href="https://github.com/Jli0423/Chat-App" target="_blank" class="list-element__link">Git &rArr;</a>
-                        </div>
-                    </li>
-                    <li class="list-element">
-                        <div>
-                            <h3 class="list-element__title">CDA Database</h3>
-                            <span class="list-element__text">
-                                First real project after learning Node JS along with MongoDB. This started out as a practice project and later got turned
-                                into a real world application that I still use on the daily. Now it is being used by the
-                                Canadian Driving Academy for student data storage.
-                            </span>
-                            <a href="https://github.com/Jli0423/CDA-Database" target="_blank" class="list-element__link">Git &rArr;</a>
                         </div>
                     </li>
                 </ul>
@@ -184,7 +162,7 @@
         <!-- resource section -->
         <section class="resource" id="projects">
             <h1 class="resource__heading-primary heading-primary">
-                Other Projects
+                Projects
             </h1>
 
             <div class="resource__container" id="resource">
@@ -207,13 +185,6 @@
                         <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
                         <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
                         <p class="resource__folders-caption">Node Js</p>
-                    </a>
-                </div>
-                <div class="resource__folders">
-                    <a href="#popup-4" class="fa-stack fa-lg resource__icon-stack">
-                        <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
-                        <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
-                        <p class="resource__folders-caption">Others</p>
                     </a>
                 </div>
             </div>
@@ -337,39 +308,6 @@
                     </div>
                 </a>
 
-            </div>
-            <a href="#resource" class="popup__close"></a>
-        </div>
-        <div class="popup" id="popup-4">
-            <div class="popup__files-content">
-                <a target="_blank" href="https://github.com/Jli0423/CashFlow101" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Cashflow 101
-                            <br>&nbsp;</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/LeetSol" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Leet Code Solutions</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/Machine-Learning" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Machine Learning</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/Connect-4" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Connect Four</p>
-                    </div>
-                </a>
             </div>
             <a href="#resource" class="popup__close"></a>
         </div>
