@@ -1,12 +1,13 @@
 .navigation-top {
     position: fixed;
+    top: 0;
     color: $color-white;
-    z-index: 100000;
+    z-index: 1000000;
     font-size: 1.9rem;
-    display: inline-block;
     width: 100%;
     border-bottom: 2px solid $color-orange-dark;
     background-color: rgba($color-black, .8);
+    -webkit-transform: translateZ(0);
     @include media(950px) {
         display: flex;
         flex-direction: row;
@@ -16,23 +17,6 @@
     }
     @include media(667px) {
         display: none;
-    }
-    // Digital Time
-    &__time {
-        font-family: 'Faster One', cursive;
-        opacity: .5;
-        color: $color-orange-light;
-        font-size: 2rem;
-        font-weight: 100;
-        position: absolute;
-        display: inline-block;
-        width: 30rem;
-        left: 7rem;
-        top: 50%;
-        transform: translateY(-50%);
-        @include media(950px) {
-            display: none;
-        }
     }
     &__link {
         transition: all .3s;

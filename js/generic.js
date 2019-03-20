@@ -1,5 +1,5 @@
 // Smooth Scrolling - per ID
-$(document).on('click', 'a[href^="#timeline"]', (event) => {
+$(document).on('click', 'a[href^="#timeline"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -8,7 +8,7 @@ $(document).on('click', 'a[href^="#timeline"]', (event) => {
 });
 
 
-$(document).on('click', 'a[href^="#top"]', (event) => {
+$(document).on('click', 'a[href^="#top"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -17,7 +17,7 @@ $(document).on('click', 'a[href^="#top"]', (event) => {
 });
 
 
-$(document).on('click', 'a[href^="#projects"]', (event) => {
+$(document).on('click', 'a[href^="#projects"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -26,12 +26,12 @@ $(document).on('click', 'a[href^="#projects"]', (event) => {
 });
 
 // Remove scroll when projects open
-$(document).on('click', '.resource__icon-stack', (event) => {
+$(document).on('click', '.resource__icon-stack', function (event) {
     $('html, body').addClass('overflow');
 });
 
 // add scroll when projects close
-$(document).on('click', '.popup__close', (event) => {
+$(document).on('click', '.popup__close', function (event) {
     $('html, body').removeClass('overflow');
 });
 
