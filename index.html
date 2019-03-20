@@ -72,11 +72,10 @@
     <!-- header section -->
     <main class="hidden-display">
         <header class="header">
-            <div class="particles-js" id="particles-js"></div>
             <div class="video">
-                <video class="video__container" autoplay loop>
+                <video class="video__container" autoplay loop plays-inline>
                     <source src="img/Love-Coding.mp4" type="video/mp4">
-                    <source src="img/Love-Coding.webm" type="video/mp4">
+                    <source src="img/Love-Coding.webm" type="video/webm">
                 </video>
             </div>
             <div class="intro">
@@ -164,104 +163,81 @@
             <h1 class="resource__heading-primary heading-primary">
                 Projects
             </h1>
-
             <div class="resource__container" id="resource">
                 <div class="resource__folders">
                     <a href="#popup-1" class="fa-stack fa-lg resource__icon-stack">
                         <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
                         <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
-                        <p class="resource__folders-caption">HTML/CSS</p>
+                        <p class="resource__folders-caption">Apps</p>
                     </a>
                 </div>
                 <div class="resource__folders">
                     <a href="#popup-2" class="fa-stack fa-lg resource__icon-stack">
                         <i class="fa fa-folder-o fa-stack-1x resource__folders-closed" aria-hidden="true"></i>
                         <i class="fa fa-folder-open-o fa-stack-1x resource__folders-open" aria-hidden="true"></i>
-                        <p class="resource__folders-caption">Javascript</p>
+                        <p class="resource__folders-caption">Miscellaneous</p>
                     </a>
                 </div>
             </div>
+            <div class="popup" id="popup-1">
+                <div class="popup__files-content">
+                    <a target="_blank" href="https://github.com/Jli0423/PlayMoji" class="popup__files">
+                        <div>
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <p class="popup__files-caption">PlayMoji</p>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/Jli0423/home/tree/old_master" class="popup__files">
+                        <div>
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <p class="popup__files-caption">Windows Simulator (WIP)</p>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/Jli0423/CDA-Web" class="popup__files">
+                        <div>
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <p class="popup__files-caption">CDA</p>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/Jli0423/Std-lib" class="popup__files">
+                        <div>
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <p class="popup__files-caption">QHack APIs</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="#resource" class="popup__close"></a>
+            </div>
+            <div class="popup" id="popup-2">
+                <div class="popup__files-content">
+                    <a target="_blank" href="https://github.com/Jli0423/Cheat-Sheets" class="popup__files">
+                        <div>
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <p class="popup__files-caption">Web Dev Tools</p>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/Jli0423/LeetSol" class="popup__files">
+                        <div>
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <p class="popup__files-caption">Leetcode</p>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/Jli0423/ShopifyWebDevChallenge2018" class="popup__files">
+                        <div>
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <p class="popup__files-caption">Shopify Web Challenge</p>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/Jli0423/ShopifyUXChallenge2018" class="popup__files">
+                        <div>
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <p class="popup__files-caption">Shopify UX Challenge</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="#resource" class="popup__close"></a>
+            </div>
         </section>
-        <!-- pop up from resource folders -->
-        <div class="popup" id="popup-1">
-            <div class="popup__files-content">
-                <a target="_blank" href="https://github.com/Jli0423/Jli0423.github.io" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Current Website</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/Jli0423.github.io----old" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Website v1</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/Website-Template" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Bootstrap Template</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/Site-v2---template" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Scss/Sass Template</p>
-                    </div>
-                </a>
-            </div>
-            <a href="#resource" class="popup__close"></a>
-        </div>
-        <div class="popup" id="popup-2">
-            <div class="popup__files-content">
-                <a target="_blank" href="https://github.com/Jli0423/MiniBreakout" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Mini Breakout</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/Tanks.io" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Tanks.io</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/CountDownClock" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Countdown Clock</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/Music-Master" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Music Master (React JS)</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/JS-Practice-Project" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Dice Roller</p>
-                    </div>
-                </a>
-
-                <a target="_blank" href="https://github.com/Jli0423/Budget-Calc" class="popup__files">
-                    <div>
-                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                        <p class="popup__files-caption">Budget Calculator</p>
-                    </div>
-                </a>
-            </div>
-            <a href="#resource" class="popup__close"></a>
-        </div>
     </main>
 </body>
-
 </html>
