@@ -1,33 +1,27 @@
 // ---------------------Entrance effect
 // entrance click after 2s
 setTimeout(() => {
-    $('.loading__animation').addClass('clicker');
-    $('.clicker').text("Click me!");
+        // change opacity + scaling
+        $('.loading__animation').addClass('hidden');
+        $('.loading').addClass('scale');
+        setTimeout(() => {
+            // show all markups inside main page
+            $('.hidden-display').removeClass('hidden-display');
+        }, 200);
+        setTimeout(() => {
+            $('.loading').addClass('hidden');
+            $('.overflow').removeClass('overflow');
+        }, 500);
+        // completely remove display after opacity is 0
+        setTimeout(() => {
+            $('.loading').css(
+                'display', 'none'
+            );
+            $('.hidden').css(
+                'display', 'none'
+            );
+        }, 600);
+        // load on top
+        window.scrollTo(0, 0);
 }, 2000);
 
-
-// zoom in and loading animation
-$(document).on('click', '.clicker', () => {
-    // change opacity + scaling
-    $('.loading__animation').addClass('hidden');
-    $('.loading').addClass('scale');
-    setTimeout(() => {
-        // show all markups inside main page
-        $('.hidden-display').removeClass('hidden-display');
-    }, 200);
-    setTimeout(() => {
-        $('.loading').addClass('hidden');
-        $('.overflow').removeClass('overflow');
-    }, 500);
-    // completely remove display after opacity is 0
-    setTimeout(() => {
-        $('.loading').css(
-            'display', 'none'
-        );
-        $('.hidden').css(
-            'display', 'none'
-        );
-    }, 800);
-    // load on top
-    window.scrollTo(0, 0);
-});
