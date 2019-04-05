@@ -20,7 +20,8 @@ html {
 
 body {
     box-sizing: border-box;
-    background: linear-gradient(45deg, rgba($color-black, .4), rgba($color-black, .6), rgba($color-black, .6)), url(../img/dark-bg.jpg);
+    // background: linear-gradient(45deg, rgba($color-black, .4), rgba($color-black, .6), rgba($color-black, .6)), url(../img/dark-bg.jpg);
+    background: rgba(#090a0f, 0.95);
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
@@ -32,7 +33,6 @@ body {
     /* Internet Explorer/Edge */
     user-select: none;
     /* Non-prefixed version, currently supported by Chrome and Opera */
-    filter: brightness(120%);
 }
 
 html, body {
@@ -40,3 +40,240 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
+main {
+    position: relative;
+}
+
+.planet-background {
+    font-size: 80%;
+    opacity: .2;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.star1 {
+  @include center;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: $small;
+  animation: fly 30s linear infinite;
+}
+
+.star2 {
+  @include center;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: $med;
+  animation: fly 90s linear infinite;
+}
+
+.star3 {
+  @include center;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: $big;
+  animation: fly 200s linear infinite;
+}
+
+.sun {
+  @include center;
+  z-index: 10;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  background: radial-gradient(#ff8c00 40%, #ffd700 75%);
+  box-shadow: 0 0 40px rgb(255, 235, 0);
+  transform: translate(-50%, -50%) rotateX(0);
+}
+
+.mercury {
+    @include center(2em, 2em);
+    background: transparent;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    box-shadow: 9em 0 2px rgb(206,220,231);
+    animation: fly $mercury linear infinite;
+    &__path {
+      @include center;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      color: transparent;
+      background: transparent;
+      padding: 9em;
+      border: 2px solid rgba(#d3d3d3, 0.2);
+      z-index: -1;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+}
+  }
+  
+  .venus {
+    @include center(2em, 2em);
+    background: transparent;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    box-shadow: 11.5em 0 2px rgb(255, 218, 185);
+    animation: fly $venus linear infinite;
+    &__path {
+      @include center;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      color: transparent;
+      background: transparent;
+      padding: 11.5em;
+      border: 2px solid rgba(#d3d3d3, 0.2);
+      z-index: -1;
+    }
+  }
+  
+  .earth {
+    @include center(2.5em, 2.5em);
+    background: transparent;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    box-shadow: 14.5em 0 2px rgb(48, 86, 191);
+    animation: fly $earth linear infinite;
+    &__path {
+      @include center;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      color: transparent;
+      background: transparent;
+      padding: 14.5em;
+      border: 2px solid rgba(#d3d3d3, 0.2);
+      z-index: -1;
+    }
+  }
+  
+  .mars {
+    @include center(2em, 2em);
+    background: transparent;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    box-shadow: 17.5em 0 2px rgb(255, 69, 0);
+    animation: fly $mars linear infinite;
+    &__path {
+      @include center;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      color: transparent;
+      background: transparent;
+      padding: 17.5em;
+      border: 2px solid rgba(#d3d3d3, 0.2);
+      z-index: -1;
+    }
+  }
+  
+  .asteriod {
+    z-index: 10000;
+    width: 5px;
+    height: 5px;
+    @include center;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    // background: red;
+    // box-shadow: $belt;
+    // @for $i from 0 to 1000 {
+    //   &:nth-child(#{$i}) {
+    //     box-shadow: #{random(2) + 18}em #{random(14em)}em 0 orangered;
+    //   }
+    // }
+  }
+  
+  .jupiter {
+    @include center(7em, 7em);
+    background: transparent;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    box-shadow: 25em 0 2px rgb(201, 124, 66);
+    animation: fly $jupiter linear infinite;
+    &__path {
+      @include center;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      color: transparent;
+      background: transparent;
+      padding: 25em;
+      border: 2px solid rgba(#d3d3d3, 0.2);
+      z-index: -1;
+    }
+  }
+  
+  .saturn {
+    @include center(6em, 6em);
+    background: transparent;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    box-shadow: 33em 0 2px rgb(201, 144, 57);
+    animation: fly $saturn linear infinite;
+    &__path {
+      @include center;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      color: transparent;
+      background: transparent;
+      padding: 33em;
+      border: 2px solid rgba(#d3d3d3, 0.2);
+      z-index: -1;
+    }
+  }
+  
+  .uranus {
+    @include center(4em, 4em);
+    background: transparent;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    box-shadow: 39.5em 0 2px rgb(0, 191, 255);
+    animation: fly $uranus linear infinite;
+    &__path {
+      @include center;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      color: transparent;
+      background: transparent;
+      padding: 39.5em;
+      border: 2px solid rgba(#d3d3d3, 0.2);
+      z-index: -1;
+    }
+  }
+  
+  .neptune {
+    @include center(4em, 4em);
+    background: transparent;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    box-shadow: 45em 0 2px rgb(30, 144, 255);
+    animation: fly $neptune linear infinite;
+    &__path {
+      @include center;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      color: transparent;
+      background: transparent;
+      padding: 45em;
+      border: 2px solid rgba(#d3d3d3, 0.2);
+      z-index: -1;
+    }
+  }
+  

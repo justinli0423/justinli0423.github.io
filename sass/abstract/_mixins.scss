@@ -34,3 +34,18 @@
     letter-spacing: normal;
     animation: typing $type-speed steps($steps) infinite;
 }
+
+// spinning rocks in main page
+@function boxshadow($number) {
+    $var: "#{random(3000)-1500}px #{random(3000)-1500}px 1px #fff";
+    @for $index from 1 through $number {
+      $var: "#{$var}, #{random(3000)-1500}px #{random(3000)-1500}px 1px #fff";
+    }
+    @return unquote($var);
+}
+
+@mixin center($w: 0px, $h: 0px) {
+    position: absolute;
+    top: calc(50% - #{$w}/2);
+    left: calc(50% - #{$h}/2);
+  }

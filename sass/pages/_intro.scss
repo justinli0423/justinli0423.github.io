@@ -135,4 +135,5 @@
     backface-visibility: hidden;
     animation-fill-mode: forwards;
     animation: zoom-in 2s linear;
+    -webkit-backface-visibility: hidden;
 }

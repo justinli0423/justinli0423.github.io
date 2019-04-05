@@ -40,3 +40,18 @@ $gutter-horizontal: 6rem;
 $small-stars: stars-boxshadow(700);
 $medium-stars: stars-boxshadow(200); 
 $large-stars: stars-boxshadow(100); 
+
+// planet speeds (Taken real life planet speeds km/s)
+$mercury: orbit(47);
+$venus: orbit(35);
+$earth: orbit(30);
+$mars: orbit(24);
+$jupiter: orbit(13);
+$saturn: orbit(10);
+$uranus: orbit(7);
+$neptune: orbit(5);
+
+// star sizes and amounts
+$small: boxshadow(1000);
+$med: boxshadow(350);
+$big: boxshadow(150);

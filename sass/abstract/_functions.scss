@@ -8,3 +8,9 @@
     }
     @return unquote($value);
 }
+
+// planets
+@function orbit($speed) {
+    $result: "#{(500/$speed)}s";
+    @return unquote($result);
+  }
