@@ -1,5 +1,5 @@
 {
-  "name": "Jli0423.github.io",
+  "name": "justinli0423.github.io",
   "version": "1.0.0",
   "description": "Revamped personal website :)",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jli0423/Jli0423.github.io.git"
+    "url": "git+https://github.com/justinli0423/justinli0423.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jli0423/Jli0423.github.io/issues"
+    "url": "https://github.com/justinli0423/justinli0423.github.io/issues"
   },
-  "homepage": "https://github.com/Jli0423/Jli0423.github.io#readme",
+  "homepage": "https://github.com/justinli0423/justinli0423.github.io#readme",
   "devDependencies": {
     "node-sass": "^4.7.2"
   }
