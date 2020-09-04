@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/justinli0423/justinli0423.github.io#readme",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.13.1"
   }
 }
